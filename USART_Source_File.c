@@ -17,6 +17,16 @@ void USART_Init(long baud_rate)
 }
 /******************TRANSMIT FUNCTION*****************************************/ 
 void putch(unsigned char byte){
+    char trash;
+    
+    // Error handling
+    if(RCSTAbits.FERR) 
+        trash = RCREG;
+    if(RCSTAbits.OERR) {
+        RCSTAbits.CREN=0; 
+        RCSTAbits.CREN=1;
+    }
+    
     // wait the end of transmission
     while (TXSTA1bits.TRMT == 0);
     TXREG1 = byte; // send the new byte
@@ -27,7 +37,6 @@ void putch(unsigned char byte){
 /*******************RECEIVE FUNCTION*****************************************/
 char USART_ReceiveChar()
 {
-
     if(RCIF==1)                 /*wait for receive interrupt flag*/
         return(RCREG);                  /*receive data is stored in RCREG register and return to main program */
     else

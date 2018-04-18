@@ -1,5 +1,5 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"10255 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
+"10255 /home/fbuga/opt/microchip/xc8/v1.45/include/pic18f4550.h
 [v _TRISC6 `Vb ~T0 @X0 0 e@31910 ]
 "10257
 [v _TRISC7 `Vb ~T0 @X0 0 e@31911 ]
@@ -9,6 +9,31 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _TXSTA `Vuc ~T0 @X0 0 e@4012 ]
 "4934
 [v _RCSTA `Vuc ~T0 @X0 0 e@4011 ]
+"4945
+[s S191 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S191 . RX9D OERR FERR ADDEN CREN SREN RX9 SPEN ]
+"4955
+[s S192 :3 `uc 1 :1 `uc 1 ]
+[n S192 . . ADEN ]
+"4959
+[s S193 :5 `uc 1 :1 `uc 1 ]
+[n S193 . . SRENA ]
+"4963
+[s S194 :6 `uc 1 :1 `uc 1 ]
+[n S194 . . RC8_9 ]
+"4967
+[s S195 :6 `uc 1 :1 `uc 1 ]
+[n S195 . . RC9 ]
+"4971
+[s S196 :1 `uc 1 ]
+[n S196 . RCD8 ]
+"4944
+[u S190 `S191 1 `S192 1 `S193 1 `S194 1 `S195 1 `S196 1 ]
+[n S190 . . . . . . . ]
+"4975
+[v _RCSTAbits `VS190 ~T0 @X0 0 e@4011 ]
+"5412
+[v _RCREG `Vuc ~T0 @X0 0 e@4014 ]
 "5277
 [s S210 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S210 . TX9D TRMT BRGH SENDB SYNC TXEN TX9 CSRC ]
@@ -32,10 +57,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _TXIF `Vb ~T0 @X0 0 e@31988 ]
 "9927
 [v _RCIF `Vb ~T0 @X0 0 e@31989 ]
-"5412
-[v _RCREG `Vuc ~T0 @X0 0 e@4014 ]
 [; ;pic18f4550.h: 50: extern volatile unsigned char SPPDATA @ 0xF62;
-"52 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
+"52 /home/fbuga/opt/microchip/xc8/v1.45/include/pic18f4550.h
 [; ;pic18f4550.h: 52: asm("SPPDATA equ 0F62h");
 [; <" SPPDATA equ 0F62h ;# ">
 [; ;pic18f4550.h: 55: typedef union {
@@ -3576,59 +3599,83 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U _putch ]
 [v _byte `uc ~T0 @X0 1 r1 ]
 [f ]
-[; ;USART_Source_File.c: 21: while (TXSTA1bits.TRMT == 0);
-"21
-[e $U 364  ]
-[e :U 365 ]
-[e :U 364 ]
-[e $ == -> . . _TXSTA1bits 0 1 `i -> 0 `i 365  ]
-[e :U 366 ]
-[; ;USART_Source_File.c: 22: TXREG1 = byte;
-"22
-[e = _TXREG1 _byte ]
-[; ;USART_Source_File.c: 23: while(!TXIF)
+"20
+[v _trash `uc ~T0 @X0 1 a ]
+[; ;USART_Source_File.c: 20: char trash;
+[; ;USART_Source_File.c: 23: if(RCSTAbits.FERR)
 "23
-[e $U 367  ]
-[e :U 368 ]
-[; ;USART_Source_File.c: 24: continue;
+[e $ ! != -> . . _RCSTAbits 0 2 `i -> -> -> 0 `i `Vuc `i 364  ]
+[; ;USART_Source_File.c: 24: trash = RCREG;
 "24
-[e $U 367  ]
-[e :U 367 ]
-"23
-[e $ ! _TXIF 368  ]
-[e :U 369 ]
-[; ;USART_Source_File.c: 25: TXIF=0;
+[e = _trash _RCREG ]
+[e :U 364 ]
+[; ;USART_Source_File.c: 25: if(RCSTAbits.OERR) {
 "25
-[e = _TXIF -> -> 0 `i `b ]
-[; ;USART_Source_File.c: 26: }
+[e $ ! != -> . . _RCSTAbits 0 1 `i -> -> -> 0 `i `Vuc `i 365  ]
+{
+[; ;USART_Source_File.c: 26: RCSTAbits.CREN=0;
 "26
+[e = . . _RCSTAbits 0 4 -> -> 0 `i `uc ]
+[; ;USART_Source_File.c: 27: RCSTAbits.CREN=1;
+"27
+[e = . . _RCSTAbits 0 4 -> -> 1 `i `uc ]
+"28
+}
+[e :U 365 ]
+[; ;USART_Source_File.c: 28: }
+[; ;USART_Source_File.c: 31: while (TXSTA1bits.TRMT == 0);
+"31
+[e $U 366  ]
+[e :U 367 ]
+[e :U 366 ]
+[e $ == -> . . _TXSTA1bits 0 1 `i -> 0 `i 367  ]
+[e :U 368 ]
+[; ;USART_Source_File.c: 32: TXREG1 = byte;
+"32
+[e = _TXREG1 _byte ]
+[; ;USART_Source_File.c: 33: while(!TXIF)
+"33
+[e $U 369  ]
+[e :U 370 ]
+[; ;USART_Source_File.c: 34: continue;
+"34
+[e $U 369  ]
+[e :U 369 ]
+"33
+[e $ ! _TXIF 370  ]
+[e :U 371 ]
+[; ;USART_Source_File.c: 35: TXIF=0;
+"35
+[e = _TXIF -> -> 0 `i `b ]
+[; ;USART_Source_File.c: 36: }
+"36
 [e :UE 363 ]
 }
-"28
+"38
 [v _USART_ReceiveChar `(uc ~T0 @X0 1 ef ]
-"29
+"39
 {
-[; ;USART_Source_File.c: 28: char USART_ReceiveChar()
-[; ;USART_Source_File.c: 29: {
+[; ;USART_Source_File.c: 38: char USART_ReceiveChar()
+[; ;USART_Source_File.c: 39: {
 [e :U _USART_ReceiveChar ]
 [f ]
-[; ;USART_Source_File.c: 31: if(RCIF==1)
-"31
-[e $ ! == -> _RCIF `i -> 1 `i 371  ]
-[; ;USART_Source_File.c: 32: return(RCREG);
-"32
+[; ;USART_Source_File.c: 40: if(RCIF==1)
+"40
+[e $ ! == -> _RCIF `i -> 1 `i 373  ]
+[; ;USART_Source_File.c: 41: return(RCREG);
+"41
 [e ) _RCREG ]
-[e $UE 370  ]
-[e $U 372  ]
-"33
-[e :U 371 ]
-[; ;USART_Source_File.c: 33: else
-[; ;USART_Source_File.c: 34: return 0;
-"34
+[e $UE 372  ]
+[e $U 374  ]
+"42
+[e :U 373 ]
+[; ;USART_Source_File.c: 42: else
+[; ;USART_Source_File.c: 43: return 0;
+"43
 [e ) -> -> 0 `i `uc ]
-[e $UE 370  ]
-[e :U 372 ]
-[; ;USART_Source_File.c: 35: }
-"35
-[e :UE 370 ]
+[e $UE 372  ]
+[e :U 374 ]
+[; ;USART_Source_File.c: 44: }
+"44
+[e :UE 372 ]
 }

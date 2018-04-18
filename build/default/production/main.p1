@@ -1,6 +1,6 @@
 Version 3.2 HI-TECH Software Intermediate Code
 [p mainexit ]
-"7984 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
+"7984 /home/fbuga/opt/microchip/xc8/v1.45/include/pic18f4550.h
 [v _OSCCON `Vuc ~T0 @X0 0 e@4051 ]
 "3189
 [s S128 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -17,33 +17,29 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _initIO `(v ~T0 @X0 0 ef ]
 "6
 [v _initBT `(v ~T0 @X0 0 ef ]
-"777 C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\i2c.h
-[v _OpenI2C `(v ~T0 @X0 0 ef2`uc`uc ]
-"7184 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
-[v _SSPADD `Vuc ~T0 @X0 0 e@4040 ]
-"422 MPU6050.h
-[v _MPU6050 `(v ~T0 @X0 0 ef1`uc ]
-"195 C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdio.h
-[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
-"424 MPU6050.h
-[v _MPU6050_initialize `(v ~T0 @X0 0 ef ]
 [v F4551 `(v ~T0 @X0 1 tf1`ul ]
-"164 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18.h
+"164 /home/fbuga/opt/microchip/xc8/v1.45/include/pic18.h
 [v __delay `JF4551 ~T0 @X0 0 e ]
 [p i __delay ]
-"425 MPU6050.h
+"777 /home/fbuga/opt/microchip/xc8/v1.45/include/plib/i2c.h
+[v _OpenI2C `(v ~T0 @X0 0 ef2`uc`uc ]
+"7184 /home/fbuga/opt/microchip/xc8/v1.45/include/pic18f4550.h
+[v _SSPADD `Vuc ~T0 @X0 0 e@4040 ]
+"411 MPU6050.h
+[v _MPU6050 `(v ~T0 @X0 0 ef1`uc ]
+"195 /home/fbuga/opt/microchip/xc8/v1.45/include/stdio.h
+[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
+"413 MPU6050.h
+[v _MPU6050_initialize `(v ~T0 @X0 0 ef ]
+"414
 [v _MPU6050_testConnection `(uc ~T0 @X0 0 ef ]
-"770
-[v _MPU6050_setDMPEnabled `(v ~T0 @X0 0 ef1`uc ]
-"588
-[v _MPU6050_getIntStatus `(uc ~T0 @X0 0 ef ]
-"799
-[v _MPU6050_dmpGetFIFOPacketSize `(ui ~T0 @X0 0 ef ]
+"587
+[v _MPU6050_getMotion6 `(v ~T0 @X0 0 ef6`*i`*i`*i`*i`*i`*i ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
 [; ;pic18f4550.h: 50: extern volatile unsigned char SPPDATA @ 0xF62;
-"52 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
+"52 /home/fbuga/opt/microchip/xc8/v1.45/include/pic18f4550.h
 [; ;pic18f4550.h: 52: asm("SPPDATA equ 0F62h");
 [; <" SPPDATA equ 0F62h ;# ">
 [; ;pic18f4550.h: 55: typedef union {
@@ -4269,2786 +4265,266 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;I2Cdev.h: 60: bool I2Cdev_writeWord(uint8_t devAddr, uint8_t regAddr, uint16_t data);
 [; ;I2Cdev.h: 61: bool I2Cdev_writeBytes(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint8_t *data);
 [; ;I2Cdev.h: 62: bool I2Cdev_writeWords(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint16_t *data);
-"414 MPU6050.h
-[v _dmpPacketSize `ui ~T0 @X0 1 e ]
-[; ;MPU6050.h: 414: uint16_t dmpPacketSize;
-[; ;MPU6050.h: 417: typedef struct MPU6050_t {
-[; ;MPU6050.h: 418: uint8_t devAddr;
-[; ;MPU6050.h: 419: uint8_t buffer[14];
-[; ;MPU6050.h: 420: } MPU6050_t;
-[; ;MPU6050.h: 422: void MPU6050(uint8_t address);
-[; ;MPU6050.h: 424: void MPU6050_initialize();
-[; ;MPU6050.h: 425: bool MPU6050_testConnection();
-[; ;MPU6050.h: 428: uint8_t MPU6050_getAuxVDDIOLevel();
-[; ;MPU6050.h: 429: void MPU6050_setAuxVDDIOLevel(uint8_t level);
-[; ;MPU6050.h: 432: uint8_t MPU6050_getRate();
-[; ;MPU6050.h: 433: void MPU6050_setRate(uint8_t rate);
-[; ;MPU6050.h: 436: uint8_t MPU6050_getExternalFrameSync();
-[; ;MPU6050.h: 437: void MPU6050_setExternalFrameSync(uint8_t sync);
-[; ;MPU6050.h: 438: uint8_t MPU6050_getDLPFMode();
-[; ;MPU6050.h: 439: void MPU6050_setDLPFMode(uint8_t bandwidth);
-[; ;MPU6050.h: 442: uint8_t MPU6050_getFullScaleGyroRange();
-[; ;MPU6050.h: 443: void MPU6050_setFullScaleGyroRange(uint8_t range);
-[; ;MPU6050.h: 446: bool MPU6050_getAccelXSelfTest();
-[; ;MPU6050.h: 447: void MPU6050_setAccelXSelfTest(bool enabled);
-[; ;MPU6050.h: 448: bool MPU6050_getAccelYSelfTest();
-[; ;MPU6050.h: 449: void MPU6050_setAccelYSelfTest(bool enabled);
-[; ;MPU6050.h: 450: bool MPU6050_getAccelZSelfTest();
-[; ;MPU6050.h: 451: void MPU6050_setAccelZSelfTest(bool enabled);
-[; ;MPU6050.h: 452: uint8_t MPU6050_getFullScaleAccelRange();
-[; ;MPU6050.h: 453: void MPU6050_setFullScaleAccelRange(uint8_t range);
-[; ;MPU6050.h: 454: uint8_t MPU6050_getDHPFMode();
-[; ;MPU6050.h: 455: void MPU6050_setDHPFMode(uint8_t mode);
-[; ;MPU6050.h: 458: uint8_t MPU6050_getFreefallDetectionThreshold();
-[; ;MPU6050.h: 459: void MPU6050_setFreefallDetectionThreshold(uint8_t threshold);
-[; ;MPU6050.h: 462: uint8_t MPU6050_getFreefallDetectionDuration();
-[; ;MPU6050.h: 463: void MPU6050_setFreefallDetectionDuration(uint8_t duration);
-[; ;MPU6050.h: 466: uint8_t MPU6050_getMotionDetectionThreshold();
-[; ;MPU6050.h: 467: void MPU6050_setMotionDetectionThreshold(uint8_t threshold);
-[; ;MPU6050.h: 470: uint8_t MPU6050_getMotionDetectionDuration();
-[; ;MPU6050.h: 471: void MPU6050_setMotionDetectionDuration(uint8_t duration);
-[; ;MPU6050.h: 474: uint8_t MPU6050_getZeroMotionDetectionThreshold();
-[; ;MPU6050.h: 475: void MPU6050_setZeroMotionDetectionThreshold(uint8_t threshold);
-[; ;MPU6050.h: 478: uint8_t MPU6050_getZeroMotionDetectionDuration();
-[; ;MPU6050.h: 479: void MPU6050_setZeroMotionDetectionDuration(uint8_t duration);
-[; ;MPU6050.h: 482: bool MPU6050_getTempFIFOEnabled();
-[; ;MPU6050.h: 483: void MPU6050_setTempFIFOEnabled(bool enabled);
-[; ;MPU6050.h: 484: bool MPU6050_getXGyroFIFOEnabled();
-[; ;MPU6050.h: 485: void MPU6050_setXGyroFIFOEnabled(bool enabled);
-[; ;MPU6050.h: 486: bool MPU6050_getYGyroFIFOEnabled();
-[; ;MPU6050.h: 487: void MPU6050_setYGyroFIFOEnabled(bool enabled);
-[; ;MPU6050.h: 488: bool MPU6050_getZGyroFIFOEnabled();
-[; ;MPU6050.h: 489: void MPU6050_setZGyroFIFOEnabled(bool enabled);
-[; ;MPU6050.h: 490: bool MPU6050_getAccelFIFOEnabled();
-[; ;MPU6050.h: 491: void MPU6050_setAccelFIFOEnabled(bool enabled);
-[; ;MPU6050.h: 492: bool MPU6050_getSlave2FIFOEnabled();
-[; ;MPU6050.h: 493: void MPU6050_setSlave2FIFOEnabled(bool enabled);
-[; ;MPU6050.h: 494: bool MPU6050_getSlave1FIFOEnabled();
-[; ;MPU6050.h: 495: void MPU6050_setSlave1FIFOEnabled(bool enabled);
-[; ;MPU6050.h: 496: bool MPU6050_getSlave0FIFOEnabled();
-[; ;MPU6050.h: 497: void MPU6050_setSlave0FIFOEnabled(bool enabled);
-[; ;MPU6050.h: 500: bool MPU6050_getMultiMasterEnabled();
-[; ;MPU6050.h: 501: void MPU6050_setMultiMasterEnabled(bool enabled);
-[; ;MPU6050.h: 502: bool MPU6050_getWaitForExternalSensorEnabled();
-[; ;MPU6050.h: 503: void MPU6050_setWaitForExternalSensorEnabled(bool enabled);
-[; ;MPU6050.h: 504: bool MPU6050_getSlave3FIFOEnabled();
-[; ;MPU6050.h: 505: void MPU6050_setSlave3FIFOEnabled(bool enabled);
-[; ;MPU6050.h: 506: bool MPU6050_getSlaveReadWriteTransitionEnabled();
-[; ;MPU6050.h: 507: void MPU6050_setSlaveReadWriteTransitionEnabled(bool enabled);
-[; ;MPU6050.h: 508: uint8_t MPU6050_getMasterClockSpeed();
-[; ;MPU6050.h: 509: void MPU6050_setMasterClockSpeed(uint8_t speed);
-[; ;MPU6050.h: 512: uint8_t MPU6050_getSlaveAddress(uint8_t num);
-[; ;MPU6050.h: 513: void MPU6050_setSlaveAddress(uint8_t num, uint8_t address);
-[; ;MPU6050.h: 514: uint8_t MPU6050_getSlaveRegister(uint8_t num);
-[; ;MPU6050.h: 515: void MPU6050_setSlaveRegister(uint8_t num, uint8_t reg);
-[; ;MPU6050.h: 516: bool MPU6050_getSlaveEnabled(uint8_t num);
-[; ;MPU6050.h: 517: void MPU6050_setSlaveEnabled(uint8_t num, bool enabled);
-[; ;MPU6050.h: 518: bool MPU6050_getSlaveWordByteSwap(uint8_t num);
-[; ;MPU6050.h: 519: void MPU6050_setSlaveWordByteSwap(uint8_t num, bool enabled);
-[; ;MPU6050.h: 520: bool MPU6050_getSlaveWriteMode(uint8_t num);
-[; ;MPU6050.h: 521: void MPU6050_setSlaveWriteMode(uint8_t num, bool mode);
-[; ;MPU6050.h: 522: bool MPU6050_getSlaveWordGroupOffset(uint8_t num);
-[; ;MPU6050.h: 523: void MPU6050_setSlaveWordGroupOffset(uint8_t num, bool enabled);
-[; ;MPU6050.h: 524: uint8_t MPU6050_getSlaveDataLength(uint8_t num);
-[; ;MPU6050.h: 525: void MPU6050_setSlaveDataLength(uint8_t num, uint8_t length);
-[; ;MPU6050.h: 528: uint8_t MPU6050_getSlave4Address();
-[; ;MPU6050.h: 529: void MPU6050_setSlave4Address(uint8_t address);
-[; ;MPU6050.h: 530: uint8_t MPU6050_getSlave4Register();
-[; ;MPU6050.h: 531: void MPU6050_setSlave4Register(uint8_t reg);
-[; ;MPU6050.h: 532: void MPU6050_setSlave4OutputByte(uint8_t data);
-[; ;MPU6050.h: 533: bool MPU6050_getSlave4Enabled();
-[; ;MPU6050.h: 534: void MPU6050_setSlave4Enabled(bool enabled);
-[; ;MPU6050.h: 535: bool MPU6050_getSlave4InterruptEnabled();
-[; ;MPU6050.h: 536: void MPU6050_setSlave4InterruptEnabled(bool enabled);
-[; ;MPU6050.h: 537: bool MPU6050_getSlave4WriteMode();
-[; ;MPU6050.h: 538: void MPU6050_setSlave4WriteMode(bool mode);
-[; ;MPU6050.h: 539: uint8_t MPU6050_getSlave4MasterDelay();
-[; ;MPU6050.h: 540: void MPU6050_setSlave4MasterDelay(uint8_t delay);
-[; ;MPU6050.h: 541: uint8_t MPU6050_getSlate4InputByte();
-[; ;MPU6050.h: 544: bool MPU6050_getPassthroughStatus();
-[; ;MPU6050.h: 545: bool MPU6050_getSlave4IsDone();
-[; ;MPU6050.h: 546: bool MPU6050_getLostArbitration();
-[; ;MPU6050.h: 547: bool MPU6050_getSlave4Nack();
-[; ;MPU6050.h: 548: bool MPU6050_getSlave3Nack();
-[; ;MPU6050.h: 549: bool MPU6050_getSlave2Nack();
-[; ;MPU6050.h: 550: bool MPU6050_getSlave1Nack();
-[; ;MPU6050.h: 551: bool MPU6050_getSlave0Nack();
-[; ;MPU6050.h: 554: bool MPU6050_getInterruptMode();
-[; ;MPU6050.h: 555: void MPU6050_setInterruptMode(bool mode);
-[; ;MPU6050.h: 556: bool MPU6050_getInterruptDrive();
-[; ;MPU6050.h: 557: void MPU6050_setInterruptDrive(bool drive);
-[; ;MPU6050.h: 558: bool MPU6050_getInterruptLatch();
-[; ;MPU6050.h: 559: void MPU6050_setInterruptLatch(bool latch);
-[; ;MPU6050.h: 560: bool MPU6050_getInterruptLatchClear();
-[; ;MPU6050.h: 561: void MPU6050_setInterruptLatchClear(bool clear);
-[; ;MPU6050.h: 562: bool MPU6050_getFSyncInterruptLevel();
-[; ;MPU6050.h: 563: void MPU6050_setFSyncInterruptLevel(bool level);
-[; ;MPU6050.h: 564: bool MPU6050_getFSyncInterruptEnabled();
-[; ;MPU6050.h: 565: void MPU6050_setFSyncInterruptEnabled(bool enabled);
-[; ;MPU6050.h: 566: bool MPU6050_getI2CBypassEnabled();
-[; ;MPU6050.h: 567: void MPU6050_setI2CBypassEnabled(bool enabled);
-[; ;MPU6050.h: 568: bool MPU6050_getClockOutputEnabled();
-[; ;MPU6050.h: 569: void MPU6050_setClockOutputEnabled(bool enabled);
-[; ;MPU6050.h: 572: uint8_t MPU6050_getIntEnabled();
-[; ;MPU6050.h: 573: void MPU6050_setIntEnabled(uint8_t enabled);
-[; ;MPU6050.h: 574: bool MPU6050_getIntFreefallEnabled();
-[; ;MPU6050.h: 575: void MPU6050_setIntFreefallEnabled(bool enabled);
-[; ;MPU6050.h: 576: bool MPU6050_getIntMotionEnabled();
-[; ;MPU6050.h: 577: void MPU6050_setIntMotionEnabled(bool enabled);
-[; ;MPU6050.h: 578: bool MPU6050_getIntZeroMotionEnabled();
-[; ;MPU6050.h: 579: void MPU6050_setIntZeroMotionEnabled(bool enabled);
-[; ;MPU6050.h: 580: bool MPU6050_getIntFIFOBufferOverflowEnabled();
-[; ;MPU6050.h: 581: void MPU6050_setIntFIFOBufferOverflowEnabled(bool enabled);
-[; ;MPU6050.h: 582: bool MPU6050_getIntI2CMasterEnabled();
-[; ;MPU6050.h: 583: void MPU6050_setIntI2CMasterEnabled(bool enabled);
-[; ;MPU6050.h: 584: bool MPU6050_getIntDataReadyEnabled();
-[; ;MPU6050.h: 585: void MPU6050_setIntDataReadyEnabled(bool enabled);
-[; ;MPU6050.h: 588: uint8_t MPU6050_getIntStatus();
-[; ;MPU6050.h: 589: bool MPU6050_getIntFreefallStatus();
-[; ;MPU6050.h: 590: bool MPU6050_getIntMotionStatus();
-[; ;MPU6050.h: 591: bool MPU6050_getIntZeroMotionStatus();
-[; ;MPU6050.h: 592: bool MPU6050_getIntFIFOBufferOverflowStatus();
-[; ;MPU6050.h: 593: bool MPU6050_getIntI2CMasterStatus();
-[; ;MPU6050.h: 594: bool MPU6050_getIntDataReadyStatus();
-[; ;MPU6050.h: 597: void MPU6050_getMotion9(int16_t* ax, int16_t* ay, int16_t* az, int16_t* gx, int16_t* gy, int16_t* gz, int16_t* mx, int16_t* my, int16_t* mz);
-[; ;MPU6050.h: 598: void MPU6050_getMotion6(int16_t* ax, int16_t* ay, int16_t* az, int16_t* gx, int16_t* gy, int16_t* gz);
-[; ;MPU6050.h: 599: void MPU6050_getAcceleration(int16_t* x, int16_t* y, int16_t* z);
-[; ;MPU6050.h: 600: int16_t MPU6050_getAccelerationX();
-[; ;MPU6050.h: 601: int16_t MPU6050_getAccelerationY();
-[; ;MPU6050.h: 602: int16_t MPU6050_getAccelerationZ();
-[; ;MPU6050.h: 605: int16_t MPU6050_getTemperature();
-[; ;MPU6050.h: 608: void MPU6050_getRotation(int16_t* x, int16_t* y, int16_t* z);
-[; ;MPU6050.h: 609: int16_t MPU6050_getRotationX();
-[; ;MPU6050.h: 610: int16_t MPU6050_getRotationY();
-[; ;MPU6050.h: 611: int16_t MPU6050_getRotationZ();
-[; ;MPU6050.h: 614: uint8_t MPU6050_getExternalSensorByte(int position);
-[; ;MPU6050.h: 615: uint16_t MPU6050_getExternalSensorWord(int position);
-[; ;MPU6050.h: 616: uint32_t getExternalSensorDWord(int position);
-[; ;MPU6050.h: 619: bool MPU6050_getXNegMotionDetected();
-[; ;MPU6050.h: 620: bool MPU6050_getXPosMotionDetected();
-[; ;MPU6050.h: 621: bool MPU6050_getYNegMotionDetected();
-[; ;MPU6050.h: 622: bool MPU6050_getYPosMotionDetected();
-[; ;MPU6050.h: 623: bool MPU6050_getZNegMotionDetected();
-[; ;MPU6050.h: 624: bool MPU6050_getZPosMotionDetected();
-[; ;MPU6050.h: 625: bool MPU6050_getZeroMotionDetected();
-[; ;MPU6050.h: 628: void MPU6050_setSlaveOutputByte(uint8_t num, uint8_t data);
-[; ;MPU6050.h: 631: bool MPU6050_getExternalShadowDelayEnabled();
-[; ;MPU6050.h: 632: void MPU6050_setExternalShadowDelayEnabled(bool enabled);
-[; ;MPU6050.h: 633: bool MPU6050_getSlaveDelayEnabled(uint8_t num);
-[; ;MPU6050.h: 634: void MPU6050_setSlaveDelayEnabled(uint8_t num, bool enabled);
-[; ;MPU6050.h: 637: void MPU6050_resetGyroscopePath();
-[; ;MPU6050.h: 638: void MPU6050_resetAccelerometerPath();
-[; ;MPU6050.h: 639: void MPU6050_resetTemperaturePath();
-[; ;MPU6050.h: 642: uint8_t MPU6050_getAccelerometerPowerOnDelay();
-[; ;MPU6050.h: 643: void MPU6050_setAccelerometerPowerOnDelay(uint8_t delay);
-[; ;MPU6050.h: 644: uint8_t MPU6050_getFreefallDetectionCounterDecrement();
-[; ;MPU6050.h: 645: void MPU6050_setFreefallDetectionCounterDecrement(uint8_t decrement);
-[; ;MPU6050.h: 646: uint8_t MPU6050_getMotionDetectionCounterDecrement();
-[; ;MPU6050.h: 647: void MPU6050_setMotionDetectionCounterDecrement(uint8_t decrement);
-[; ;MPU6050.h: 650: bool MPU6050_getFIFOEnabled();
-[; ;MPU6050.h: 651: void MPU6050_setFIFOEnabled(bool enabled);
-[; ;MPU6050.h: 652: bool MPU6050_getI2CMasterModeEnabled();
-[; ;MPU6050.h: 653: void MPU6050_setI2CMasterModeEnabled(bool enabled);
-[; ;MPU6050.h: 654: void MPU6050_switchSPIEnabled(bool enabled);
-[; ;MPU6050.h: 655: void MPU6050_resetFIFO();
-[; ;MPU6050.h: 656: void MPU6050_resetI2CMaster();
-[; ;MPU6050.h: 657: void MPU6050_resetSensors();
-[; ;MPU6050.h: 660: void MPU6050_reset();
-[; ;MPU6050.h: 661: bool MPU6050_getSleepEnabled();
-[; ;MPU6050.h: 662: void MPU6050_setSleepEnabled(bool enabled);
-[; ;MPU6050.h: 663: bool MPU6050_getWakeCycleEnabled();
-[; ;MPU6050.h: 664: void MPU6050_setWakeCycleEnabled(bool enabled);
-[; ;MPU6050.h: 665: bool MPU6050_getTempSensorEnabled();
-[; ;MPU6050.h: 666: void MPU6050_setTempSensorEnabled(bool enabled);
-[; ;MPU6050.h: 667: uint8_t MPU6050_getClockSource();
-[; ;MPU6050.h: 668: void MPU6050_setClockSource(uint8_t source);
-[; ;MPU6050.h: 671: uint8_t MPU6050_getWakeFrequency();
-[; ;MPU6050.h: 672: void MPU6050_setWakeFrequency(uint8_t frequency);
-[; ;MPU6050.h: 673: bool MPU6050_getStandbyXAccelEnabled();
-[; ;MPU6050.h: 674: void MPU6050_setStandbyXAccelEnabled(bool enabled);
-[; ;MPU6050.h: 675: bool MPU6050_getStandbyYAccelEnabled();
-[; ;MPU6050.h: 676: void MPU6050_setStandbyYAccelEnabled(bool enabled);
-[; ;MPU6050.h: 677: bool MPU6050_getStandbyZAccelEnabled();
-[; ;MPU6050.h: 678: void MPU6050_setStandbyZAccelEnabled(bool enabled);
-[; ;MPU6050.h: 679: bool MPU6050_getStandbyXGyroEnabled();
-[; ;MPU6050.h: 680: void MPU6050_setStandbyXGyroEnabled(bool enabled);
-[; ;MPU6050.h: 681: bool MPU6050_getStandbyYGyroEnabled();
-[; ;MPU6050.h: 682: void MPU6050_setStandbyYGyroEnabled(bool enabled);
-[; ;MPU6050.h: 683: bool MPU6050_getStandbyZGyroEnabled();
-[; ;MPU6050.h: 684: void MPU6050_setStandbyZGyroEnabled(bool enabled);
-[; ;MPU6050.h: 687: uint16_t MPU6050_getFIFOCount();
-[; ;MPU6050.h: 690: uint8_t MPU6050_getFIFOByte();
-[; ;MPU6050.h: 691: void MPU6050_setFIFOByte(uint8_t data);
-[; ;MPU6050.h: 692: void MPU6050_getFIFOBytes(uint8_t *data, uint8_t length);
-[; ;MPU6050.h: 695: uint8_t MPU6050_getDeviceID();
-[; ;MPU6050.h: 696: void MPU6050_setDeviceID(uint8_t id);
-[; ;MPU6050.h: 701: uint8_t MPU6050_getOTPBankValid();
-[; ;MPU6050.h: 702: void MPU6050_setOTPBankValid(bool enabled);
-[; ;MPU6050.h: 703: int8_t MPU6050_getXGyroOffsetTC();
-[; ;MPU6050.h: 704: void MPU6050_setXGyroOffsetTC(int8_t offset);
-[; ;MPU6050.h: 707: int8_t MPU6050_getYGyroOffsetTC();
-[; ;MPU6050.h: 708: void MPU6050_setYGyroOffsetTC(int8_t offset);
-[; ;MPU6050.h: 711: int8_t MPU6050_getZGyroOffsetTC();
-[; ;MPU6050.h: 712: void MPU6050_setZGyroOffsetTC(int8_t offset);
-[; ;MPU6050.h: 715: int8_t getXFineGain();
-[; ;MPU6050.h: 716: void MPU6050_setXFineGain(int8_t gain);
-[; ;MPU6050.h: 719: int8_t getYFineGain();
-[; ;MPU6050.h: 720: void MPU6050_setYFineGain(int8_t gain);
-[; ;MPU6050.h: 723: int8_t getZFineGain();
-[; ;MPU6050.h: 724: void MPU6050_setZFineGain(int8_t gain);
-[; ;MPU6050.h: 727: int16_t MPU6050_getXAccelOffset();
-[; ;MPU6050.h: 728: void MPU6050_setXAccelOffset(int16_t offset);
-[; ;MPU6050.h: 731: int16_t MPU6050_getYAccelOffset();
-[; ;MPU6050.h: 732: void MPU6050_setYAccelOffset(int16_t offset);
-[; ;MPU6050.h: 735: int16_t MPU6050_getZAccelOffset();
-[; ;MPU6050.h: 736: void MPU6050_setZAccelOffset(int16_t offset);
-[; ;MPU6050.h: 739: int16_t MPU6050_getXGyroOffset();
-[; ;MPU6050.h: 740: void MPU6050_setXGyroOffset(int16_t offset);
-[; ;MPU6050.h: 743: int16_t MPU6050_getYGyroOffset();
-[; ;MPU6050.h: 744: void MPU6050_setYGyroOffset(int16_t offset);
-[; ;MPU6050.h: 747: int16_t MPU6050_getZGyroOffset();
-[; ;MPU6050.h: 748: void MPU6050_setZGyroOffset(int16_t offset);
-[; ;MPU6050.h: 751: bool MPU6050_getIntPLLReadyEnabled();
-[; ;MPU6050.h: 752: void MPU6050_setIntPLLReadyEnabled(bool enabled);
-[; ;MPU6050.h: 753: bool MPU6050_getIntDMPEnabled();
-[; ;MPU6050.h: 754: void MPU6050_setIntDMPEnabled(bool enabled);
-[; ;MPU6050.h: 757: bool MPU6050_getDMPInt5Status();
-[; ;MPU6050.h: 758: bool MPU6050_getDMPInt4Status();
-[; ;MPU6050.h: 759: bool MPU6050_getDMPInt3Status();
-[; ;MPU6050.h: 760: bool MPU6050_getDMPInt2Status();
-[; ;MPU6050.h: 761: bool MPU6050_getDMPInt1Status();
-[; ;MPU6050.h: 762: bool MPU6050_getDMPInt0Status();
-[; ;MPU6050.h: 765: bool MPU6050_getIntPLLReadyStatus();
-[; ;MPU6050.h: 766: bool MPU6050_getIntDMPStatus();
-[; ;MPU6050.h: 769: bool MPU6050_getDMPEnabled();
-[; ;MPU6050.h: 770: void MPU6050_setDMPEnabled(bool enabled);
-[; ;MPU6050.h: 771: void MPU6050_resetDMP();
-[; ;MPU6050.h: 774: void MPU6050_setMemoryBank(uint8_t bank, bool prefetchEnabled, bool userBank);
-[; ;MPU6050.h: 777: void MPU6050_setMemoryStartAddress(uint8_t address);
-[; ;MPU6050.h: 780: uint8_t MPU6050_readMemoryByte();
-[; ;MPU6050.h: 781: void MPU6050_writeMemoryByte(uint8_t data);
-[; ;MPU6050.h: 782: void MPU6050_readMemoryBlock(uint8_t *data, uint16_t dataSize, uint8_t bank, uint8_t address);
-[; ;MPU6050.h: 783: bool MPU6050_writeMemoryBlock(const uint8_t *data, uint16_t dataSize, uint8_t bank, uint8_t address);
-[; ;MPU6050.h: 784: bool MPU6050_writeProgMemoryBlock(const uint8_t *data, uint16_t dataSize, uint8_t bank, uint8_t address);
-[; ;MPU6050.h: 786: bool MPU6050_writeDMPConfigurationSet(const uint8_t *data, uint16_t dataSize);
-[; ;MPU6050.h: 787: bool MPU6050_writeProgDMPConfigurationSet(const uint8_t *data, uint16_t dataSize);
-[; ;MPU6050.h: 790: uint8_t MPU6050_getDMPConfig1();
-[; ;MPU6050.h: 791: void MPU6050_setDMPConfig1(uint8_t config);
-[; ;MPU6050.h: 794: uint8_t MPU6050_getDMPConfig2();
-[; ;MPU6050.h: 795: void MPU6050_setDMPConfig2(uint8_t config);
-[; ;MPU6050.h: 798: uint8_t MPU6050_dmpInitialize();
-[; ;MPU6050.h: 799: uint16_t MPU6050_dmpGetFIFOPacketSize();
-"801
-[v _dmpMemory `Cuc ~T0 @X0 -> 1929 `i e ]
-[i _dmpMemory
-:U ..
-"803
--> -> 251 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 62 `i `uc
--> -> 0 `i `uc
--> -> 11 `i `uc
--> -> 0 `i `uc
--> -> 54 `i `uc
--> -> 0 `i `uc
--> -> 1 `i `uc
--> -> 0 `i `uc
--> -> 2 `i `uc
--> -> 0 `i `uc
--> -> 3 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"804
--> -> 0 `i `uc
--> -> 101 `i `uc
--> -> 0 `i `uc
--> -> 84 `i `uc
--> -> 255 `i `uc
--> -> 239 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 250 `i `uc
--> -> 128 `i `uc
--> -> 0 `i `uc
--> -> 11 `i `uc
--> -> 18 `i `uc
--> -> 130 `i `uc
--> -> 0 `i `uc
--> -> 1 `i `uc
-"805
--> -> 0 `i `uc
--> -> 2 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"806
--> -> 0 `i `uc
--> -> 40 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 255 `i `uc
--> -> 255 `i `uc
--> -> 69 `i `uc
--> -> 129 `i `uc
--> -> 255 `i `uc
--> -> 255 `i `uc
--> -> 250 `i `uc
--> -> 114 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"807
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 3 `i `uc
--> -> 232 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 1 `i `uc
--> -> 0 `i `uc
--> -> 1 `i `uc
--> -> 127 `i `uc
--> -> 255 `i `uc
--> -> 255 `i `uc
--> -> 254 `i `uc
--> -> 128 `i `uc
--> -> 1 `i `uc
-"808
--> -> 0 `i `uc
--> -> 27 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"809
--> -> 0 `i `uc
--> -> 62 `i `uc
--> -> 3 `i `uc
--> -> 48 `i `uc
--> -> 64 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 2 `i `uc
--> -> 202 `i `uc
--> -> 227 `i `uc
--> -> 9 `i `uc
--> -> 62 `i `uc
--> -> 128 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"810
--> -> 32 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 64 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 96 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"811
--> -> 65 `i `uc
--> -> 255 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 11 `i `uc
--> -> 42 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 22 `i `uc
--> -> 85 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 33 `i `uc
--> -> 130 `i `uc
-"812
--> -> 253 `i `uc
--> -> 135 `i `uc
--> -> 38 `i `uc
--> -> 80 `i `uc
--> -> 253 `i `uc
--> -> 128 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 31 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 5 `i `uc
--> -> 128 `i `uc
--> -> 0 `i `uc
-"813
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 1 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 2 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 3 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"814
--> -> 64 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 4 `i `uc
--> -> 111 `i `uc
--> -> 0 `i `uc
--> -> 2 `i `uc
--> -> 101 `i `uc
--> -> 50 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 94 `i `uc
--> -> 192 `i `uc
-"815
--> -> 64 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"816
--> -> 251 `i `uc
--> -> 140 `i `uc
--> -> 111 `i `uc
--> -> 93 `i `uc
--> -> 253 `i `uc
--> -> 93 `i `uc
--> -> 8 `i `uc
--> -> 217 `i `uc
--> -> 0 `i `uc
--> -> 124 `i `uc
--> -> 115 `i `uc
--> -> 59 `i `uc
--> -> 0 `i `uc
--> -> 108 `i `uc
--> -> 18 `i `uc
--> -> 204 `i `uc
-"817
--> -> 50 `i `uc
--> -> 0 `i `uc
--> -> 19 `i `uc
--> -> 157 `i `uc
--> -> 50 `i `uc
--> -> 0 `i `uc
--> -> 208 `i `uc
--> -> 214 `i `uc
--> -> 50 `i `uc
--> -> 0 `i `uc
--> -> 8 `i `uc
--> -> 0 `i `uc
--> -> 64 `i `uc
--> -> 0 `i `uc
--> -> 1 `i `uc
--> -> 244 `i `uc
-"818
--> -> 255 `i `uc
--> -> 230 `i `uc
--> -> 128 `i `uc
--> -> 121 `i `uc
--> -> 2 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 208 `i `uc
--> -> 214 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 39 `i `uc
--> -> 16 `i `uc
-"821
--> -> 251 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 64 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"822
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 1 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 1 `i `uc
--> -> 0 `i `uc
--> -> 1 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"823
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 250 `i `uc
--> -> 54 `i `uc
--> -> 255 `i `uc
--> -> 188 `i `uc
--> -> 48 `i `uc
--> -> 142 `i `uc
--> -> 0 `i `uc
--> -> 5 `i `uc
--> -> 251 `i `uc
--> -> 240 `i `uc
--> -> 255 `i `uc
--> -> 217 `i `uc
--> -> 91 `i `uc
--> -> 200 `i `uc
-"824
--> -> 255 `i `uc
--> -> 208 `i `uc
--> -> 154 `i `uc
--> -> 190 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 16 `i `uc
--> -> 169 `i `uc
--> -> 255 `i `uc
--> -> 244 `i `uc
--> -> 30 `i `uc
--> -> 178 `i `uc
--> -> 0 `i `uc
--> -> 206 `i `uc
--> -> 187 `i `uc
--> -> 247 `i `uc
-"825
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 1 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 4 `i `uc
--> -> 0 `i `uc
--> -> 2 `i `uc
--> -> 0 `i `uc
--> -> 2 `i `uc
--> -> 2 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 12 `i `uc
-"826
--> -> 255 `i `uc
--> -> 194 `i `uc
--> -> 128 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 1 `i `uc
--> -> 128 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 207 `i `uc
--> -> 128 `i `uc
--> -> 0 `i `uc
--> -> 64 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"827
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 1 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 6 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 20 `i `uc
-"828
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"829
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"830
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"831
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 3 `i `uc
--> -> 63 `i `uc
--> -> 104 `i `uc
--> -> 182 `i `uc
--> -> 121 `i `uc
--> -> 53 `i `uc
--> -> 40 `i `uc
--> -> 188 `i `uc
--> -> 198 `i `uc
--> -> 126 `i `uc
--> -> 209 `i `uc
--> -> 108 `i `uc
-"832
--> -> 128 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 64 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 178 `i `uc
--> -> 106 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"833
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 63 `i `uc
--> -> 240 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 48 `i `uc
-"834
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"835
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"836
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 37 `i `uc
--> -> 77 `i `uc
--> -> 0 `i `uc
--> -> 47 `i `uc
--> -> 112 `i `uc
--> -> 109 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 5 `i `uc
--> -> 174 `i `uc
--> -> 0 `i `uc
--> -> 12 `i `uc
--> -> 2 `i `uc
--> -> 208 `i `uc
-"839
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 101 `i `uc
--> -> 0 `i `uc
--> -> 84 `i `uc
--> -> 255 `i `uc
--> -> 239 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"840
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 1 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 68 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 12 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 1 `i `uc
--> -> 0 `i `uc
-"841
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 101 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 84 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 255 `i `uc
--> -> 239 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"842
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"843
--> -> 64 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"844
--> -> 64 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"845
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 1 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 2 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"846
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"847
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"848
--> -> 0 `i `uc
--> -> 27 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"849
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"850
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 64 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"851
--> -> 0 `i `uc
--> -> 27 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"852
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"853
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"854
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"857
--> -> 216 `i `uc
--> -> 220 `i `uc
--> -> 186 `i `uc
--> -> 162 `i `uc
--> -> 241 `i `uc
--> -> 222 `i `uc
--> -> 178 `i `uc
--> -> 184 `i `uc
--> -> 180 `i `uc
--> -> 168 `i `uc
--> -> 129 `i `uc
--> -> 145 `i `uc
--> -> 247 `i `uc
--> -> 74 `i `uc
--> -> 144 `i `uc
--> -> 127 `i `uc
-"858
--> -> 145 `i `uc
--> -> 106 `i `uc
--> -> 243 `i `uc
--> -> 249 `i `uc
--> -> 219 `i `uc
--> -> 168 `i `uc
--> -> 249 `i `uc
--> -> 176 `i `uc
--> -> 186 `i `uc
--> -> 160 `i `uc
--> -> 128 `i `uc
--> -> 242 `i `uc
--> -> 206 `i `uc
--> -> 129 `i `uc
--> -> 243 `i `uc
--> -> 194 `i `uc
-"859
--> -> 241 `i `uc
--> -> 193 `i `uc
--> -> 242 `i `uc
--> -> 195 `i `uc
--> -> 243 `i `uc
--> -> 204 `i `uc
--> -> 162 `i `uc
--> -> 178 `i `uc
--> -> 128 `i `uc
--> -> 241 `i `uc
--> -> 198 `i `uc
--> -> 216 `i `uc
--> -> 128 `i `uc
--> -> 186 `i `uc
--> -> 167 `i `uc
--> -> 223 `i `uc
-"860
--> -> 223 `i `uc
--> -> 223 `i `uc
--> -> 242 `i `uc
--> -> 167 `i `uc
--> -> 195 `i `uc
--> -> 203 `i `uc
--> -> 197 `i `uc
--> -> 182 `i `uc
--> -> 240 `i `uc
--> -> 135 `i `uc
--> -> 162 `i `uc
--> -> 148 `i `uc
--> -> 36 `i `uc
--> -> 72 `i `uc
--> -> 112 `i `uc
--> -> 60 `i `uc
-"861
--> -> 149 `i `uc
--> -> 64 `i `uc
--> -> 104 `i `uc
--> -> 52 `i `uc
--> -> 88 `i `uc
--> -> 155 `i `uc
--> -> 120 `i `uc
--> -> 162 `i `uc
--> -> 241 `i `uc
--> -> 131 `i `uc
--> -> 146 `i `uc
--> -> 45 `i `uc
--> -> 85 `i `uc
--> -> 125 `i `uc
--> -> 216 `i `uc
--> -> 177 `i `uc
-"862
--> -> 180 `i `uc
--> -> 184 `i `uc
--> -> 161 `i `uc
--> -> 208 `i `uc
--> -> 145 `i `uc
--> -> 128 `i `uc
--> -> 242 `i `uc
--> -> 112 `i `uc
--> -> 243 `i `uc
--> -> 112 `i `uc
--> -> 242 `i `uc
--> -> 124 `i `uc
--> -> 128 `i `uc
--> -> 168 `i `uc
--> -> 241 `i `uc
--> -> 1 `i `uc
-"863
--> -> 176 `i `uc
--> -> 152 `i `uc
--> -> 135 `i `uc
--> -> 217 `i `uc
--> -> 67 `i `uc
--> -> 216 `i `uc
--> -> 134 `i `uc
--> -> 201 `i `uc
--> -> 136 `i `uc
--> -> 186 `i `uc
--> -> 161 `i `uc
--> -> 242 `i `uc
--> -> 14 `i `uc
--> -> 184 `i `uc
--> -> 151 `i `uc
--> -> 128 `i `uc
-"864
--> -> 241 `i `uc
--> -> 169 `i `uc
--> -> 223 `i `uc
--> -> 223 `i `uc
--> -> 223 `i `uc
--> -> 170 `i `uc
--> -> 223 `i `uc
--> -> 223 `i `uc
--> -> 223 `i `uc
--> -> 242 `i `uc
--> -> 170 `i `uc
--> -> 197 `i `uc
--> -> 205 `i `uc
--> -> 199 `i `uc
--> -> 169 `i `uc
--> -> 12 `i `uc
-"865
--> -> 201 `i `uc
--> -> 44 `i `uc
--> -> 151 `i `uc
--> -> 151 `i `uc
--> -> 151 `i `uc
--> -> 151 `i `uc
--> -> 241 `i `uc
--> -> 169 `i `uc
--> -> 137 `i `uc
--> -> 38 `i `uc
--> -> 70 `i `uc
--> -> 102 `i `uc
--> -> 176 `i `uc
--> -> 180 `i `uc
--> -> 186 `i `uc
--> -> 128 `i `uc
-"866
--> -> 172 `i `uc
--> -> 222 `i `uc
--> -> 242 `i `uc
--> -> 202 `i `uc
--> -> 241 `i `uc
--> -> 178 `i `uc
--> -> 140 `i `uc
--> -> 2 `i `uc
--> -> 169 `i `uc
--> -> 182 `i `uc
--> -> 152 `i `uc
--> -> 0 `i `uc
--> -> 137 `i `uc
--> -> 14 `i `uc
--> -> 22 `i `uc
--> -> 30 `i `uc
-"867
--> -> 184 `i `uc
--> -> 169 `i `uc
--> -> 180 `i `uc
--> -> 153 `i `uc
--> -> 44 `i `uc
--> -> 84 `i `uc
--> -> 124 `i `uc
--> -> 176 `i `uc
--> -> 138 `i `uc
--> -> 168 `i `uc
--> -> 150 `i `uc
--> -> 54 `i `uc
--> -> 86 `i `uc
--> -> 118 `i `uc
--> -> 241 `i `uc
--> -> 185 `i `uc
-"868
--> -> 175 `i `uc
--> -> 180 `i `uc
--> -> 176 `i `uc
--> -> 131 `i `uc
--> -> 192 `i `uc
--> -> 184 `i `uc
--> -> 168 `i `uc
--> -> 151 `i `uc
--> -> 17 `i `uc
--> -> 177 `i `uc
--> -> 143 `i `uc
--> -> 152 `i `uc
--> -> 185 `i `uc
--> -> 175 `i `uc
--> -> 240 `i `uc
--> -> 36 `i `uc
-"869
--> -> 8 `i `uc
--> -> 68 `i `uc
--> -> 16 `i `uc
--> -> 100 `i `uc
--> -> 24 `i `uc
--> -> 241 `i `uc
--> -> 163 `i `uc
--> -> 41 `i `uc
--> -> 85 `i `uc
--> -> 125 `i `uc
--> -> 175 `i `uc
--> -> 131 `i `uc
--> -> 181 `i `uc
--> -> 147 `i `uc
--> -> 175 `i `uc
--> -> 240 `i `uc
-"870
--> -> 0 `i `uc
--> -> 40 `i `uc
--> -> 80 `i `uc
--> -> 241 `i `uc
--> -> 163 `i `uc
--> -> 134 `i `uc
--> -> 159 `i `uc
--> -> 97 `i `uc
--> -> 166 `i `uc
--> -> 218 `i `uc
--> -> 222 `i `uc
--> -> 223 `i `uc
--> -> 217 `i `uc
--> -> 250 `i `uc
--> -> 163 `i `uc
--> -> 134 `i `uc
-"871
--> -> 150 `i `uc
--> -> 219 `i `uc
--> -> 49 `i `uc
--> -> 166 `i `uc
--> -> 217 `i `uc
--> -> 248 `i `uc
--> -> 223 `i `uc
--> -> 186 `i `uc
--> -> 166 `i `uc
--> -> 143 `i `uc
--> -> 194 `i `uc
--> -> 197 `i `uc
--> -> 199 `i `uc
--> -> 178 `i `uc
--> -> 140 `i `uc
--> -> 193 `i `uc
-"872
--> -> 184 `i `uc
--> -> 162 `i `uc
--> -> 223 `i `uc
--> -> 223 `i `uc
--> -> 223 `i `uc
--> -> 163 `i `uc
--> -> 223 `i `uc
--> -> 223 `i `uc
--> -> 223 `i `uc
--> -> 216 `i `uc
--> -> 216 `i `uc
--> -> 241 `i `uc
--> -> 184 `i `uc
--> -> 168 `i `uc
--> -> 178 `i `uc
--> -> 134 `i `uc
-"875
--> -> 180 `i `uc
--> -> 152 `i `uc
--> -> 13 `i `uc
--> -> 53 `i `uc
--> -> 93 `i `uc
--> -> 184 `i `uc
--> -> 170 `i `uc
--> -> 152 `i `uc
--> -> 176 `i `uc
--> -> 135 `i `uc
--> -> 45 `i `uc
--> -> 53 `i `uc
--> -> 61 `i `uc
--> -> 178 `i `uc
--> -> 182 `i `uc
--> -> 186 `i `uc
-"876
--> -> 175 `i `uc
--> -> 140 `i `uc
--> -> 150 `i `uc
--> -> 25 `i `uc
--> -> 143 `i `uc
--> -> 159 `i `uc
--> -> 167 `i `uc
--> -> 14 `i `uc
--> -> 22 `i `uc
--> -> 30 `i `uc
--> -> 180 `i `uc
--> -> 154 `i `uc
--> -> 184 `i `uc
--> -> 170 `i `uc
--> -> 135 `i `uc
--> -> 44 `i `uc
-"877
--> -> 84 `i `uc
--> -> 124 `i `uc
--> -> 185 `i `uc
--> -> 163 `i `uc
--> -> 222 `i `uc
--> -> 223 `i `uc
--> -> 223 `i `uc
--> -> 163 `i `uc
--> -> 177 `i `uc
--> -> 128 `i `uc
--> -> 242 `i `uc
--> -> 196 `i `uc
--> -> 205 `i `uc
--> -> 201 `i `uc
--> -> 241 `i `uc
--> -> 184 `i `uc
-"878
--> -> 169 `i `uc
--> -> 180 `i `uc
--> -> 153 `i `uc
--> -> 131 `i `uc
--> -> 13 `i `uc
--> -> 53 `i `uc
--> -> 93 `i `uc
--> -> 137 `i `uc
--> -> 185 `i `uc
--> -> 163 `i `uc
--> -> 45 `i `uc
--> -> 85 `i `uc
--> -> 125 `i `uc
--> -> 181 `i `uc
--> -> 147 `i `uc
--> -> 163 `i `uc
-"879
--> -> 14 `i `uc
--> -> 22 `i `uc
--> -> 30 `i `uc
--> -> 169 `i `uc
--> -> 44 `i `uc
--> -> 84 `i `uc
--> -> 124 `i `uc
--> -> 184 `i `uc
--> -> 180 `i `uc
--> -> 176 `i `uc
--> -> 241 `i `uc
--> -> 151 `i `uc
--> -> 131 `i `uc
--> -> 168 `i `uc
--> -> 17 `i `uc
--> -> 132 `i `uc
-"880
--> -> 165 `i `uc
--> -> 9 `i `uc
--> -> 152 `i `uc
--> -> 163 `i `uc
--> -> 131 `i `uc
--> -> 240 `i `uc
--> -> 218 `i `uc
--> -> 36 `i `uc
--> -> 8 `i `uc
--> -> 68 `i `uc
--> -> 16 `i `uc
--> -> 100 `i `uc
--> -> 24 `i `uc
--> -> 216 `i `uc
--> -> 241 `i `uc
--> -> 165 `i `uc
-"881
--> -> 41 `i `uc
--> -> 85 `i `uc
--> -> 125 `i `uc
--> -> 165 `i `uc
--> -> 133 `i `uc
--> -> 149 `i `uc
--> -> 2 `i `uc
--> -> 26 `i `uc
--> -> 46 `i `uc
--> -> 58 `i `uc
--> -> 86 `i `uc
--> -> 90 `i `uc
--> -> 64 `i `uc
--> -> 72 `i `uc
--> -> 249 `i `uc
--> -> 243 `i `uc
-"882
--> -> 163 `i `uc
--> -> 217 `i `uc
--> -> 248 `i `uc
--> -> 240 `i `uc
--> -> 152 `i `uc
--> -> 131 `i `uc
--> -> 36 `i `uc
--> -> 8 `i `uc
--> -> 68 `i `uc
--> -> 16 `i `uc
--> -> 100 `i `uc
--> -> 24 `i `uc
--> -> 151 `i `uc
--> -> 130 `i `uc
--> -> 168 `i `uc
--> -> 241 `i `uc
-"883
--> -> 17 `i `uc
--> -> 240 `i `uc
--> -> 152 `i `uc
--> -> 162 `i `uc
--> -> 36 `i `uc
--> -> 8 `i `uc
--> -> 68 `i `uc
--> -> 16 `i `uc
--> -> 100 `i `uc
--> -> 24 `i `uc
--> -> 218 `i `uc
--> -> 243 `i `uc
--> -> 222 `i `uc
--> -> 216 `i `uc
--> -> 131 `i `uc
--> -> 165 `i `uc
-"884
--> -> 148 `i `uc
--> -> 1 `i `uc
--> -> 217 `i `uc
--> -> 163 `i `uc
--> -> 2 `i `uc
--> -> 241 `i `uc
--> -> 162 `i `uc
--> -> 195 `i `uc
--> -> 197 `i `uc
--> -> 199 `i `uc
--> -> 216 `i `uc
--> -> 241 `i `uc
--> -> 132 `i `uc
--> -> 146 `i `uc
--> -> 162 `i `uc
--> -> 77 `i `uc
-"885
--> -> 218 `i `uc
--> -> 42 `i `uc
--> -> 216 `i `uc
--> -> 72 `i `uc
--> -> 105 `i `uc
--> -> 217 `i `uc
--> -> 42 `i `uc
--> -> 216 `i `uc
--> -> 104 `i `uc
--> -> 85 `i `uc
--> -> 218 `i `uc
--> -> 50 `i `uc
--> -> 216 `i `uc
--> -> 80 `i `uc
--> -> 113 `i `uc
--> -> 217 `i `uc
-"886
--> -> 50 `i `uc
--> -> 216 `i `uc
--> -> 112 `i `uc
--> -> 93 `i `uc
--> -> 218 `i `uc
--> -> 58 `i `uc
--> -> 216 `i `uc
--> -> 88 `i `uc
--> -> 121 `i `uc
--> -> 217 `i `uc
--> -> 58 `i `uc
--> -> 216 `i `uc
--> -> 120 `i `uc
--> -> 147 `i `uc
--> -> 163 `i `uc
--> -> 77 `i `uc
-"887
--> -> 218 `i `uc
--> -> 42 `i `uc
--> -> 216 `i `uc
--> -> 72 `i `uc
--> -> 105 `i `uc
--> -> 217 `i `uc
--> -> 42 `i `uc
--> -> 216 `i `uc
--> -> 104 `i `uc
--> -> 85 `i `uc
--> -> 218 `i `uc
--> -> 50 `i `uc
--> -> 216 `i `uc
--> -> 80 `i `uc
--> -> 113 `i `uc
--> -> 217 `i `uc
-"888
--> -> 50 `i `uc
--> -> 216 `i `uc
--> -> 112 `i `uc
--> -> 93 `i `uc
--> -> 218 `i `uc
--> -> 58 `i `uc
--> -> 216 `i `uc
--> -> 88 `i `uc
--> -> 121 `i `uc
--> -> 217 `i `uc
--> -> 58 `i `uc
--> -> 216 `i `uc
--> -> 120 `i `uc
--> -> 168 `i `uc
--> -> 138 `i `uc
--> -> 154 `i `uc
-"889
--> -> 240 `i `uc
--> -> 40 `i `uc
--> -> 80 `i `uc
--> -> 120 `i `uc
--> -> 158 `i `uc
--> -> 243 `i `uc
--> -> 136 `i `uc
--> -> 24 `i `uc
--> -> 241 `i `uc
--> -> 159 `i `uc
--> -> 29 `i `uc
--> -> 152 `i `uc
--> -> 168 `i `uc
--> -> 217 `i `uc
--> -> 8 `i `uc
--> -> 216 `i `uc
-"890
--> -> 200 `i `uc
--> -> 159 `i `uc
--> -> 18 `i `uc
--> -> 158 `i `uc
--> -> 243 `i `uc
--> -> 21 `i `uc
--> -> 168 `i `uc
--> -> 218 `i `uc
--> -> 18 `i `uc
--> -> 16 `i `uc
--> -> 216 `i `uc
--> -> 241 `i `uc
--> -> 175 `i `uc
--> -> 200 `i `uc
--> -> 151 `i `uc
--> -> 135 `i `uc
-"893
--> -> 52 `i `uc
--> -> 181 `i `uc
--> -> 185 `i `uc
--> -> 148 `i `uc
--> -> 164 `i `uc
--> -> 33 `i `uc
--> -> 243 `i `uc
--> -> 217 `i `uc
--> -> 34 `i `uc
--> -> 216 `i `uc
--> -> 242 `i `uc
--> -> 45 `i `uc
--> -> 243 `i `uc
--> -> 217 `i `uc
--> -> 42 `i `uc
--> -> 216 `i `uc
-"894
--> -> 242 `i `uc
--> -> 53 `i `uc
--> -> 243 `i `uc
--> -> 217 `i `uc
--> -> 50 `i `uc
--> -> 216 `i `uc
--> -> 129 `i `uc
--> -> 164 `i `uc
--> -> 96 `i `uc
--> -> 96 `i `uc
--> -> 97 `i `uc
--> -> 217 `i `uc
--> -> 97 `i `uc
--> -> 216 `i `uc
--> -> 108 `i `uc
--> -> 104 `i `uc
-"895
--> -> 105 `i `uc
--> -> 217 `i `uc
--> -> 105 `i `uc
--> -> 216 `i `uc
--> -> 116 `i `uc
--> -> 112 `i `uc
--> -> 113 `i `uc
--> -> 217 `i `uc
--> -> 113 `i `uc
--> -> 216 `i `uc
--> -> 177 `i `uc
--> -> 163 `i `uc
--> -> 132 `i `uc
--> -> 25 `i `uc
--> -> 61 `i `uc
--> -> 93 `i `uc
-"896
--> -> 163 `i `uc
--> -> 131 `i `uc
--> -> 26 `i `uc
--> -> 62 `i `uc
--> -> 94 `i `uc
--> -> 147 `i `uc
--> -> 16 `i `uc
--> -> 48 `i `uc
--> -> 129 `i `uc
--> -> 16 `i `uc
--> -> 17 `i `uc
--> -> 184 `i `uc
--> -> 176 `i `uc
--> -> 175 `i `uc
--> -> 143 `i `uc
--> -> 148 `i `uc
-"897
--> -> 242 `i `uc
--> -> 218 `i `uc
--> -> 62 `i `uc
--> -> 216 `i `uc
--> -> 180 `i `uc
--> -> 154 `i `uc
--> -> 168 `i `uc
--> -> 135 `i `uc
--> -> 41 `i `uc
--> -> 218 `i `uc
--> -> 248 `i `uc
--> -> 216 `i `uc
--> -> 135 `i `uc
--> -> 154 `i `uc
--> -> 53 `i `uc
--> -> 218 `i `uc
-"898
--> -> 248 `i `uc
--> -> 216 `i `uc
--> -> 135 `i `uc
--> -> 154 `i `uc
--> -> 61 `i `uc
--> -> 218 `i `uc
--> -> 248 `i `uc
--> -> 216 `i `uc
--> -> 177 `i `uc
--> -> 185 `i `uc
--> -> 164 `i `uc
--> -> 152 `i `uc
--> -> 133 `i `uc
--> -> 2 `i `uc
--> -> 46 `i `uc
--> -> 86 `i `uc
-"899
--> -> 165 `i `uc
--> -> 129 `i `uc
--> -> 0 `i `uc
--> -> 12 `i `uc
--> -> 20 `i `uc
--> -> 163 `i `uc
--> -> 151 `i `uc
--> -> 176 `i `uc
--> -> 138 `i `uc
--> -> 241 `i `uc
--> -> 45 `i `uc
--> -> 217 `i `uc
--> -> 40 `i `uc
--> -> 216 `i `uc
--> -> 77 `i `uc
--> -> 217 `i `uc
-"900
--> -> 72 `i `uc
--> -> 216 `i `uc
--> -> 109 `i `uc
--> -> 217 `i `uc
--> -> 104 `i `uc
--> -> 216 `i `uc
--> -> 177 `i `uc
--> -> 132 `i `uc
--> -> 13 `i `uc
--> -> 218 `i `uc
--> -> 14 `i `uc
--> -> 216 `i `uc
--> -> 163 `i `uc
--> -> 41 `i `uc
--> -> 131 `i `uc
--> -> 218 `i `uc
-"901
--> -> 44 `i `uc
--> -> 14 `i `uc
--> -> 216 `i `uc
--> -> 163 `i `uc
--> -> 132 `i `uc
--> -> 73 `i `uc
--> -> 131 `i `uc
--> -> 218 `i `uc
--> -> 44 `i `uc
--> -> 76 `i `uc
--> -> 14 `i `uc
--> -> 216 `i `uc
--> -> 184 `i `uc
--> -> 176 `i `uc
--> -> 168 `i `uc
--> -> 138 `i `uc
-"902
--> -> 154 `i `uc
--> -> 245 `i `uc
--> -> 32 `i `uc
--> -> 170 `i `uc
--> -> 218 `i `uc
--> -> 223 `i `uc
--> -> 216 `i `uc
--> -> 168 `i `uc
--> -> 64 `i `uc
--> -> 170 `i `uc
--> -> 208 `i `uc
--> -> 218 `i `uc
--> -> 222 `i `uc
--> -> 216 `i `uc
--> -> 168 `i `uc
--> -> 96 `i `uc
-"903
--> -> 170 `i `uc
--> -> 218 `i `uc
--> -> 208 `i `uc
--> -> 223 `i `uc
--> -> 216 `i `uc
--> -> 241 `i `uc
--> -> 151 `i `uc
--> -> 134 `i `uc
--> -> 168 `i `uc
--> -> 49 `i `uc
--> -> 155 `i `uc
--> -> 6 `i `uc
--> -> 153 `i `uc
--> -> 7 `i `uc
--> -> 171 `i `uc
--> -> 151 `i `uc
-"904
--> -> 40 `i `uc
--> -> 136 `i `uc
--> -> 155 `i `uc
--> -> 240 `i `uc
--> -> 12 `i `uc
--> -> 32 `i `uc
--> -> 20 `i `uc
--> -> 64 `i `uc
--> -> 184 `i `uc
--> -> 176 `i `uc
--> -> 180 `i `uc
--> -> 168 `i `uc
--> -> 140 `i `uc
--> -> 156 `i `uc
--> -> 240 `i `uc
--> -> 4 `i `uc
-"905
--> -> 40 `i `uc
--> -> 81 `i `uc
--> -> 121 `i `uc
--> -> 29 `i `uc
--> -> 48 `i `uc
--> -> 20 `i `uc
--> -> 56 `i `uc
--> -> 178 `i `uc
--> -> 130 `i `uc
--> -> 171 `i `uc
--> -> 208 `i `uc
--> -> 152 `i `uc
--> -> 44 `i `uc
--> -> 80 `i `uc
--> -> 80 `i `uc
--> -> 120 `i `uc
-"906
--> -> 120 `i `uc
--> -> 155 `i `uc
--> -> 241 `i `uc
--> -> 26 `i `uc
--> -> 176 `i `uc
--> -> 240 `i `uc
--> -> 138 `i `uc
--> -> 156 `i `uc
--> -> 168 `i `uc
--> -> 41 `i `uc
--> -> 81 `i `uc
--> -> 121 `i `uc
--> -> 139 `i `uc
--> -> 41 `i `uc
--> -> 81 `i `uc
--> -> 121 `i `uc
-"907
--> -> 138 `i `uc
--> -> 36 `i `uc
--> -> 112 `i `uc
--> -> 89 `i `uc
--> -> 139 `i `uc
--> -> 32 `i `uc
--> -> 88 `i `uc
--> -> 113 `i `uc
--> -> 138 `i `uc
--> -> 68 `i `uc
--> -> 105 `i `uc
--> -> 56 `i `uc
--> -> 139 `i `uc
--> -> 57 `i `uc
--> -> 64 `i `uc
--> -> 104 `i `uc
-"908
--> -> 138 `i `uc
--> -> 100 `i `uc
--> -> 72 `i `uc
--> -> 49 `i `uc
--> -> 139 `i `uc
--> -> 48 `i `uc
--> -> 73 `i `uc
--> -> 96 `i `uc
--> -> 165 `i `uc
--> -> 136 `i `uc
--> -> 32 `i `uc
--> -> 9 `i `uc
--> -> 113 `i `uc
--> -> 88 `i `uc
--> -> 68 `i `uc
--> -> 104 `i `uc
-"911
--> -> 17 `i `uc
--> -> 57 `i `uc
--> -> 100 `i `uc
--> -> 73 `i `uc
--> -> 48 `i `uc
--> -> 25 `i `uc
--> -> 241 `i `uc
--> -> 172 `i `uc
--> -> 0 `i `uc
--> -> 44 `i `uc
--> -> 84 `i `uc
--> -> 124 `i `uc
--> -> 240 `i `uc
--> -> 140 `i `uc
--> -> 168 `i `uc
--> -> 4 `i `uc
-"912
--> -> 40 `i `uc
--> -> 80 `i `uc
--> -> 120 `i `uc
--> -> 241 `i `uc
--> -> 136 `i `uc
--> -> 151 `i `uc
--> -> 38 `i `uc
--> -> 168 `i `uc
--> -> 89 `i `uc
--> -> 152 `i `uc
--> -> 172 `i `uc
--> -> 140 `i `uc
--> -> 2 `i `uc
--> -> 38 `i `uc
--> -> 70 `i `uc
--> -> 102 `i `uc
-"913
--> -> 240 `i `uc
--> -> 137 `i `uc
--> -> 156 `i `uc
--> -> 168 `i `uc
--> -> 41 `i `uc
--> -> 81 `i `uc
--> -> 121 `i `uc
--> -> 36 `i `uc
--> -> 112 `i `uc
--> -> 89 `i `uc
--> -> 68 `i `uc
--> -> 105 `i `uc
--> -> 56 `i `uc
--> -> 100 `i `uc
--> -> 72 `i `uc
--> -> 49 `i `uc
-"914
--> -> 169 `i `uc
--> -> 136 `i `uc
--> -> 9 `i `uc
--> -> 32 `i `uc
--> -> 89 `i `uc
--> -> 112 `i `uc
--> -> 171 `i `uc
--> -> 17 `i `uc
--> -> 56 `i `uc
--> -> 64 `i `uc
--> -> 105 `i `uc
--> -> 168 `i `uc
--> -> 25 `i `uc
--> -> 49 `i `uc
--> -> 72 `i `uc
--> -> 96 `i `uc
-"915
--> -> 140 `i `uc
--> -> 168 `i `uc
--> -> 60 `i `uc
--> -> 65 `i `uc
--> -> 92 `i `uc
--> -> 32 `i `uc
--> -> 124 `i `uc
--> -> 0 `i `uc
--> -> 241 `i `uc
--> -> 135 `i `uc
--> -> 152 `i `uc
--> -> 25 `i `uc
--> -> 134 `i `uc
--> -> 168 `i `uc
--> -> 110 `i `uc
--> -> 118 `i `uc
-"916
--> -> 126 `i `uc
--> -> 169 `i `uc
--> -> 153 `i `uc
--> -> 136 `i `uc
--> -> 45 `i `uc
--> -> 85 `i `uc
--> -> 125 `i `uc
--> -> 158 `i `uc
--> -> 185 `i `uc
--> -> 163 `i `uc
--> -> 138 `i `uc
--> -> 34 `i `uc
--> -> 138 `i `uc
--> -> 110 `i `uc
--> -> 138 `i `uc
--> -> 86 `i `uc
-"917
--> -> 138 `i `uc
--> -> 94 `i `uc
--> -> 159 `i `uc
--> -> 177 `i `uc
--> -> 131 `i `uc
--> -> 6 `i `uc
--> -> 38 `i `uc
--> -> 70 `i `uc
--> -> 102 `i `uc
--> -> 14 `i `uc
--> -> 46 `i `uc
--> -> 78 `i `uc
--> -> 110 `i `uc
--> -> 157 `i `uc
--> -> 184 `i `uc
--> -> 173 `i `uc
-"918
--> -> 0 `i `uc
--> -> 44 `i `uc
--> -> 84 `i `uc
--> -> 124 `i `uc
--> -> 242 `i `uc
--> -> 177 `i `uc
--> -> 140 `i `uc
--> -> 180 `i `uc
--> -> 153 `i `uc
--> -> 185 `i `uc
--> -> 163 `i `uc
--> -> 45 `i `uc
--> -> 85 `i `uc
--> -> 125 `i `uc
--> -> 129 `i `uc
--> -> 145 `i `uc
-"919
--> -> 172 `i `uc
--> -> 56 `i `uc
--> -> 173 `i `uc
--> -> 58 `i `uc
--> -> 181 `i `uc
--> -> 131 `i `uc
--> -> 145 `i `uc
--> -> 172 `i `uc
--> -> 45 `i `uc
--> -> 217 `i `uc
--> -> 40 `i `uc
--> -> 216 `i `uc
--> -> 77 `i `uc
--> -> 217 `i `uc
--> -> 72 `i `uc
--> -> 216 `i `uc
-"920
--> -> 109 `i `uc
--> -> 217 `i `uc
--> -> 104 `i `uc
--> -> 216 `i `uc
--> -> 140 `i `uc
--> -> 157 `i `uc
--> -> 174 `i `uc
--> -> 41 `i `uc
--> -> 217 `i `uc
--> -> 4 `i `uc
--> -> 174 `i `uc
--> -> 216 `i `uc
--> -> 81 `i `uc
--> -> 217 `i `uc
--> -> 4 `i `uc
--> -> 174 `i `uc
-"921
--> -> 216 `i `uc
--> -> 121 `i `uc
--> -> 217 `i `uc
--> -> 4 `i `uc
--> -> 216 `i `uc
--> -> 129 `i `uc
--> -> 243 `i `uc
--> -> 157 `i `uc
--> -> 173 `i `uc
--> -> 0 `i `uc
--> -> 141 `i `uc
--> -> 174 `i `uc
--> -> 25 `i `uc
--> -> 129 `i `uc
--> -> 173 `i `uc
--> -> 217 `i `uc
-"922
--> -> 1 `i `uc
--> -> 216 `i `uc
--> -> 242 `i `uc
--> -> 174 `i `uc
--> -> 218 `i `uc
--> -> 38 `i `uc
--> -> 216 `i `uc
--> -> 142 `i `uc
--> -> 145 `i `uc
--> -> 41 `i `uc
--> -> 131 `i `uc
--> -> 167 `i `uc
--> -> 217 `i `uc
--> -> 173 `i `uc
--> -> 173 `i `uc
--> -> 173 `i `uc
-"923
--> -> 173 `i `uc
--> -> 243 `i `uc
--> -> 42 `i `uc
--> -> 216 `i `uc
--> -> 216 `i `uc
--> -> 241 `i `uc
--> -> 176 `i `uc
--> -> 172 `i `uc
--> -> 137 `i `uc
--> -> 145 `i `uc
--> -> 62 `i `uc
--> -> 94 `i `uc
--> -> 118 `i `uc
--> -> 243 `i `uc
--> -> 172 `i `uc
--> -> 46 `i `uc
-"924
--> -> 46 `i `uc
--> -> 241 `i `uc
--> -> 177 `i `uc
--> -> 140 `i `uc
--> -> 90 `i `uc
--> -> 156 `i `uc
--> -> 172 `i `uc
--> -> 44 `i `uc
--> -> 40 `i `uc
--> -> 40 `i `uc
--> -> 40 `i `uc
--> -> 156 `i `uc
--> -> 172 `i `uc
--> -> 48 `i `uc
--> -> 24 `i `uc
--> -> 168 `i `uc
-"925
--> -> 152 `i `uc
--> -> 129 `i `uc
--> -> 40 `i `uc
--> -> 52 `i `uc
--> -> 60 `i `uc
--> -> 151 `i `uc
--> -> 36 `i `uc
--> -> 167 `i `uc
--> -> 40 `i `uc
--> -> 52 `i `uc
--> -> 60 `i `uc
--> -> 156 `i `uc
--> -> 36 `i `uc
--> -> 242 `i `uc
--> -> 176 `i `uc
--> -> 137 `i `uc
-"926
--> -> 172 `i `uc
--> -> 145 `i `uc
--> -> 44 `i `uc
--> -> 76 `i `uc
--> -> 108 `i `uc
--> -> 138 `i `uc
--> -> 155 `i `uc
--> -> 45 `i `uc
--> -> 217 `i `uc
--> -> 216 `i `uc
--> -> 216 `i `uc
--> -> 81 `i `uc
--> -> 217 `i `uc
--> -> 216 `i `uc
--> -> 216 `i `uc
--> -> 121 `i `uc
-"929
--> -> 217 `i `uc
--> -> 216 `i `uc
--> -> 216 `i `uc
--> -> 241 `i `uc
--> -> 158 `i `uc
--> -> 136 `i `uc
--> -> 163 `i `uc
--> -> 49 `i `uc
--> -> 218 `i `uc
--> -> 216 `i `uc
--> -> 216 `i `uc
--> -> 145 `i `uc
--> -> 45 `i `uc
--> -> 217 `i `uc
--> -> 40 `i `uc
--> -> 216 `i `uc
-"930
--> -> 77 `i `uc
--> -> 217 `i `uc
--> -> 72 `i `uc
--> -> 216 `i `uc
--> -> 109 `i `uc
--> -> 217 `i `uc
--> -> 104 `i `uc
--> -> 216 `i `uc
--> -> 177 `i `uc
--> -> 131 `i `uc
--> -> 147 `i `uc
--> -> 53 `i `uc
--> -> 61 `i `uc
--> -> 128 `i `uc
--> -> 37 `i `uc
--> -> 218 `i `uc
-"931
--> -> 216 `i `uc
--> -> 216 `i `uc
--> -> 133 `i `uc
--> -> 105 `i `uc
--> -> 218 `i `uc
--> -> 216 `i `uc
--> -> 216 `i `uc
--> -> 180 `i `uc
--> -> 147 `i `uc
--> -> 129 `i `uc
--> -> 163 `i `uc
--> -> 40 `i `uc
--> -> 52 `i `uc
--> -> 60 `i `uc
--> -> 243 `i `uc
--> -> 171 `i `uc
-"932
--> -> 139 `i `uc
--> -> 248 `i `uc
--> -> 163 `i `uc
--> -> 145 `i `uc
--> -> 182 `i `uc
--> -> 9 `i `uc
--> -> 180 `i `uc
--> -> 217 `i `uc
--> -> 171 `i `uc
--> -> 222 `i `uc
--> -> 250 `i `uc
--> -> 176 `i `uc
--> -> 135 `i `uc
--> -> 156 `i `uc
--> -> 185 `i `uc
--> -> 163 `i `uc
-"933
--> -> 221 `i `uc
--> -> 241 `i `uc
--> -> 163 `i `uc
--> -> 163 `i `uc
--> -> 163 `i `uc
--> -> 163 `i `uc
--> -> 149 `i `uc
--> -> 241 `i `uc
--> -> 163 `i `uc
--> -> 163 `i `uc
--> -> 163 `i `uc
--> -> 157 `i `uc
--> -> 241 `i `uc
--> -> 163 `i `uc
--> -> 163 `i `uc
--> -> 163 `i `uc
-"934
--> -> 163 `i `uc
--> -> 242 `i `uc
--> -> 163 `i `uc
--> -> 180 `i `uc
--> -> 144 `i `uc
--> -> 128 `i `uc
--> -> 242 `i `uc
--> -> 163 `i `uc
--> -> 163 `i `uc
--> -> 163 `i `uc
--> -> 163 `i `uc
--> -> 163 `i `uc
--> -> 163 `i `uc
--> -> 163 `i `uc
--> -> 163 `i `uc
--> -> 163 `i `uc
-"935
--> -> 163 `i `uc
--> -> 178 `i `uc
--> -> 163 `i `uc
--> -> 163 `i `uc
--> -> 163 `i `uc
--> -> 163 `i `uc
--> -> 163 `i `uc
--> -> 163 `i `uc
--> -> 176 `i `uc
--> -> 135 `i `uc
--> -> 181 `i `uc
--> -> 153 `i `uc
--> -> 241 `i `uc
--> -> 163 `i `uc
--> -> 163 `i `uc
--> -> 163 `i `uc
-"936
--> -> 152 `i `uc
--> -> 241 `i `uc
--> -> 163 `i `uc
--> -> 163 `i `uc
--> -> 163 `i `uc
--> -> 163 `i `uc
--> -> 151 `i `uc
--> -> 163 `i `uc
--> -> 163 `i `uc
--> -> 163 `i `uc
--> -> 163 `i `uc
--> -> 243 `i `uc
--> -> 155 `i `uc
--> -> 163 `i `uc
--> -> 163 `i `uc
--> -> 220 `i `uc
-"937
--> -> 185 `i `uc
--> -> 167 `i `uc
--> -> 241 `i `uc
--> -> 38 `i `uc
--> -> 38 `i `uc
--> -> 38 `i `uc
--> -> 216 `i `uc
--> -> 216 `i `uc
-"938
--> -> 255 `i `uc
-..
-]
-[; ;MPU6050.h: 801: const unsigned char dmpMemory[1929] = {
-[; ;MPU6050.h: 803: 0xFB, 0x00, 0x00, 0x3E, 0x00, 0x0B, 0x00, 0x36, 0x00, 0x01, 0x00, 0x02, 0x00, 0x03, 0x00, 0x00,
-[; ;MPU6050.h: 804: 0x00, 0x65, 0x00, 0x54, 0xFF, 0xEF, 0x00, 0x00, 0xFA, 0x80, 0x00, 0x0B, 0x12, 0x82, 0x00, 0x01,
-[; ;MPU6050.h: 805: 0x00, 0x02, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 806: 0x00, 0x28, 0x00, 0x00, 0xFF, 0xFF, 0x45, 0x81, 0xFF, 0xFF, 0xFA, 0x72, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 807: 0x00, 0x00, 0x03, 0xE8, 0x00, 0x00, 0x00, 0x01, 0x00, 0x01, 0x7F, 0xFF, 0xFF, 0xFE, 0x80, 0x01,
-[; ;MPU6050.h: 808: 0x00, 0x1B, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 809: 0x00, 0x3E, 0x03, 0x30, 0x40, 0x00, 0x00, 0x00, 0x02, 0xCA, 0xE3, 0x09, 0x3E, 0x80, 0x00, 0x00,
-[; ;MPU6050.h: 810: 0x20, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x40, 0x00, 0x00, 0x00, 0x60, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 811: 0x41, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x0B, 0x2A, 0x00, 0x00, 0x16, 0x55, 0x00, 0x00, 0x21, 0x82,
-[; ;MPU6050.h: 812: 0xFD, 0x87, 0x26, 0x50, 0xFD, 0x80, 0x00, 0x00, 0x00, 0x1F, 0x00, 0x00, 0x00, 0x05, 0x80, 0x00,
-[; ;MPU6050.h: 813: 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x02, 0x00, 0x00, 0x00, 0x03, 0x00, 0x00,
-[; ;MPU6050.h: 814: 0x40, 0x00, 0x00, 0x00, 0x00, 0x00, 0x04, 0x6F, 0x00, 0x02, 0x65, 0x32, 0x00, 0x00, 0x5E, 0xC0,
-[; ;MPU6050.h: 815: 0x40, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 816: 0xFB, 0x8C, 0x6F, 0x5D, 0xFD, 0x5D, 0x08, 0xD9, 0x00, 0x7C, 0x73, 0x3B, 0x00, 0x6C, 0x12, 0xCC,
-[; ;MPU6050.h: 817: 0x32, 0x00, 0x13, 0x9D, 0x32, 0x00, 0xD0, 0xD6, 0x32, 0x00, 0x08, 0x00, 0x40, 0x00, 0x01, 0xF4,
-[; ;MPU6050.h: 818: 0xFF, 0xE6, 0x80, 0x79, 0x02, 0x00, 0x00, 0x00, 0x00, 0x00, 0xD0, 0xD6, 0x00, 0x00, 0x27, 0x10,
-[; ;MPU6050.h: 821: 0xFB, 0x00, 0x00, 0x00, 0x40, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 822: 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 823: 0x00, 0x00, 0xFA, 0x36, 0xFF, 0xBC, 0x30, 0x8E, 0x00, 0x05, 0xFB, 0xF0, 0xFF, 0xD9, 0x5B, 0xC8,
-[; ;MPU6050.h: 824: 0xFF, 0xD0, 0x9A, 0xBE, 0x00, 0x00, 0x10, 0xA9, 0xFF, 0xF4, 0x1E, 0xB2, 0x00, 0xCE, 0xBB, 0xF7,
-[; ;MPU6050.h: 825: 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x04, 0x00, 0x02, 0x00, 0x02, 0x02, 0x00, 0x00, 0x0C,
-[; ;MPU6050.h: 826: 0xFF, 0xC2, 0x80, 0x00, 0x00, 0x01, 0x80, 0x00, 0x00, 0xCF, 0x80, 0x00, 0x40, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 827: 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x06, 0x00, 0x00, 0x00, 0x00, 0x14,
-[; ;MPU6050.h: 828: 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 829: 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 830: 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 831: 0x00, 0x00, 0x00, 0x00, 0x03, 0x3F, 0x68, 0xB6, 0x79, 0x35, 0x28, 0xBC, 0xC6, 0x7E, 0xD1, 0x6C,
-[; ;MPU6050.h: 832: 0x80, 0x00, 0x00, 0x00, 0x40, 0x00, 0x00, 0x00, 0x00, 0x00, 0xB2, 0x6A, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 833: 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x3F, 0xF0, 0x00, 0x00, 0x00, 0x30,
-[; ;MPU6050.h: 834: 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 835: 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 836: 0x00, 0x00, 0x25, 0x4D, 0x00, 0x2F, 0x70, 0x6D, 0x00, 0x00, 0x05, 0xAE, 0x00, 0x0C, 0x02, 0xD0,
-[; ;MPU6050.h: 839: 0x00, 0x00, 0x00, 0x00, 0x00, 0x65, 0x00, 0x54, 0xFF, 0xEF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 840: 0x00, 0x00, 0x01, 0x00, 0x00, 0x44, 0x00, 0x00, 0x00, 0x00, 0x0C, 0x00, 0x00, 0x00, 0x01, 0x00,
-[; ;MPU6050.h: 841: 0x00, 0x00, 0x00, 0x00, 0x00, 0x65, 0x00, 0x00, 0x00, 0x54, 0x00, 0x00, 0xFF, 0xEF, 0x00, 0x00,
-[; ;MPU6050.h: 842: 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 843: 0x40, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 844: 0x40, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 845: 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x02, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 846: 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 847: 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 848: 0x00, 0x1B, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 849: 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 850: 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x40, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 851: 0x00, 0x1B, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 852: 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 853: 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 854: 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 857: 0xD8, 0xDC, 0xBA, 0xA2, 0xF1, 0xDE, 0xB2, 0xB8, 0xB4, 0xA8, 0x81, 0x91, 0xF7, 0x4A, 0x90, 0x7F,
-[; ;MPU6050.h: 858: 0x91, 0x6A, 0xF3, 0xF9, 0xDB, 0xA8, 0xF9, 0xB0, 0xBA, 0xA0, 0x80, 0xF2, 0xCE, 0x81, 0xF3, 0xC2,
-[; ;MPU6050.h: 859: 0xF1, 0xC1, 0xF2, 0xC3, 0xF3, 0xCC, 0xA2, 0xB2, 0x80, 0xF1, 0xC6, 0xD8, 0x80, 0xBA, 0xA7, 0xDF,
-[; ;MPU6050.h: 860: 0xDF, 0xDF, 0xF2, 0xA7, 0xC3, 0xCB, 0xC5, 0xB6, 0xF0, 0x87, 0xA2, 0x94, 0x24, 0x48, 0x70, 0x3C,
-[; ;MPU6050.h: 861: 0x95, 0x40, 0x68, 0x34, 0x58, 0x9B, 0x78, 0xA2, 0xF1, 0x83, 0x92, 0x2D, 0x55, 0x7D, 0xD8, 0xB1,
-[; ;MPU6050.h: 862: 0xB4, 0xB8, 0xA1, 0xD0, 0x91, 0x80, 0xF2, 0x70, 0xF3, 0x70, 0xF2, 0x7C, 0x80, 0xA8, 0xF1, 0x01,
-[; ;MPU6050.h: 863: 0xB0, 0x98, 0x87, 0xD9, 0x43, 0xD8, 0x86, 0xC9, 0x88, 0xBA, 0xA1, 0xF2, 0x0E, 0xB8, 0x97, 0x80,
-[; ;MPU6050.h: 864: 0xF1, 0xA9, 0xDF, 0xDF, 0xDF, 0xAA, 0xDF, 0xDF, 0xDF, 0xF2, 0xAA, 0xC5, 0xCD, 0xC7, 0xA9, 0x0C,
-[; ;MPU6050.h: 865: 0xC9, 0x2C, 0x97, 0x97, 0x97, 0x97, 0xF1, 0xA9, 0x89, 0x26, 0x46, 0x66, 0xB0, 0xB4, 0xBA, 0x80,
-[; ;MPU6050.h: 866: 0xAC, 0xDE, 0xF2, 0xCA, 0xF1, 0xB2, 0x8C, 0x02, 0xA9, 0xB6, 0x98, 0x00, 0x89, 0x0E, 0x16, 0x1E,
-[; ;MPU6050.h: 867: 0xB8, 0xA9, 0xB4, 0x99, 0x2C, 0x54, 0x7C, 0xB0, 0x8A, 0xA8, 0x96, 0x36, 0x56, 0x76, 0xF1, 0xB9,
-[; ;MPU6050.h: 868: 0xAF, 0xB4, 0xB0, 0x83, 0xC0, 0xB8, 0xA8, 0x97, 0x11, 0xB1, 0x8F, 0x98, 0xB9, 0xAF, 0xF0, 0x24,
-[; ;MPU6050.h: 869: 0x08, 0x44, 0x10, 0x64, 0x18, 0xF1, 0xA3, 0x29, 0x55, 0x7D, 0xAF, 0x83, 0xB5, 0x93, 0xAF, 0xF0,
-[; ;MPU6050.h: 870: 0x00, 0x28, 0x50, 0xF1, 0xA3, 0x86, 0x9F, 0x61, 0xA6, 0xDA, 0xDE, 0xDF, 0xD9, 0xFA, 0xA3, 0x86,
-[; ;MPU6050.h: 871: 0x96, 0xDB, 0x31, 0xA6, 0xD9, 0xF8, 0xDF, 0xBA, 0xA6, 0x8F, 0xC2, 0xC5, 0xC7, 0xB2, 0x8C, 0xC1,
-[; ;MPU6050.h: 872: 0xB8, 0xA2, 0xDF, 0xDF, 0xDF, 0xA3, 0xDF, 0xDF, 0xDF, 0xD8, 0xD8, 0xF1, 0xB8, 0xA8, 0xB2, 0x86,
-[; ;MPU6050.h: 875: 0xB4, 0x98, 0x0D, 0x35, 0x5D, 0xB8, 0xAA, 0x98, 0xB0, 0x87, 0x2D, 0x35, 0x3D, 0xB2, 0xB6, 0xBA,
-[; ;MPU6050.h: 876: 0xAF, 0x8C, 0x96, 0x19, 0x8F, 0x9F, 0xA7, 0x0E, 0x16, 0x1E, 0xB4, 0x9A, 0xB8, 0xAA, 0x87, 0x2C,
-[; ;MPU6050.h: 877: 0x54, 0x7C, 0xB9, 0xA3, 0xDE, 0xDF, 0xDF, 0xA3, 0xB1, 0x80, 0xF2, 0xC4, 0xCD, 0xC9, 0xF1, 0xB8,
-[; ;MPU6050.h: 878: 0xA9, 0xB4, 0x99, 0x83, 0x0D, 0x35, 0x5D, 0x89, 0xB9, 0xA3, 0x2D, 0x55, 0x7D, 0xB5, 0x93, 0xA3,
-[; ;MPU6050.h: 879: 0x0E, 0x16, 0x1E, 0xA9, 0x2C, 0x54, 0x7C, 0xB8, 0xB4, 0xB0, 0xF1, 0x97, 0x83, 0xA8, 0x11, 0x84,
-[; ;MPU6050.h: 880: 0xA5, 0x09, 0x98, 0xA3, 0x83, 0xF0, 0xDA, 0x24, 0x08, 0x44, 0x10, 0x64, 0x18, 0xD8, 0xF1, 0xA5,
-[; ;MPU6050.h: 881: 0x29, 0x55, 0x7D, 0xA5, 0x85, 0x95, 0x02, 0x1A, 0x2E, 0x3A, 0x56, 0x5A, 0x40, 0x48, 0xF9, 0xF3,
-[; ;MPU6050.h: 882: 0xA3, 0xD9, 0xF8, 0xF0, 0x98, 0x83, 0x24, 0x08, 0x44, 0x10, 0x64, 0x18, 0x97, 0x82, 0xA8, 0xF1,
-[; ;MPU6050.h: 883: 0x11, 0xF0, 0x98, 0xA2, 0x24, 0x08, 0x44, 0x10, 0x64, 0x18, 0xDA, 0xF3, 0xDE, 0xD8, 0x83, 0xA5,
-[; ;MPU6050.h: 884: 0x94, 0x01, 0xD9, 0xA3, 0x02, 0xF1, 0xA2, 0xC3, 0xC5, 0xC7, 0xD8, 0xF1, 0x84, 0x92, 0xA2, 0x4D,
-[; ;MPU6050.h: 885: 0xDA, 0x2A, 0xD8, 0x48, 0x69, 0xD9, 0x2A, 0xD8, 0x68, 0x55, 0xDA, 0x32, 0xD8, 0x50, 0x71, 0xD9,
-[; ;MPU6050.h: 886: 0x32, 0xD8, 0x70, 0x5D, 0xDA, 0x3A, 0xD8, 0x58, 0x79, 0xD9, 0x3A, 0xD8, 0x78, 0x93, 0xA3, 0x4D,
-[; ;MPU6050.h: 887: 0xDA, 0x2A, 0xD8, 0x48, 0x69, 0xD9, 0x2A, 0xD8, 0x68, 0x55, 0xDA, 0x32, 0xD8, 0x50, 0x71, 0xD9,
-[; ;MPU6050.h: 888: 0x32, 0xD8, 0x70, 0x5D, 0xDA, 0x3A, 0xD8, 0x58, 0x79, 0xD9, 0x3A, 0xD8, 0x78, 0xA8, 0x8A, 0x9A,
-[; ;MPU6050.h: 889: 0xF0, 0x28, 0x50, 0x78, 0x9E, 0xF3, 0x88, 0x18, 0xF1, 0x9F, 0x1D, 0x98, 0xA8, 0xD9, 0x08, 0xD8,
-[; ;MPU6050.h: 890: 0xC8, 0x9F, 0x12, 0x9E, 0xF3, 0x15, 0xA8, 0xDA, 0x12, 0x10, 0xD8, 0xF1, 0xAF, 0xC8, 0x97, 0x87,
-[; ;MPU6050.h: 893: 0x34, 0xB5, 0xB9, 0x94, 0xA4, 0x21, 0xF3, 0xD9, 0x22, 0xD8, 0xF2, 0x2D, 0xF3, 0xD9, 0x2A, 0xD8,
-[; ;MPU6050.h: 894: 0xF2, 0x35, 0xF3, 0xD9, 0x32, 0xD8, 0x81, 0xA4, 0x60, 0x60, 0x61, 0xD9, 0x61, 0xD8, 0x6C, 0x68,
-[; ;MPU6050.h: 895: 0x69, 0xD9, 0x69, 0xD8, 0x74, 0x70, 0x71, 0xD9, 0x71, 0xD8, 0xB1, 0xA3, 0x84, 0x19, 0x3D, 0x5D,
-[; ;MPU6050.h: 896: 0xA3, 0x83, 0x1A, 0x3E, 0x5E, 0x93, 0x10, 0x30, 0x81, 0x10, 0x11, 0xB8, 0xB0, 0xAF, 0x8F, 0x94,
-[; ;MPU6050.h: 897: 0xF2, 0xDA, 0x3E, 0xD8, 0xB4, 0x9A, 0xA8, 0x87, 0x29, 0xDA, 0xF8, 0xD8, 0x87, 0x9A, 0x35, 0xDA,
-[; ;MPU6050.h: 898: 0xF8, 0xD8, 0x87, 0x9A, 0x3D, 0xDA, 0xF8, 0xD8, 0xB1, 0xB9, 0xA4, 0x98, 0x85, 0x02, 0x2E, 0x56,
-[; ;MPU6050.h: 899: 0xA5, 0x81, 0x00, 0x0C, 0x14, 0xA3, 0x97, 0xB0, 0x8A, 0xF1, 0x2D, 0xD9, 0x28, 0xD8, 0x4D, 0xD9,
-[; ;MPU6050.h: 900: 0x48, 0xD8, 0x6D, 0xD9, 0x68, 0xD8, 0xB1, 0x84, 0x0D, 0xDA, 0x0E, 0xD8, 0xA3, 0x29, 0x83, 0xDA,
-[; ;MPU6050.h: 901: 0x2C, 0x0E, 0xD8, 0xA3, 0x84, 0x49, 0x83, 0xDA, 0x2C, 0x4C, 0x0E, 0xD8, 0xB8, 0xB0, 0xA8, 0x8A,
-[; ;MPU6050.h: 902: 0x9A, 0xF5, 0x20, 0xAA, 0xDA, 0xDF, 0xD8, 0xA8, 0x40, 0xAA, 0xD0, 0xDA, 0xDE, 0xD8, 0xA8, 0x60,
-[; ;MPU6050.h: 903: 0xAA, 0xDA, 0xD0, 0xDF, 0xD8, 0xF1, 0x97, 0x86, 0xA8, 0x31, 0x9B, 0x06, 0x99, 0x07, 0xAB, 0x97,
-[; ;MPU6050.h: 904: 0x28, 0x88, 0x9B, 0xF0, 0x0C, 0x20, 0x14, 0x40, 0xB8, 0xB0, 0xB4, 0xA8, 0x8C, 0x9C, 0xF0, 0x04,
-[; ;MPU6050.h: 905: 0x28, 0x51, 0x79, 0x1D, 0x30, 0x14, 0x38, 0xB2, 0x82, 0xAB, 0xD0, 0x98, 0x2C, 0x50, 0x50, 0x78,
-[; ;MPU6050.h: 906: 0x78, 0x9B, 0xF1, 0x1A, 0xB0, 0xF0, 0x8A, 0x9C, 0xA8, 0x29, 0x51, 0x79, 0x8B, 0x29, 0x51, 0x79,
-[; ;MPU6050.h: 907: 0x8A, 0x24, 0x70, 0x59, 0x8B, 0x20, 0x58, 0x71, 0x8A, 0x44, 0x69, 0x38, 0x8B, 0x39, 0x40, 0x68,
-[; ;MPU6050.h: 908: 0x8A, 0x64, 0x48, 0x31, 0x8B, 0x30, 0x49, 0x60, 0xA5, 0x88, 0x20, 0x09, 0x71, 0x58, 0x44, 0x68,
-[; ;MPU6050.h: 911: 0x11, 0x39, 0x64, 0x49, 0x30, 0x19, 0xF1, 0xAC, 0x00, 0x2C, 0x54, 0x7C, 0xF0, 0x8C, 0xA8, 0x04,
-[; ;MPU6050.h: 912: 0x28, 0x50, 0x78, 0xF1, 0x88, 0x97, 0x26, 0xA8, 0x59, 0x98, 0xAC, 0x8C, 0x02, 0x26, 0x46, 0x66,
-[; ;MPU6050.h: 913: 0xF0, 0x89, 0x9C, 0xA8, 0x29, 0x51, 0x79, 0x24, 0x70, 0x59, 0x44, 0x69, 0x38, 0x64, 0x48, 0x31,
-[; ;MPU6050.h: 914: 0xA9, 0x88, 0x09, 0x20, 0x59, 0x70, 0xAB, 0x11, 0x38, 0x40, 0x69, 0xA8, 0x19, 0x31, 0x48, 0x60,
-[; ;MPU6050.h: 915: 0x8C, 0xA8, 0x3C, 0x41, 0x5C, 0x20, 0x7C, 0x00, 0xF1, 0x87, 0x98, 0x19, 0x86, 0xA8, 0x6E, 0x76,
-[; ;MPU6050.h: 916: 0x7E, 0xA9, 0x99, 0x88, 0x2D, 0x55, 0x7D, 0x9E, 0xB9, 0xA3, 0x8A, 0x22, 0x8A, 0x6E, 0x8A, 0x56,
-[; ;MPU6050.h: 917: 0x8A, 0x5E, 0x9F, 0xB1, 0x83, 0x06, 0x26, 0x46, 0x66, 0x0E, 0x2E, 0x4E, 0x6E, 0x9D, 0xB8, 0xAD,
-[; ;MPU6050.h: 918: 0x00, 0x2C, 0x54, 0x7C, 0xF2, 0xB1, 0x8C, 0xB4, 0x99, 0xB9, 0xA3, 0x2D, 0x55, 0x7D, 0x81, 0x91,
-[; ;MPU6050.h: 919: 0xAC, 0x38, 0xAD, 0x3A, 0xB5, 0x83, 0x91, 0xAC, 0x2D, 0xD9, 0x28, 0xD8, 0x4D, 0xD9, 0x48, 0xD8,
-[; ;MPU6050.h: 920: 0x6D, 0xD9, 0x68, 0xD8, 0x8C, 0x9D, 0xAE, 0x29, 0xD9, 0x04, 0xAE, 0xD8, 0x51, 0xD9, 0x04, 0xAE,
-[; ;MPU6050.h: 921: 0xD8, 0x79, 0xD9, 0x04, 0xD8, 0x81, 0xF3, 0x9D, 0xAD, 0x00, 0x8D, 0xAE, 0x19, 0x81, 0xAD, 0xD9,
-[; ;MPU6050.h: 922: 0x01, 0xD8, 0xF2, 0xAE, 0xDA, 0x26, 0xD8, 0x8E, 0x91, 0x29, 0x83, 0xA7, 0xD9, 0xAD, 0xAD, 0xAD,
-[; ;MPU6050.h: 923: 0xAD, 0xF3, 0x2A, 0xD8, 0xD8, 0xF1, 0xB0, 0xAC, 0x89, 0x91, 0x3E, 0x5E, 0x76, 0xF3, 0xAC, 0x2E,
-[; ;MPU6050.h: 924: 0x2E, 0xF1, 0xB1, 0x8C, 0x5A, 0x9C, 0xAC, 0x2C, 0x28, 0x28, 0x28, 0x9C, 0xAC, 0x30, 0x18, 0xA8,
-[; ;MPU6050.h: 925: 0x98, 0x81, 0x28, 0x34, 0x3C, 0x97, 0x24, 0xA7, 0x28, 0x34, 0x3C, 0x9C, 0x24, 0xF2, 0xB0, 0x89,
-[; ;MPU6050.h: 926: 0xAC, 0x91, 0x2C, 0x4C, 0x6C, 0x8A, 0x9B, 0x2D, 0xD9, 0xD8, 0xD8, 0x51, 0xD9, 0xD8, 0xD8, 0x79,
-[; ;MPU6050.h: 929: 0xD9, 0xD8, 0xD8, 0xF1, 0x9E, 0x88, 0xA3, 0x31, 0xDA, 0xD8, 0xD8, 0x91, 0x2D, 0xD9, 0x28, 0xD8,
-[; ;MPU6050.h: 930: 0x4D, 0xD9, 0x48, 0xD8, 0x6D, 0xD9, 0x68, 0xD8, 0xB1, 0x83, 0x93, 0x35, 0x3D, 0x80, 0x25, 0xDA,
-[; ;MPU6050.h: 931: 0xD8, 0xD8, 0x85, 0x69, 0xDA, 0xD8, 0xD8, 0xB4, 0x93, 0x81, 0xA3, 0x28, 0x34, 0x3C, 0xF3, 0xAB,
-[; ;MPU6050.h: 932: 0x8B, 0xF8, 0xA3, 0x91, 0xB6, 0x09, 0xB4, 0xD9, 0xAB, 0xDE, 0xFA, 0xB0, 0x87, 0x9C, 0xB9, 0xA3,
-[; ;MPU6050.h: 933: 0xDD, 0xF1, 0xA3, 0xA3, 0xA3, 0xA3, 0x95, 0xF1, 0xA3, 0xA3, 0xA3, 0x9D, 0xF1, 0xA3, 0xA3, 0xA3,
-[; ;MPU6050.h: 934: 0xA3, 0xF2, 0xA3, 0xB4, 0x90, 0x80, 0xF2, 0xA3, 0xA3, 0xA3, 0xA3, 0xA3, 0xA3, 0xA3, 0xA3, 0xA3,
-[; ;MPU6050.h: 935: 0xA3, 0xB2, 0xA3, 0xA3, 0xA3, 0xA3, 0xA3, 0xA3, 0xB0, 0x87, 0xB5, 0x99, 0xF1, 0xA3, 0xA3, 0xA3,
-[; ;MPU6050.h: 936: 0x98, 0xF1, 0xA3, 0xA3, 0xA3, 0xA3, 0x97, 0xA3, 0xA3, 0xA3, 0xA3, 0xF3, 0x9B, 0xA3, 0xA3, 0xDC,
-[; ;MPU6050.h: 937: 0xB9, 0xA7, 0xF1, 0x26, 0x26, 0x26, 0xD8, 0xD8, 0xFF
-[; ;MPU6050.h: 938: };
-"941
-[v _dmpConfig `Cuc ~T0 @X0 -> 192 `i e ]
-[i _dmpConfig
-:U ..
-"943
--> -> 3 `i `uc
--> -> 123 `i `uc
--> -> 3 `i `uc
--> -> 76 `i `uc
--> -> 205 `i `uc
--> -> 108 `i `uc
-"944
--> -> 3 `i `uc
--> -> 171 `i `uc
--> -> 3 `i `uc
--> -> 54 `i `uc
--> -> 86 `i `uc
--> -> 118 `i `uc
-"945
--> -> 0 `i `uc
--> -> 104 `i `uc
--> -> 4 `i `uc
--> -> 2 `i `uc
--> -> 203 `i `uc
--> -> 71 `i `uc
--> -> 162 `i `uc
-"946
--> -> 2 `i `uc
--> -> 24 `i `uc
--> -> 4 `i `uc
--> -> 0 `i `uc
--> -> 5 `i `uc
--> -> 139 `i `uc
--> -> 193 `i `uc
-"947
--> -> 1 `i `uc
--> -> 12 `i `uc
--> -> 4 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"948
--> -> 3 `i `uc
--> -> 127 `i `uc
--> -> 6 `i `uc
--> -> 12 `i `uc
--> -> 201 `i `uc
--> -> 44 `i `uc
--> -> 151 `i `uc
--> -> 151 `i `uc
--> -> 151 `i `uc
-"949
--> -> 3 `i `uc
--> -> 137 `i `uc
--> -> 3 `i `uc
--> -> 38 `i `uc
--> -> 70 `i `uc
--> -> 102 `i `uc
-"950
--> -> 0 `i `uc
--> -> 108 `i `uc
--> -> 2 `i `uc
--> -> 32 `i `uc
--> -> 0 `i `uc
-"951
--> -> 2 `i `uc
--> -> 64 `i `uc
--> -> 4 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"952
--> -> 2 `i `uc
--> -> 68 `i `uc
--> -> 4 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"953
--> -> 2 `i `uc
--> -> 72 `i `uc
--> -> 4 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"954
--> -> 2 `i `uc
--> -> 76 `i `uc
--> -> 4 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"955
--> -> 2 `i `uc
--> -> 80 `i `uc
--> -> 4 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"956
--> -> 2 `i `uc
--> -> 84 `i `uc
--> -> 4 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"957
--> -> 2 `i `uc
--> -> 88 `i `uc
--> -> 4 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"958
--> -> 2 `i `uc
--> -> 92 `i `uc
--> -> 4 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"959
--> -> 2 `i `uc
--> -> 188 `i `uc
--> -> 4 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"960
--> -> 1 `i `uc
--> -> 236 `i `uc
--> -> 4 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 64 `i `uc
--> -> 0 `i `uc
-"961
--> -> 3 `i `uc
--> -> 127 `i `uc
--> -> 6 `i `uc
--> -> 12 `i `uc
--> -> 201 `i `uc
--> -> 44 `i `uc
--> -> 151 `i `uc
--> -> 151 `i `uc
--> -> 151 `i `uc
-"962
--> -> 4 `i `uc
--> -> 2 `i `uc
--> -> 3 `i `uc
--> -> 13 `i `uc
--> -> 53 `i `uc
--> -> 93 `i `uc
-"963
--> -> 4 `i `uc
--> -> 9 `i `uc
--> -> 4 `i `uc
--> -> 135 `i `uc
--> -> 45 `i `uc
--> -> 53 `i `uc
--> -> 61 `i `uc
-"964
--> -> 0 `i `uc
--> -> 163 `i `uc
--> -> 1 `i `uc
--> -> 0 `i `uc
-"966
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 1 `i `uc
-"967
--> -> 7 `i `uc
--> -> 134 `i `uc
--> -> 1 `i `uc
--> -> 254 `i `uc
-"968
--> -> 7 `i `uc
--> -> 65 `i `uc
--> -> 5 `i `uc
--> -> 241 `i `uc
--> -> 32 `i `uc
--> -> 40 `i `uc
--> -> 48 `i `uc
--> -> 56 `i `uc
-"969
--> -> 7 `i `uc
--> -> 126 `i `uc
--> -> 1 `i `uc
--> -> 48 `i `uc
-"970
--> -> 7 `i `uc
--> -> 70 `i `uc
--> -> 1 `i `uc
--> -> 154 `i `uc
-"971
--> -> 7 `i `uc
--> -> 71 `i `uc
--> -> 4 `i `uc
--> -> 241 `i `uc
--> -> 40 `i `uc
--> -> 48 `i `uc
--> -> 56 `i `uc
-"972
--> -> 7 `i `uc
--> -> 108 `i `uc
--> -> 4 `i `uc
--> -> 241 `i `uc
--> -> 40 `i `uc
--> -> 48 `i `uc
--> -> 56 `i `uc
-"973
--> -> 2 `i `uc
--> -> 22 `i `uc
--> -> 2 `i `uc
--> -> 0 `i `uc
-"981
--> -> 1 `i `uc
-..
-]
-[; ;MPU6050.h: 941: const unsigned char dmpConfig[192] = {
-[; ;MPU6050.h: 943: 0x03, 0x7B, 0x03, 0x4C, 0xCD, 0x6C,
-[; ;MPU6050.h: 944: 0x03, 0xAB, 0x03, 0x36, 0x56, 0x76,
-[; ;MPU6050.h: 945: 0x00, 0x68, 0x04, 0x02, 0xCB, 0x47, 0xA2,
-[; ;MPU6050.h: 946: 0x02, 0x18, 0x04, 0x00, 0x05, 0x8B, 0xC1,
-[; ;MPU6050.h: 947: 0x01, 0x0C, 0x04, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 948: 0x03, 0x7F, 0x06, 0x0C, 0xC9, 0x2C, 0x97, 0x97, 0x97,
-[; ;MPU6050.h: 949: 0x03, 0x89, 0x03, 0x26, 0x46, 0x66,
-[; ;MPU6050.h: 950: 0x00, 0x6C, 0x02, 0x20, 0x00,
-[; ;MPU6050.h: 951: 0x02, 0x40, 0x04, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 952: 0x02, 0x44, 0x04, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 953: 0x02, 0x48, 0x04, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 954: 0x02, 0x4C, 0x04, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 955: 0x02, 0x50, 0x04, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 956: 0x02, 0x54, 0x04, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 957: 0x02, 0x58, 0x04, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 958: 0x02, 0x5C, 0x04, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 959: 0x02, 0xBC, 0x04, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 960: 0x01, 0xEC, 0x04, 0x00, 0x00, 0x40, 0x00,
-[; ;MPU6050.h: 961: 0x03, 0x7F, 0x06, 0x0C, 0xC9, 0x2C, 0x97, 0x97, 0x97,
-[; ;MPU6050.h: 962: 0x04, 0x02, 0x03, 0x0D, 0x35, 0x5D,
-[; ;MPU6050.h: 963: 0x04, 0x09, 0x04, 0x87, 0x2D, 0x35, 0x3D,
-[; ;MPU6050.h: 964: 0x00, 0xA3, 0x01, 0x00,
-[; ;MPU6050.h: 966: 0x00, 0x00, 0x00, 0x01,
-[; ;MPU6050.h: 967: 0x07, 0x86, 0x01, 0xFE,
-[; ;MPU6050.h: 968: 0x07, 0x41, 0x05, 0xF1, 0x20, 0x28, 0x30, 0x38,
-[; ;MPU6050.h: 969: 0x07, 0x7E, 0x01, 0x30,
-[; ;MPU6050.h: 970: 0x07, 0x46, 0x01, 0x9A,
-[; ;MPU6050.h: 971: 0x07, 0x47, 0x04, 0xF1, 0x28, 0x30, 0x38,
-[; ;MPU6050.h: 972: 0x07, 0x6C, 0x04, 0xF1, 0x28, 0x30, 0x38,
-[; ;MPU6050.h: 973: 0x02, 0x16, 0x02, 0x00, 0x01
-[; ;MPU6050.h: 981: };
-"983
-[v _dmpUpdates `Cuc ~T0 @X0 -> 47 `i e ]
-[i _dmpUpdates
-:U ..
-"984
--> -> 1 `i `uc
--> -> 178 `i `uc
--> -> 2 `i `uc
--> -> 255 `i `uc
--> -> 255 `i `uc
-"985
--> -> 1 `i `uc
--> -> 144 `i `uc
--> -> 4 `i `uc
--> -> 9 `i `uc
--> -> 35 `i `uc
--> -> 161 `i `uc
--> -> 53 `i `uc
-"986
--> -> 1 `i `uc
--> -> 106 `i `uc
--> -> 2 `i `uc
--> -> 6 `i `uc
--> -> 0 `i `uc
-"987
--> -> 1 `i `uc
--> -> 96 `i `uc
--> -> 8 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"988
--> -> 0 `i `uc
--> -> 96 `i `uc
--> -> 4 `i `uc
--> -> 64 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"989
--> -> 1 `i `uc
--> -> 98 `i `uc
--> -> 2 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-"990
--> -> 0 `i `uc
--> -> 96 `i `uc
--> -> 4 `i `uc
--> -> 0 `i `uc
--> -> 64 `i `uc
--> -> 0 `i `uc
-"991
--> -> 0 `i `uc
-..
-]
-[; ;MPU6050.h: 983: const unsigned char dmpUpdates[47] = {
-[; ;MPU6050.h: 984: 0x01, 0xB2, 0x02, 0xFF, 0xFF,
-[; ;MPU6050.h: 985: 0x01, 0x90, 0x04, 0x09, 0x23, 0xA1, 0x35,
-[; ;MPU6050.h: 986: 0x01, 0x6A, 0x02, 0x06, 0x00,
-[; ;MPU6050.h: 987: 0x01, 0x60, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 988: 0x00, 0x60, 0x04, 0x40, 0x00, 0x00, 0x00,
-[; ;MPU6050.h: 989: 0x01, 0x62, 0x02, 0x00, 0x00,
-[; ;MPU6050.h: 990: 0x00, 0x60, 0x04, 0x00, 0x40, 0x00, 0x00
-[; ;MPU6050.h: 991: };
+[; ;MPU6050.h: 406: typedef struct MPU6050_t {
+[; ;MPU6050.h: 407: uint8_t devAddr;
+[; ;MPU6050.h: 408: uint8_t buffer[14];
+[; ;MPU6050.h: 409: } MPU6050_t;
+[; ;MPU6050.h: 411: void MPU6050(uint8_t address);
+[; ;MPU6050.h: 413: void MPU6050_initialize();
+[; ;MPU6050.h: 414: bool MPU6050_testConnection();
+[; ;MPU6050.h: 417: uint8_t MPU6050_getAuxVDDIOLevel();
+[; ;MPU6050.h: 418: void MPU6050_setAuxVDDIOLevel(uint8_t level);
+[; ;MPU6050.h: 421: uint8_t MPU6050_getRate();
+[; ;MPU6050.h: 422: void MPU6050_setRate(uint8_t rate);
+[; ;MPU6050.h: 425: uint8_t MPU6050_getExternalFrameSync();
+[; ;MPU6050.h: 426: void MPU6050_setExternalFrameSync(uint8_t sync);
+[; ;MPU6050.h: 427: uint8_t MPU6050_getDLPFMode();
+[; ;MPU6050.h: 428: void MPU6050_setDLPFMode(uint8_t bandwidth);
+[; ;MPU6050.h: 431: uint8_t MPU6050_getFullScaleGyroRange();
+[; ;MPU6050.h: 432: void MPU6050_setFullScaleGyroRange(uint8_t range);
+[; ;MPU6050.h: 435: bool MPU6050_getAccelXSelfTest();
+[; ;MPU6050.h: 436: void MPU6050_setAccelXSelfTest(bool enabled);
+[; ;MPU6050.h: 437: bool MPU6050_getAccelYSelfTest();
+[; ;MPU6050.h: 438: void MPU6050_setAccelYSelfTest(bool enabled);
+[; ;MPU6050.h: 439: bool MPU6050_getAccelZSelfTest();
+[; ;MPU6050.h: 440: void MPU6050_setAccelZSelfTest(bool enabled);
+[; ;MPU6050.h: 441: uint8_t MPU6050_getFullScaleAccelRange();
+[; ;MPU6050.h: 442: void MPU6050_setFullScaleAccelRange(uint8_t range);
+[; ;MPU6050.h: 443: uint8_t MPU6050_getDHPFMode();
+[; ;MPU6050.h: 444: void MPU6050_setDHPFMode(uint8_t mode);
+[; ;MPU6050.h: 447: uint8_t MPU6050_getFreefallDetectionThreshold();
+[; ;MPU6050.h: 448: void MPU6050_setFreefallDetectionThreshold(uint8_t threshold);
+[; ;MPU6050.h: 451: uint8_t MPU6050_getFreefallDetectionDuration();
+[; ;MPU6050.h: 452: void MPU6050_setFreefallDetectionDuration(uint8_t duration);
+[; ;MPU6050.h: 455: uint8_t MPU6050_getMotionDetectionThreshold();
+[; ;MPU6050.h: 456: void MPU6050_setMotionDetectionThreshold(uint8_t threshold);
+[; ;MPU6050.h: 459: uint8_t MPU6050_getMotionDetectionDuration();
+[; ;MPU6050.h: 460: void MPU6050_setMotionDetectionDuration(uint8_t duration);
+[; ;MPU6050.h: 463: uint8_t MPU6050_getZeroMotionDetectionThreshold();
+[; ;MPU6050.h: 464: void MPU6050_setZeroMotionDetectionThreshold(uint8_t threshold);
+[; ;MPU6050.h: 467: uint8_t MPU6050_getZeroMotionDetectionDuration();
+[; ;MPU6050.h: 468: void MPU6050_setZeroMotionDetectionDuration(uint8_t duration);
+[; ;MPU6050.h: 471: bool MPU6050_getTempFIFOEnabled();
+[; ;MPU6050.h: 472: void MPU6050_setTempFIFOEnabled(bool enabled);
+[; ;MPU6050.h: 473: bool MPU6050_getXGyroFIFOEnabled();
+[; ;MPU6050.h: 474: void MPU6050_setXGyroFIFOEnabled(bool enabled);
+[; ;MPU6050.h: 475: bool MPU6050_getYGyroFIFOEnabled();
+[; ;MPU6050.h: 476: void MPU6050_setYGyroFIFOEnabled(bool enabled);
+[; ;MPU6050.h: 477: bool MPU6050_getZGyroFIFOEnabled();
+[; ;MPU6050.h: 478: void MPU6050_setZGyroFIFOEnabled(bool enabled);
+[; ;MPU6050.h: 479: bool MPU6050_getAccelFIFOEnabled();
+[; ;MPU6050.h: 480: void MPU6050_setAccelFIFOEnabled(bool enabled);
+[; ;MPU6050.h: 481: bool MPU6050_getSlave2FIFOEnabled();
+[; ;MPU6050.h: 482: void MPU6050_setSlave2FIFOEnabled(bool enabled);
+[; ;MPU6050.h: 483: bool MPU6050_getSlave1FIFOEnabled();
+[; ;MPU6050.h: 484: void MPU6050_setSlave1FIFOEnabled(bool enabled);
+[; ;MPU6050.h: 485: bool MPU6050_getSlave0FIFOEnabled();
+[; ;MPU6050.h: 486: void MPU6050_setSlave0FIFOEnabled(bool enabled);
+[; ;MPU6050.h: 489: bool MPU6050_getMultiMasterEnabled();
+[; ;MPU6050.h: 490: void MPU6050_setMultiMasterEnabled(bool enabled);
+[; ;MPU6050.h: 491: bool MPU6050_getWaitForExternalSensorEnabled();
+[; ;MPU6050.h: 492: void MPU6050_setWaitForExternalSensorEnabled(bool enabled);
+[; ;MPU6050.h: 493: bool MPU6050_getSlave3FIFOEnabled();
+[; ;MPU6050.h: 494: void MPU6050_setSlave3FIFOEnabled(bool enabled);
+[; ;MPU6050.h: 495: bool MPU6050_getSlaveReadWriteTransitionEnabled();
+[; ;MPU6050.h: 496: void MPU6050_setSlaveReadWriteTransitionEnabled(bool enabled);
+[; ;MPU6050.h: 497: uint8_t MPU6050_getMasterClockSpeed();
+[; ;MPU6050.h: 498: void MPU6050_setMasterClockSpeed(uint8_t speed);
+[; ;MPU6050.h: 501: uint8_t MPU6050_getSlaveAddress(uint8_t num);
+[; ;MPU6050.h: 502: void MPU6050_setSlaveAddress(uint8_t num, uint8_t address);
+[; ;MPU6050.h: 503: uint8_t MPU6050_getSlaveRegister(uint8_t num);
+[; ;MPU6050.h: 504: void MPU6050_setSlaveRegister(uint8_t num, uint8_t reg);
+[; ;MPU6050.h: 505: bool MPU6050_getSlaveEnabled(uint8_t num);
+[; ;MPU6050.h: 506: void MPU6050_setSlaveEnabled(uint8_t num, bool enabled);
+[; ;MPU6050.h: 507: bool MPU6050_getSlaveWordByteSwap(uint8_t num);
+[; ;MPU6050.h: 508: void MPU6050_setSlaveWordByteSwap(uint8_t num, bool enabled);
+[; ;MPU6050.h: 509: bool MPU6050_getSlaveWriteMode(uint8_t num);
+[; ;MPU6050.h: 510: void MPU6050_setSlaveWriteMode(uint8_t num, bool mode);
+[; ;MPU6050.h: 511: bool MPU6050_getSlaveWordGroupOffset(uint8_t num);
+[; ;MPU6050.h: 512: void MPU6050_setSlaveWordGroupOffset(uint8_t num, bool enabled);
+[; ;MPU6050.h: 513: uint8_t MPU6050_getSlaveDataLength(uint8_t num);
+[; ;MPU6050.h: 514: void MPU6050_setSlaveDataLength(uint8_t num, uint8_t length);
+[; ;MPU6050.h: 517: uint8_t MPU6050_getSlave4Address();
+[; ;MPU6050.h: 518: void MPU6050_setSlave4Address(uint8_t address);
+[; ;MPU6050.h: 519: uint8_t MPU6050_getSlave4Register();
+[; ;MPU6050.h: 520: void MPU6050_setSlave4Register(uint8_t reg);
+[; ;MPU6050.h: 521: void MPU6050_setSlave4OutputByte(uint8_t data);
+[; ;MPU6050.h: 522: bool MPU6050_getSlave4Enabled();
+[; ;MPU6050.h: 523: void MPU6050_setSlave4Enabled(bool enabled);
+[; ;MPU6050.h: 524: bool MPU6050_getSlave4InterruptEnabled();
+[; ;MPU6050.h: 525: void MPU6050_setSlave4InterruptEnabled(bool enabled);
+[; ;MPU6050.h: 526: bool MPU6050_getSlave4WriteMode();
+[; ;MPU6050.h: 527: void MPU6050_setSlave4WriteMode(bool mode);
+[; ;MPU6050.h: 528: uint8_t MPU6050_getSlave4MasterDelay();
+[; ;MPU6050.h: 529: void MPU6050_setSlave4MasterDelay(uint8_t delay);
+[; ;MPU6050.h: 530: uint8_t MPU6050_getSlate4InputByte();
+[; ;MPU6050.h: 533: bool MPU6050_getPassthroughStatus();
+[; ;MPU6050.h: 534: bool MPU6050_getSlave4IsDone();
+[; ;MPU6050.h: 535: bool MPU6050_getLostArbitration();
+[; ;MPU6050.h: 536: bool MPU6050_getSlave4Nack();
+[; ;MPU6050.h: 537: bool MPU6050_getSlave3Nack();
+[; ;MPU6050.h: 538: bool MPU6050_getSlave2Nack();
+[; ;MPU6050.h: 539: bool MPU6050_getSlave1Nack();
+[; ;MPU6050.h: 540: bool MPU6050_getSlave0Nack();
+[; ;MPU6050.h: 543: bool MPU6050_getInterruptMode();
+[; ;MPU6050.h: 544: void MPU6050_setInterruptMode(bool mode);
+[; ;MPU6050.h: 545: bool MPU6050_getInterruptDrive();
+[; ;MPU6050.h: 546: void MPU6050_setInterruptDrive(bool drive);
+[; ;MPU6050.h: 547: bool MPU6050_getInterruptLatch();
+[; ;MPU6050.h: 548: void MPU6050_setInterruptLatch(bool latch);
+[; ;MPU6050.h: 549: bool MPU6050_getInterruptLatchClear();
+[; ;MPU6050.h: 550: void MPU6050_setInterruptLatchClear(bool clear);
+[; ;MPU6050.h: 551: bool MPU6050_getFSyncInterruptLevel();
+[; ;MPU6050.h: 552: void MPU6050_setFSyncInterruptLevel(bool level);
+[; ;MPU6050.h: 553: bool MPU6050_getFSyncInterruptEnabled();
+[; ;MPU6050.h: 554: void MPU6050_setFSyncInterruptEnabled(bool enabled);
+[; ;MPU6050.h: 555: bool MPU6050_getI2CBypassEnabled();
+[; ;MPU6050.h: 556: void MPU6050_setI2CBypassEnabled(bool enabled);
+[; ;MPU6050.h: 557: bool MPU6050_getClockOutputEnabled();
+[; ;MPU6050.h: 558: void MPU6050_setClockOutputEnabled(bool enabled);
+[; ;MPU6050.h: 561: uint8_t MPU6050_getIntEnabled();
+[; ;MPU6050.h: 562: void MPU6050_setIntEnabled(uint8_t enabled);
+[; ;MPU6050.h: 563: bool MPU6050_getIntFreefallEnabled();
+[; ;MPU6050.h: 564: void MPU6050_setIntFreefallEnabled(bool enabled);
+[; ;MPU6050.h: 565: bool MPU6050_getIntMotionEnabled();
+[; ;MPU6050.h: 566: void MPU6050_setIntMotionEnabled(bool enabled);
+[; ;MPU6050.h: 567: bool MPU6050_getIntZeroMotionEnabled();
+[; ;MPU6050.h: 568: void MPU6050_setIntZeroMotionEnabled(bool enabled);
+[; ;MPU6050.h: 569: bool MPU6050_getIntFIFOBufferOverflowEnabled();
+[; ;MPU6050.h: 570: void MPU6050_setIntFIFOBufferOverflowEnabled(bool enabled);
+[; ;MPU6050.h: 571: bool MPU6050_getIntI2CMasterEnabled();
+[; ;MPU6050.h: 572: void MPU6050_setIntI2CMasterEnabled(bool enabled);
+[; ;MPU6050.h: 573: bool MPU6050_getIntDataReadyEnabled();
+[; ;MPU6050.h: 574: void MPU6050_setIntDataReadyEnabled(bool enabled);
+[; ;MPU6050.h: 577: uint8_t MPU6050_getIntStatus();
+[; ;MPU6050.h: 578: bool MPU6050_getIntFreefallStatus();
+[; ;MPU6050.h: 579: bool MPU6050_getIntMotionStatus();
+[; ;MPU6050.h: 580: bool MPU6050_getIntZeroMotionStatus();
+[; ;MPU6050.h: 581: bool MPU6050_getIntFIFOBufferOverflowStatus();
+[; ;MPU6050.h: 582: bool MPU6050_getIntI2CMasterStatus();
+[; ;MPU6050.h: 583: bool MPU6050_getIntDataReadyStatus();
+[; ;MPU6050.h: 586: void MPU6050_getMotion9(int16_t* ax, int16_t* ay, int16_t* az, int16_t* gx, int16_t* gy, int16_t* gz, int16_t* mx, int16_t* my, int16_t* mz);
+[; ;MPU6050.h: 587: void MPU6050_getMotion6(int16_t* ax, int16_t* ay, int16_t* az, int16_t* gx, int16_t* gy, int16_t* gz);
+[; ;MPU6050.h: 588: void MPU6050_getAcceleration(int16_t* x, int16_t* y, int16_t* z);
+[; ;MPU6050.h: 589: int16_t MPU6050_getAccelerationX();
+[; ;MPU6050.h: 590: int16_t MPU6050_getAccelerationY();
+[; ;MPU6050.h: 591: int16_t MPU6050_getAccelerationZ();
+[; ;MPU6050.h: 594: int16_t MPU6050_getTemperature();
+[; ;MPU6050.h: 597: void MPU6050_getRotation(int16_t* x, int16_t* y, int16_t* z);
+[; ;MPU6050.h: 598: int16_t MPU6050_getRotationX();
+[; ;MPU6050.h: 599: int16_t MPU6050_getRotationY();
+[; ;MPU6050.h: 600: int16_t MPU6050_getRotationZ();
+[; ;MPU6050.h: 603: uint8_t MPU6050_getExternalSensorByte(int position);
+[; ;MPU6050.h: 604: uint16_t MPU6050_getExternalSensorWord(int position);
+[; ;MPU6050.h: 605: uint32_t getExternalSensorDWord(int position);
+[; ;MPU6050.h: 608: bool MPU6050_getXNegMotionDetected();
+[; ;MPU6050.h: 609: bool MPU6050_getXPosMotionDetected();
+[; ;MPU6050.h: 610: bool MPU6050_getYNegMotionDetected();
+[; ;MPU6050.h: 611: bool MPU6050_getYPosMotionDetected();
+[; ;MPU6050.h: 612: bool MPU6050_getZNegMotionDetected();
+[; ;MPU6050.h: 613: bool MPU6050_getZPosMotionDetected();
+[; ;MPU6050.h: 614: bool MPU6050_getZeroMotionDetected();
+[; ;MPU6050.h: 617: void MPU6050_setSlaveOutputByte(uint8_t num, uint8_t data);
+[; ;MPU6050.h: 620: bool MPU6050_getExternalShadowDelayEnabled();
+[; ;MPU6050.h: 621: void MPU6050_setExternalShadowDelayEnabled(bool enabled);
+[; ;MPU6050.h: 622: bool MPU6050_getSlaveDelayEnabled(uint8_t num);
+[; ;MPU6050.h: 623: void MPU6050_setSlaveDelayEnabled(uint8_t num, bool enabled);
+[; ;MPU6050.h: 626: void MPU6050_resetGyroscopePath();
+[; ;MPU6050.h: 627: void MPU6050_resetAccelerometerPath();
+[; ;MPU6050.h: 628: void MPU6050_resetTemperaturePath();
+[; ;MPU6050.h: 631: uint8_t MPU6050_getAccelerometerPowerOnDelay();
+[; ;MPU6050.h: 632: void MPU6050_setAccelerometerPowerOnDelay(uint8_t delay);
+[; ;MPU6050.h: 633: uint8_t MPU6050_getFreefallDetectionCounterDecrement();
+[; ;MPU6050.h: 634: void MPU6050_setFreefallDetectionCounterDecrement(uint8_t decrement);
+[; ;MPU6050.h: 635: uint8_t MPU6050_getMotionDetectionCounterDecrement();
+[; ;MPU6050.h: 636: void MPU6050_setMotionDetectionCounterDecrement(uint8_t decrement);
+[; ;MPU6050.h: 639: bool MPU6050_getFIFOEnabled();
+[; ;MPU6050.h: 640: void MPU6050_setFIFOEnabled(bool enabled);
+[; ;MPU6050.h: 641: bool MPU6050_getI2CMasterModeEnabled();
+[; ;MPU6050.h: 642: void MPU6050_setI2CMasterModeEnabled(bool enabled);
+[; ;MPU6050.h: 643: void MPU6050_switchSPIEnabled(bool enabled);
+[; ;MPU6050.h: 644: void MPU6050_resetFIFO();
+[; ;MPU6050.h: 645: void MPU6050_resetI2CMaster();
+[; ;MPU6050.h: 646: void MPU6050_resetSensors();
+[; ;MPU6050.h: 649: void MPU6050_reset();
+[; ;MPU6050.h: 650: bool MPU6050_getSleepEnabled();
+[; ;MPU6050.h: 651: void MPU6050_setSleepEnabled(bool enabled);
+[; ;MPU6050.h: 652: bool MPU6050_getWakeCycleEnabled();
+[; ;MPU6050.h: 653: void MPU6050_setWakeCycleEnabled(bool enabled);
+[; ;MPU6050.h: 654: bool MPU6050_getTempSensorEnabled();
+[; ;MPU6050.h: 655: void MPU6050_setTempSensorEnabled(bool enabled);
+[; ;MPU6050.h: 656: uint8_t MPU6050_getClockSource();
+[; ;MPU6050.h: 657: void MPU6050_setClockSource(uint8_t source);
+[; ;MPU6050.h: 660: uint8_t MPU6050_getWakeFrequency();
+[; ;MPU6050.h: 661: void MPU6050_setWakeFrequency(uint8_t frequency);
+[; ;MPU6050.h: 662: bool MPU6050_getStandbyXAccelEnabled();
+[; ;MPU6050.h: 663: void MPU6050_setStandbyXAccelEnabled(bool enabled);
+[; ;MPU6050.h: 664: bool MPU6050_getStandbyYAccelEnabled();
+[; ;MPU6050.h: 665: void MPU6050_setStandbyYAccelEnabled(bool enabled);
+[; ;MPU6050.h: 666: bool MPU6050_getStandbyZAccelEnabled();
+[; ;MPU6050.h: 667: void MPU6050_setStandbyZAccelEnabled(bool enabled);
+[; ;MPU6050.h: 668: bool MPU6050_getStandbyXGyroEnabled();
+[; ;MPU6050.h: 669: void MPU6050_setStandbyXGyroEnabled(bool enabled);
+[; ;MPU6050.h: 670: bool MPU6050_getStandbyYGyroEnabled();
+[; ;MPU6050.h: 671: void MPU6050_setStandbyYGyroEnabled(bool enabled);
+[; ;MPU6050.h: 672: bool MPU6050_getStandbyZGyroEnabled();
+[; ;MPU6050.h: 673: void MPU6050_setStandbyZGyroEnabled(bool enabled);
+[; ;MPU6050.h: 676: uint16_t MPU6050_getFIFOCount();
+[; ;MPU6050.h: 679: uint8_t MPU6050_getFIFOByte();
+[; ;MPU6050.h: 680: void MPU6050_setFIFOByte(uint8_t data);
+[; ;MPU6050.h: 681: void MPU6050_getFIFOBytes(uint8_t *data, uint8_t length);
+[; ;MPU6050.h: 684: uint8_t MPU6050_getDeviceID();
+[; ;MPU6050.h: 685: void MPU6050_setDeviceID(uint8_t id);
+[; ;MPU6050.h: 690: uint8_t MPU6050_getOTPBankValid();
+[; ;MPU6050.h: 691: void MPU6050_setOTPBankValid(bool enabled);
+[; ;MPU6050.h: 692: int8_t getXGyroOffsetTC();
+[; ;MPU6050.h: 693: void MPU6050_setXGyroOffsetTC(int8_t offset);
+[; ;MPU6050.h: 696: int8_t getYGyroOffsetTC();
+[; ;MPU6050.h: 697: void MPU6050_setYGyroOffsetTC(int8_t offset);
+[; ;MPU6050.h: 700: int8_t getZGyroOffsetTC();
+[; ;MPU6050.h: 701: void MPU6050_setZGyroOffsetTC(int8_t offset);
+[; ;MPU6050.h: 704: int8_t getXFineGain();
+[; ;MPU6050.h: 705: void MPU6050_setXFineGain(int8_t gain);
+[; ;MPU6050.h: 708: int8_t getYFineGain();
+[; ;MPU6050.h: 709: void MPU6050_setYFineGain(int8_t gain);
+[; ;MPU6050.h: 712: int8_t getZFineGain();
+[; ;MPU6050.h: 713: void MPU6050_setZFineGain(int8_t gain);
+[; ;MPU6050.h: 716: int16_t MPU6050_getXAccelOffset();
+[; ;MPU6050.h: 717: void MPU6050_setXAccelOffset(int16_t offset);
+[; ;MPU6050.h: 720: int16_t MPU6050_getYAccelOffset();
+[; ;MPU6050.h: 721: void MPU6050_setYAccelOffset(int16_t offset);
+[; ;MPU6050.h: 724: int16_t MPU6050_getZAccelOffset();
+[; ;MPU6050.h: 725: void MPU6050_setZAccelOffset(int16_t offset);
+[; ;MPU6050.h: 728: int16_t MPU6050_getXGyroOffset();
+[; ;MPU6050.h: 729: void MPU6050_setXGyroOffset(int16_t offset);
+[; ;MPU6050.h: 732: int16_t MPU6050_getYGyroOffset();
+[; ;MPU6050.h: 733: void MPU6050_setYGyroOffset(int16_t offset);
+[; ;MPU6050.h: 736: int16_t MPU6050_getZGyroOffset();
+[; ;MPU6050.h: 737: void MPU6050_setZGyroOffset(int16_t offset);
+[; ;MPU6050.h: 740: bool MPU6050_getIntPLLReadyEnabled();
+[; ;MPU6050.h: 741: void MPU6050_setIntPLLReadyEnabled(bool enabled);
+[; ;MPU6050.h: 742: bool MPU6050_getIntDMPEnabled();
+[; ;MPU6050.h: 743: void MPU6050_setIntDMPEnabled(bool enabled);
+[; ;MPU6050.h: 746: bool MPU6050_getDMPInt5Status();
+[; ;MPU6050.h: 747: bool MPU6050_getDMPInt4Status();
+[; ;MPU6050.h: 748: bool MPU6050_getDMPInt3Status();
+[; ;MPU6050.h: 749: bool MPU6050_getDMPInt2Status();
+[; ;MPU6050.h: 750: bool MPU6050_getDMPInt1Status();
+[; ;MPU6050.h: 751: bool MPU6050_getDMPInt0Status();
+[; ;MPU6050.h: 754: bool MPU6050_getIntPLLReadyStatus();
+[; ;MPU6050.h: 755: bool MPU6050_getIntDMPStatus();
+[; ;MPU6050.h: 758: bool MPU6050_getDMPEnabled();
+[; ;MPU6050.h: 759: void MPU6050_setDMPEnabled(bool enabled);
+[; ;MPU6050.h: 760: void MPU6050_resetDMP();
+[; ;MPU6050.h: 763: void MPU6050_setMemoryBank(uint8_t bank, bool prefetchEnabled, bool userBank);
+[; ;MPU6050.h: 766: void MPU6050_setMemoryStartAddress(uint8_t address);
+[; ;MPU6050.h: 769: uint8_t MPU6050_readMemoryByte();
+[; ;MPU6050.h: 770: void MPU6050_writeMemoryByte(uint8_t data);
+[; ;MPU6050.h: 771: void MPU6050_readMemoryBlock(uint8_t *data, uint16_t dataSize, uint8_t bank, uint8_t address);
+[; ;MPU6050.h: 779: uint8_t MPU6050_getDMPConfig1();
+[; ;MPU6050.h: 780: void MPU6050_setDMPConfig1(uint8_t config);
+[; ;MPU6050.h: 783: uint8_t MPU6050_getDMPConfig2();
+[; ;MPU6050.h: 784: void MPU6050_setDMPConfig2(uint8_t config);
 "14 main.c
 [p x FOSC=INTOSC_EC ]
 "15
@@ -7096,132 +4572,123 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _gy `i ~T0 @X0 1 a ]
 [v _gz `i ~T0 @X0 1 a ]
 "32
-[v _devStatus `uc ~T0 @X0 1 a ]
-[; ;main.c: 31: int16_t ax, ay, az, gx, gy, gz;
-[; ;main.c: 32: uint8_t devStatus=1, mpuIntStatus, dmpReady;
-[e = _devStatus -> -> 1 `i `uc ]
-[v _mpuIntStatus `uc ~T0 @X0 1 a ]
-[v _dmpReady `uc ~T0 @X0 1 a ]
+[v _fax `f ~T0 @X0 1 a ]
+[v _fay `f ~T0 @X0 1 a ]
+[v _faz `f ~T0 @X0 1 a ]
+[v _fgz `f ~T0 @X0 1 a ]
+[v _fgy `f ~T0 @X0 1 a ]
+[v _fgx `f ~T0 @X0 1 a ]
 "33
-[v _packetSize `ui ~T0 @X0 1 a ]
-[; ;main.c: 33: uint16_t packetSize;
-[; ;main.c: 34: OSCCON = 0x72;
+[v _angle `f ~T0 @X0 1 a ]
+[; ;main.c: 31: int16_t ax, ay, az, gx, gy, gz;
+[; ;main.c: 32: float fax, fay, faz, fgz, fgy, fgx;
+[; ;main.c: 33: float angle=180;
+[e = _angle -> -> 180 `i `f ]
 "34
-[e = _OSCCON -> -> 114 `i `uc ]
-[; ;main.c: 36: LATCbits.LC2=1;
+[v _A `f ~T0 @X0 1 a ]
+[; ;main.c: 34: float A = 0.962;
+[e = _A -> .0.962 `f ]
+"35
+[v _dt `f ~T0 @X0 1 a ]
+[; ;main.c: 35: float dt = 0.02;
+[e = _dt -> .0.02 `f ]
 "36
-[e = . . _LATCbits 1 2 -> -> 1 `i `uc ]
-[; ;main.c: 38: initIO();
+[v _error_angle `f ~T0 @X0 1 a ]
+[; ;main.c: 36: float error_angle;
+[; ;main.c: 38: OSCCON = 0x72;
 "38
+[e = _OSCCON -> -> 114 `i `uc ]
+[; ;main.c: 40: LATCbits.LATC2=1;
+"40
+[e = . . _LATCbits 0 2 -> -> 1 `i `uc ]
+[; ;main.c: 42: initIO();
+"42
 [e ( _initIO ..  ]
-[; ;main.c: 39: initBT();
-"39
+[; ;main.c: 43: initBT();
+"43
 [e ( _initBT ..  ]
-[; ;main.c: 44: OpenI2C(0b00001000, 0b10000000);
-"44
-[e ( _OpenI2C (2 , -> -> 8 `i `uc -> -> 128 `i `uc ]
-[; ;main.c: 45: SSPADD = 14;
+[; ;main.c: 45: _delay((unsigned long)((30)*(8000000/4000.0)));
 "45
-[e = _SSPADD -> -> 14 `i `uc ]
-[; ;main.c: 47: MPU6050(0x68);
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;main.c: 47: OpenI2C(0b00001000, 0b10000000);
 "47
-[e ( _MPU6050 (1 -> -> 104 `i `uc ]
-[; ;main.c: 48: printf("try MPU... ");
+[e ( _OpenI2C (2 , -> -> 8 `i `uc -> -> 128 `i `uc ]
+[; ;main.c: 48: SSPADD = 14;
 "48
-[e ( _printf :s 1C ]
-[; ;main.c: 49: MPU6050_initialize();
-"49
-[e ( _MPU6050_initialize ..  ]
-[; ;main.c: 50: _delay((unsigned long)((500)*(8000000/4000.0)));
+[e = _SSPADD -> -> 14 `i `uc ]
+[; ;main.c: 50: MPU6050(0x68);
 "50
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;main.c: 52: if(MPU6050_testConnection())
+[e ( _MPU6050 (1 -> -> 104 `i `uc ]
+[; ;main.c: 51: printf("Init MPU... \r\n");
+"51
+[e ( _printf :s 1C ]
+[; ;main.c: 52: MPU6050_initialize();
 "52
-[e $ ! != -> ( _MPU6050_testConnection ..  `i -> -> -> 0 `i `uc `i 400  ]
-[; ;main.c: 53: printf("Got MPU!\r\n");
+[e ( _MPU6050_initialize ..  ]
+[; ;main.c: 53: _delay((unsigned long)((30)*(8000000/4000.0)));
 "53
-[e ( _printf :s 2C ]
-[e :U 400 ]
-[; ;main.c: 54: printf("Begin DMP init\r\n");
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;main.c: 54: if(MPU6050_testConnection())
 "54
-[e ( _printf :s 3C ]
-[; ;main.c: 55: _delay((unsigned long)((500)*(8000000/4000.0)));
+[e $ ! != -> ( _MPU6050_testConnection ..  `i -> -> -> 0 `i `uc `i 400  ]
+[; ;main.c: 55: printf("MPU enabled!\r\n");
 "55
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;main.c: 57: if(devStatus == 0){
-"57
-[e $ ! == -> _devStatus `i -> 0 `i 401  ]
-{
-[; ;main.c: 58: printf("Successfully init DMP!\r\n");
-"58
-[e ( _printf :s 4C ]
-[; ;main.c: 59: printf("Enabling DMP... ");
-"59
-[e ( _printf :s 5C ]
-[; ;main.c: 60: MPU6050_setDMPEnabled(1);
-"60
-[e ( _MPU6050_setDMPEnabled (1 -> -> 1 `i `uc ]
-[; ;main.c: 62: mpuIntStatus = MPU6050_getIntStatus();
-"62
-[e = _mpuIntStatus ( _MPU6050_getIntStatus ..  ]
-[; ;main.c: 63: printf("DMP ready! Waiting on interrupt\r\n");
-"63
-[e ( _printf :s 6C ]
-[; ;main.c: 64: dmpReady = 1;
-"64
-[e = _dmpReady -> -> 1 `i `uc ]
-[; ;main.c: 65: packetSize = MPU6050_dmpGetFIFOPacketSize();
-"65
-[e = _packetSize ( _MPU6050_dmpGetFIFOPacketSize ..  ]
-"66
-}
-[; ;main.c: 66: } else {
-[e $U 402  ]
+[e ( _printf :s 2C ]
+[e $U 401  ]
+"56
+[e :U 400 ]
+[; ;main.c: 56: else printf("MPU failure\r\n");
+[e ( _printf :s 3C ]
 [e :U 401 ]
+[; ;main.c: 58: while (1) {
+"58
+[e :U 403 ]
 {
-[; ;main.c: 67: printf("DMP init failed\r\n");
+[; ;main.c: 59: MPU6050_getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
+"59
+[e ( _MPU6050_getMotion6 (4 , , , , , &U _ax &U _ay &U _az &U _gx &U _gy &U _gz ]
+[; ;main.c: 62: angle = angle + gx*dt;
+"62
+[e = _angle + _angle * -> _gx `f _dt ]
+[; ;main.c: 63: error_angle = ax - angle;
+"63
+[e = _error_angle - -> _ax `f _angle ]
+[; ;main.c: 64: angle = angle + (1-A)*error_angle;
+"64
+[e = _angle + _angle * - -> -> 1 `i `f _A _error_angle ]
+[; ;main.c: 67: printf("%f\r\n", angle);
 "67
-[e ( _printf :s 7C ]
-"68
+[e ( _printf , (. :s 4C -> _angle `d ]
+[; ;main.c: 69: if(angle>360) angle-=360;
+"69
+[e $ ! > _angle -> -> 360 `i `f 405  ]
+[e =- _angle -> -> 360 `i `f ]
+[e :U 405 ]
+[; ;main.c: 70: _delay((unsigned long)((10)*(8000000/4000.0)));
+"70
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;main.c: 71: LATCbits.LC2=1;
+"71
+[e = . . _LATCbits 1 2 -> -> 1 `i `uc ]
+[; ;main.c: 72: _delay((unsigned long)((10)*(8000000/4000.0)));
+"72
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;main.c: 73: LATCbits.LC2=0;
+"73
+[e = . . _LATCbits 1 2 -> -> 0 `i `uc ]
+"74
 }
 [e :U 402 ]
-[; ;main.c: 68: }
-[; ;main.c: 70: while (1) {
-"70
+"58
+[e $U 403  ]
 [e :U 404 ]
-{
-[; ;main.c: 74: printf("alive\r\n");
-"74
-[e ( _printf :s 8C ]
-[; ;main.c: 75: _delay((unsigned long)((500)*(8000000/4000.0)));
+[; ;main.c: 74: }
+[; ;main.c: 75: }
 "75
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;main.c: 76: LATCbits.LC2=1;
-"76
-[e = . . _LATCbits 1 2 -> -> 1 `i `uc ]
-[; ;main.c: 77: _delay((unsigned long)((500)*(8000000/4000.0)));
-"77
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;main.c: 78: LATCbits.LC2=0;
-"78
-[e = . . _LATCbits 1 2 -> -> 0 `i `uc ]
-"79
-}
-[e :U 403 ]
-"70
-[e $U 404  ]
-[e :U 405 ]
-[; ;main.c: 79: }
-[; ;main.c: 80: }
-"80
 [e :UE 399 ]
 }
-[p f _printf 8388608 ]
-[a 1C 116 114 121 32 77 80 85 46 46 46 32 0 ]
-[a 5C 69 110 97 98 108 105 110 103 32 68 77 80 46 46 46 32 0 ]
-[a 6C 68 77 80 32 114 101 97 100 121 33 32 87 97 105 116 105 110 103 32 111 110 32 105 110 116 101 114 114 117 112 116 13 10 0 ]
-[a 3C 66 101 103 105 110 32 68 77 80 32 105 110 105 116 13 10 0 ]
-[a 8C 97 108 105 118 101 13 10 0 ]
-[a 7C 68 77 80 32 105 110 105 116 32 102 97 105 108 101 100 13 10 0 ]
-[a 2C 71 111 116 32 77 80 85 33 13 10 0 ]
-[a 4C 83 117 99 99 101 115 115 102 117 108 108 121 32 105 110 105 116 32 68 77 80 33 13 10 0 ]
+[p f _printf 8396800 ]
+[a 4C 37 102 13 10 0 ]
+[a 3C 77 80 85 32 102 97 105 108 117 114 101 13 10 0 ]
+[a 2C 77 80 85 32 101 110 97 98 108 101 100 33 13 10 0 ]
+[a 1C 73 110 105 116 32 77 80 85 46 46 46 32 13 10 0 ]

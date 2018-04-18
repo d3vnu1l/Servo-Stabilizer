@@ -1,7 +1,7 @@
 
 # 1 "USART_Source_File.c"
 
-# 50 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h"
+# 50 "/home/fbuga/opt/microchip/xc8/v1.45/include/pic18f4550.h"
 extern volatile unsigned char SPPDATA @ 0xF62;
 
 asm("SPPDATA equ 0F62h");
@@ -4786,6 +4786,16 @@ RCSTA=0x90;
 }
 
 void putch(unsigned char byte){
+char trash;
+
+
+if(RCSTAbits.FERR)
+trash = RCREG;
+if(RCSTAbits.OERR) {
+RCSTAbits.CREN=0;
+RCSTAbits.CREN=1;
+}
+
 
 while (TXSTA1bits.TRMT == 0);
 TXREG1 = byte;
@@ -4796,7 +4806,6 @@ TXIF=0;
 
 char USART_ReceiveChar()
 {
-
 if(RCIF==1)
 return(RCREG);
 else

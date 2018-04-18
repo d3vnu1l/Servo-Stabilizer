@@ -29,52 +29,47 @@
 int main(void) {
     char data_in=0;
     int16_t ax, ay, az, gx, gy, gz;
-    uint8_t devStatus=1, mpuIntStatus, dmpReady;
-    uint16_t packetSize;
+    float fax, fay, faz, fgz, fgy, fgx;
+    float angle=180;
+    float A = 0.962;
+    float dt = 0.02;
+    float error_angle;
+    
     OSCCON = 0x72; // internal oscillator, 8MHz
     
-    LATCbits.LC2=1; // Turn on Status Led
+    LATCbits.LATC2=1;
     
     initIO();
     initBT();
-    
     //initSTEER();
-    
+    __delay_ms(30);
     // I2C (400 kHz)
     OpenI2C(MASTER, SLEW_OFF);
     SSPADD = 14;
     // MPU6050
     MPU6050(MPU6050_ADDRESS_AD0_LOW);
-    printf("try MPU... ");
+    printf("Init MPU... \r\n");
     MPU6050_initialize();
-    __delay_ms(500);
-    //enable pin interrupt here
+    __delay_ms(30);
     if(MPU6050_testConnection())
-        printf("Got MPU!\r\n");
-    printf("Begin DMP init\r\n");
-    __delay_ms(500);
-    //devStatus = MPU6050_dmpInitialize();
-    if(devStatus == 0){
-        printf("Successfully init DMP!\r\n");
-        printf("Enabling DMP... ");
-        MPU6050_setDMPEnabled(true);
-        // attach interrupt
-        mpuIntStatus = MPU6050_getIntStatus();
-        printf("DMP ready! Waiting on interrupt\r\n");
-        dmpReady = 1;
-        packetSize = MPU6050_dmpGetFIFOPacketSize();
-    } else {
-        printf("DMP init failed\r\n");
-    }
+        printf("MPU enabled!\r\n");
+    else printf("MPU failure\r\n");
     
     while (1) {
-        //MPU6050_getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
+        MPU6050_getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
         //printf("a/g:\t%d\t%d\t%d\t%d\t%d\t%d\r\n", ax, ay, az, gx, gy, gz);
-        //data_in=0;
-        printf("alive\r\n");
-        __delay_ms(500);
+        
+        angle = angle + gx*dt;
+        error_angle = ax - angle;
+        angle = angle + (1-A)*error_angle;
+        
+        
+        printf("%f\r\n", angle);
+        
+        if(angle>360) angle-=360;
+        __delay_ms(10);
         LATCbits.LC2=1;
-        __delay_ms(500);
+        __delay_ms(10);
         LATCbits.LC2=0;
     }
 }

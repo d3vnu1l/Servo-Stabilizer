@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=AVC_b.X
+PROJECTNAME=Servo-Stabilizer
 
 # Active Configuration
 DEFAULTCONF=default

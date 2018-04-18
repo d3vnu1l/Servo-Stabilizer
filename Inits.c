@@ -13,12 +13,10 @@
 
 void initIO(void){ 
     TRISA = 0;          // all output (except RA7 not implemented) 
-    TRISB = 0x03;       // i2c as input
-    TRISBbits.RB2=1;    // MPU interrupt
-    TRISCbits.RC1 = 1;  // Servo steer pwm in
-    TRISD = 0;          // all output 
-    TRISE = 0;          // all output (only RE0, RE1, RE2 exist) 
-    TRISDbits.RD0 = 1;
+    TRISB = 0x07;       // i2c as input
+    TRISC1 = 1;         // Servo steer pwm in
+    TRISC2 = 0;         // Status LED (PWM1)
+    LATA=LATB=LATC=LATD=LATE=0x00;
 }
 
 void initBT(void){

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/default/production\AVC_b.X.production.hex">
+  <executable name="dist/default/production/Servo-Stabilizer.production.hex">
     <memory name="program">
       <units>bytes</units>
       <length>32768</length>
-      <used>5284</used>
-      <free>27484</free>
+      <used>8462</used>
+      <free>24306</free>
     </memory>
     <memory name="data">
       <units>bytes</units>
       <length>2048</length>
-      <used>78</used>
-      <free>1970</free>
+      <used>141</used>
+      <free>1907</free>
     </memory>
   </executable>
 </project>

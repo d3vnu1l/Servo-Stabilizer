@@ -1,0 +1,870 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"42 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"8 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"8 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"32 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"409 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/doprnt.c
+[v _fround fround `(d  1 s 3 fround ]
+"425
+[v _scale scale `(d  1 s 3 scale ]
+"464
+[v _printf printf `(i  1 e 2 0 ]
+"60 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/fldivl.c
+[v __div_to_l_ _div_to_l_ `(ul  1 e 4 0 ]
+"62 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"60 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/ftdivl.c
+[v __tdiv_to_l_ _tdiv_to_l_ `(ul  1 e 4 0 ]
+"4 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"20 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"8 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"8 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"35 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"10 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"24 /home/fbuga/opt/microchip/xc8/v1.45/sources/pic18/plib/i2c/i2c_idle.c
+[v _IdleI2C IdleI2C `(v  1 e 1 0 ]
+"14 /home/fbuga/opt/microchip/xc8/v1.45/sources/pic18/plib/i2c/i2c_open.c
+[v _OpenI2C OpenI2C `(v  1 e 1 0 ]
+"11 /home/fbuga/opt/microchip/xc8/v1.45/sources/pic18/plib/i2c/i2c_read.c
+[v _ReadI2C ReadI2C `(uc  1 e 1 0 ]
+"12 /home/fbuga/opt/microchip/xc8/v1.45/sources/pic18/plib/i2c/i2c_writ.c
+[v _WriteI2C WriteI2C `(c  1 e 1 0 ]
+"43 /home/fbuga/Documents/Servo-Stabilizer/I2Cdev.c
+[v _I2Cdev_readBytes I2Cdev_readBytes `(c  1 e 1 0 ]
+"95
+[v _I2Cdev_readByte I2Cdev_readByte `(c  1 e 1 0 ]
+"106
+[v _I2Cdev_readWords I2Cdev_readWords `(c  1 e 1 0 ]
+"166
+[v _I2Cdev_readWord I2Cdev_readWord `(c  1 e 1 0 ]
+"177
+[v _I2Cdev_readBit I2Cdev_readBit `(c  1 e 1 0 ]
+"206
+[v _I2Cdev_readBits I2Cdev_readBits `(c  1 e 1 0 ]
+"254
+[v _I2Cdev_writeBytes I2Cdev_writeBytes `(uc  1 e 1 0 ]
+"286
+[v _I2Cdev_writeByte I2Cdev_writeByte `(uc  1 e 1 0 ]
+"297
+[v _I2Cdev_writeWords I2Cdev_writeWords `(uc  1 e 1 0 ]
+"333
+[v _I2Cdev_writeWord I2Cdev_writeWord `(uc  1 e 1 0 ]
+"344
+[v _I2Cdev_writeBit I2Cdev_writeBit `(uc  1 e 1 0 ]
+"373
+[v _I2Cdev_writeBits I2Cdev_writeBits `(uc  1 e 1 0 ]
+"14 /home/fbuga/Documents/Servo-Stabilizer/Inits.c
+[v _initIO initIO `(v  1 e 1 0 ]
+"22
+[v _initBT initBT `(v  1 e 1 0 ]
+"29 /home/fbuga/Documents/Servo-Stabilizer/main.c
+[v _main main `(i  1 e 2 0 ]
+"51 /home/fbuga/Documents/Servo-Stabilizer/MPU6050.c
+[v _MPU6050 MPU6050 `(v  1 e 1 0 ]
+"62
+[v _MPU6050_initialize MPU6050_initialize `(v  1 e 1 0 ]
+"73
+[v _MPU6050_testConnection MPU6050_testConnection `(uc  1 e 1 0 ]
+"251
+[v _MPU6050_setFullScaleGyroRange MPU6050_setFullScaleGyroRange `(v  1 e 1 0 ]
+"327
+[v _MPU6050_setFullScaleAccelRange MPU6050_setFullScaleAccelRange `(v  1 e 1 0 ]
+"1733
+[v _MPU6050_getMotion6 MPU6050_getMotion6 `(v  1 e 1 0 ]
+"2382
+[v _MPU6050_setSleepEnabled MPU6050_setSleepEnabled `(v  1 e 1 0 ]
+"2475
+[v _MPU6050_setClockSource MPU6050_setClockSource `(v  1 e 1 0 ]
+"2696
+[v _MPU6050_getDeviceID MPU6050_getDeviceID `(uc  1 e 1 0 ]
+"2912
+[v _MPU6050_setMemoryBank MPU6050_setMemoryBank `(v  1 e 1 0 ]
+"2921
+[v _MPU6050_setMemoryStartAddress MPU6050_setMemoryStartAddress `(v  1 e 1 0 ]
+"8 /home/fbuga/Documents/Servo-Stabilizer/USART_Source_File.c
+[v _USART_Init USART_Init `(v  1 e 1 0 ]
+"19
+[v _putch putch `(v  1 e 1 0 ]
+"2971 /home/fbuga/opt/microchip/xc8/v1.45/include/pic18f4550.h
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+"3071
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"3183
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+[s S22 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"3206
+[s S29 . 1 `uc 1 LC0 1 0 :1:0 
+`uc 1 LC1 1 0 :1:1 
+`uc 1 LC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 LC6 1 0 :1:6 
+`uc 1 LC7 1 0 :1:7 
+]
+[u S36 . 1 `S22 1 . 1 0 `S29 1 . 1 0 ]
+[v _LATCbits LATCbits `VES36  1 e 1 @3979 ]
+"3261
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"3373
+[v _LATE LATE `VEuc  1 e 1 @3981 ]
+"3425
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"3623
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+[s S1134 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"4205
+[s S1143 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+[u S1152 . 1 `S1134 1 . 1 0 `S1143 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES1152  1 e 1 @3987 ]
+"4934
+[v _RCSTA RCSTA `VEuc  1 e 1 @4011 ]
+[s S146 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"4975
+[s S155 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 ADEN 1 0 :1:3 
+]
+[s S158 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 SRENA 1 0 :1:5 
+]
+[s S161 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[s S164 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S167 . 1 `uc 1 RCD8 1 0 :1:0 
+]
+[u S169 . 1 `S146 1 . 1 0 `S155 1 . 1 0 `S158 1 . 1 0 `S161 1 . 1 0 `S164 1 . 1 0 `S167 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES169  1 e 1 @4011 ]
+[s S1333 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 SPPIF 1 0 :1:7 
+]
+"5062
+[s S1342 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 PSPIF 1 0 :1:7 
+]
+[s S1345 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 RC1IF 1 0 :1:5 
+]
+[s S1348 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IF 1 0 :1:4 
+]
+[u S1351 . 1 `S1333 1 . 1 0 `S1342 1 . 1 0 `S1345 1 . 1 0 `S1348 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES1351  1 e 1 @3998 ]
+"5144
+[v _TXSTA TXSTA `VEuc  1 e 1 @4012 ]
+[s S201 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"5305
+[s S210 . 1 `uc 1 TX9D1 1 0 :1:0 
+`uc 1 TRMT1 1 0 :1:1 
+`uc 1 BRGH1 1 0 :1:2 
+`uc 1 SENDB1 1 0 :1:3 
+`uc 1 SYNC1 1 0 :1:4 
+`uc 1 TXEN1 1 0 :1:5 
+`uc 1 TX91 1 0 :1:6 
+`uc 1 CSRC1 1 0 :1:7 
+]
+[s S219 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[s S222 . 1 `uc 1 TXD8 1 0 :1:0 
+]
+[u S224 . 1 `S201 1 . 1 0 `S210 1 . 1 0 `S219 1 . 1 0 `S222 1 . 1 0 ]
+[v _TXSTA1bits TXSTA1bits `VES224  1 e 1 @4012 ]
+"5405
+[v _TXREG1 TXREG1 `VEuc  1 e 1 @4013 ]
+"5412
+[v _RCREG RCREG `VEuc  1 e 1 @4014 ]
+"5424
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+"6325
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @4029 ]
+[s S300 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"6821
+[u S309 . 1 `S300 1 . 1 0 ]
+[v _SSPCON2bits SSPCON2bits `VES309  1 e 1 @4037 ]
+"7184
+[v _SSPADD SSPADD `VEuc  1 e 1 @4040 ]
+"7403
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @4037 ]
+"7464
+[v _SSPCON1 SSPCON1 `VEuc  1 e 1 @4038 ]
+[s S1306 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"7484
+[s S1312 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[u S1317 . 1 `S1306 1 . 1 0 `S1312 1 . 1 0 ]
+[v _SSPCON1bits SSPCON1bits `VES1317  1 e 1 @4038 ]
+"7533
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @4039 ]
+[s S953 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+"7635
+[s S956 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+[s S959 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S974 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S979 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+[s S985 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S990 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+[s S993 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+[s S996 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S1001 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[s S1006 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S1011 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 DA 1 0 :1:5 
+]
+[s S1014 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW 1 0 :1:2 
+]
+[s S1017 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 START 1 0 :1:3 
+]
+[s S1020 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 STOP 1 0 :1:4 
+]
+[s S1023 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+]
+[s S1026 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_A 1 0 :1:5 
+]
+[u S1029 . 1 `S953 1 . 1 0 `S956 1 . 1 0 `S959 1 . 1 0 `S953 1 . 1 0 `S956 1 . 1 0 `S974 1 . 1 0 `S979 1 . 1 0 `S985 1 . 1 0 `S990 1 . 1 0 `S993 1 . 1 0 `S996 1 . 1 0 `S1001 1 . 1 0 `S1006 1 . 1 0 `S1011 1 . 1 0 `S1014 1 . 1 0 `S1017 1 . 1 0 `S1020 1 . 1 0 `S1023 1 . 1 0 `S1026 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES1029  1 e 1 @4039 ]
+"7805
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @4041 ]
+"7984
+[v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
+"9927
+[v _RCIF RCIF `VEb  1 e 0 @31989 ]
+"10251
+[v _TRISC1 TRISC1 `VEb  1 e 0 @31905 ]
+"10253
+[v _TRISC2 TRISC2 `VEb  1 e 0 @31906 ]
+"10255
+[v _TRISC6 TRISC6 `VEb  1 e 0 @31910 ]
+"10257
+[v _TRISC7 TRISC7 `VEb  1 e 0 @31911 ]
+"10327
+[v _TXIF TXIF `VEb  1 e 0 @31988 ]
+"354 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/doprnt.c
+[v _dpowers dpowers `C[10]ul  1 s 40 dpowers ]
+"7 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/powers.c
+[v __powers_ _powers_ `C[13]d  1 e 39 0 ]
+"39
+[v __npowers_ _npowers_ `C[13]d  1 e 39 0 ]
+[s S447 MPU6050_t 15 `uc 1 devAddr 1 0 `[14]uc 1 buffer 14 1 ]
+"43 /home/fbuga/Documents/Servo-Stabilizer/MPU6050.c
+[v _mpu6050 mpu6050 `S447  1 e 15 0 ]
+"29 /home/fbuga/Documents/Servo-Stabilizer/main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"33
+[v main@angle angle `f  1 a 3 48 ]
+"36
+[v main@error_angle error_angle `f  1 a 3 30 ]
+"35
+[v main@dt dt `f  1 a 3 27 ]
+"34
+[v main@A A `f  1 a 3 24 ]
+"31
+[v main@gx gx `i  1 a 2 46 ]
+[v main@ax ax `i  1 a 2 44 ]
+[v main@gz gz `i  1 a 2 42 ]
+[v main@gy gy `i  1 a 2 40 ]
+[v main@az az `i  1 a 2 38 ]
+[v main@ay ay `i  1 a 2 36 ]
+"30
+[v main@data_in data_in `uc  1 a 1 23 ]
+"75
+} 0
+"464 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/doprnt.c
+[v _printf printf `(i  1 e 2 0 ]
+{
+[u S940 . 4 `ul 1 vd 4 0 `d 1 integ 3 0 ]
+"526
+[v printf@tmpval tmpval `S940  1 a 4 15 ]
+"528
+[v printf@val val `ul  1 a 4 9 ]
+"516
+[v printf@fval fval `d  1 a 3 19 ]
+[v printf@exp exp `i  1 a 2 13 ]
+"504
+[v printf@prec prec `i  1 a 2 7 ]
+"508
+[v printf@flag flag `us  1 a 2 5 ]
+"466
+[v printf@ap ap `[1]*.39v  1 a 2 3 ]
+"499
+[v printf@c c `c  1 a 1 22 ]
+"464
+[v printf@f f `*.25Cuc  1 p 2 63 ]
+"1541
+} 0
+"425
+[v _scale scale `(d  1 s 3 scale ]
+{
+[v scale@scl scl `c  1 a 1 wreg ]
+[v scale@scl scl `c  1 a 1 wreg ]
+"428
+[v scale@scl scl `c  1 a 1 41 ]
+"441
+} 0
+"19 /home/fbuga/Documents/Servo-Stabilizer/USART_Source_File.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+[v putch@byte byte `uc  1 a 1 wreg ]
+"20
+[v putch@trash trash `uc  1 a 1 0 ]
+"19
+[v putch@byte byte `uc  1 a 1 wreg ]
+"23
+[v putch@byte byte `uc  1 a 1 1 ]
+"36
+} 0
+"409 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/doprnt.c
+[v _fround fround `(d  1 s 3 fround ]
+{
+[v fround@prec prec `uc  1 a 1 wreg ]
+[v fround@prec prec `uc  1 a 1 wreg ]
+"413
+[v fround@prec prec `uc  1 a 1 44 ]
+"418
+} 0
+"62 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 30 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 34 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 33 ]
+[v ___ftmul@exp exp `uc  1 a 1 29 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 20 ]
+[v ___ftmul@f2 f2 `f  1 p 3 23 ]
+"157
+} 0
+"8 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"11
+[v ___awmod@sign sign `uc  1 a 1 5 ]
+[v ___awmod@counter counter `uc  1 a 1 4 ]
+"8
+[v ___awmod@dividend dividend `i  1 p 2 0 ]
+[v ___awmod@divisor divisor `i  1 p 2 2 ]
+"35
+} 0
+"8 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"11
+[v ___awdiv@quotient quotient `i  1 a 2 12 ]
+"12
+[v ___awdiv@sign sign `uc  1 a 1 11 ]
+[v ___awdiv@counter counter `uc  1 a 1 10 ]
+"8
+[v ___awdiv@dividend dividend `i  1 p 2 6 ]
+[v ___awdiv@divisor divisor `i  1 p 2 8 ]
+"42
+} 0
+"60 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/ftdivl.c
+[v __tdiv_to_l_ _tdiv_to_l_ `(ul  1 e 4 0 ]
+{
+"63
+[v __tdiv_to_l_@quot quot `ul  1 a 4 9 ]
+"62
+[v __tdiv_to_l_@exp1 exp1 `uc  1 a 1 14 ]
+[v __tdiv_to_l_@cntr cntr `uc  1 a 1 13 ]
+"60
+[v __tdiv_to_l_@f1 f1 `f  1 p 3 0 ]
+[v __tdiv_to_l_@f2 f2 `f  1 p 3 3 ]
+"101
+} 0
+"60 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/fldivl.c
+[v __div_to_l_ _div_to_l_ `(ul  1 e 4 0 ]
+{
+"63
+[v __div_to_l_@quot quot `ul  1 a 4 6 ]
+"62
+[v __div_to_l_@exp1 exp1 `uc  1 a 1 11 ]
+[v __div_to_l_@cntr cntr `uc  1 a 1 10 ]
+"60
+[v __div_to_l_@f1 f1 `d  1 p 3 0 ]
+[v __div_to_l_@f2 f2 `d  1 p 3 3 ]
+"101
+} 0
+"35 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+{
+"37
+[v ___lltoft@exp exp `uc  1 a 1 16 ]
+"35
+[v ___lltoft@c c `ul  1 p 4 8 ]
+"46
+} 0
+"8 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+{
+"11
+[v ___llmod@counter counter `uc  1 a 1 8 ]
+"8
+[v ___llmod@dividend dividend `ul  1 p 4 0 ]
+[v ___llmod@divisor divisor `ul  1 p 4 4 ]
+"26
+} 0
+"8 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"11
+[v ___lldiv@quotient quotient `ul  1 a 4 8 ]
+"12
+[v ___lldiv@counter counter `uc  1 a 1 12 ]
+"8
+[v ___lldiv@dividend dividend `ul  1 p 4 0 ]
+[v ___lldiv@divisor divisor `ul  1 p 4 4 ]
+"31
+} 0
+"20 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+{
+[v ___ftsub@f1 f1 `f  1 p 3 57 ]
+[v ___ftsub@f2 f2 `f  1 p 3 60 ]
+"27
+} 0
+"15 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+{
+[v ___ftneg@f1 f1 `f  1 p 3 0 ]
+"20
+} 0
+"4 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+{
+[v ___ftge@ff1 ff1 `f  1 p 3 0 ]
+[v ___ftge@ff2 ff2 `f  1 p 3 3 ]
+"13
+} 0
+"14 /home/fbuga/Documents/Servo-Stabilizer/Inits.c
+[v _initIO initIO `(v  1 e 1 0 ]
+{
+"20
+} 0
+"22
+[v _initBT initBT `(v  1 e 1 0 ]
+{
+"25
+} 0
+"8 /home/fbuga/Documents/Servo-Stabilizer/USART_Source_File.c
+[v _USART_Init USART_Init `(v  1 e 1 0 ]
+{
+"10
+[v USART_Init@temp temp `f  1 a 3 61 ]
+"8
+[v USART_Init@baud_rate baud_rate `l  1 p 4 57 ]
+"17
+} 0
+"44 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 52 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 56 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 51 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 42 ]
+"73
+} 0
+"54 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+"60
+[v ___ftdiv@f3 f3 `f  1 a 3 28 ]
+"59
+[v ___ftdiv@sign sign `uc  1 a 1 32 ]
+[v ___ftdiv@exp exp `uc  1 a 1 31 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 27 ]
+"54
+[v ___ftdiv@f1 f1 `f  1 p 3 18 ]
+[v ___ftdiv@f2 f2 `f  1 p 3 21 ]
+"86
+} 0
+"86 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+{
+"88
+[v ___ftadd@exp1 exp1 `uc  1 a 1 56 ]
+[v ___ftadd@exp2 exp2 `uc  1 a 1 55 ]
+[v ___ftadd@sign sign `uc  1 a 1 54 ]
+"86
+[v ___ftadd@f1 f1 `f  1 p 3 45 ]
+[v ___ftadd@f2 f2 `f  1 p 3 48 ]
+"148
+} 0
+"42 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+{
+"44
+[v ___altoft@sign sign `uc  1 a 1 17 ]
+[v ___altoft@exp exp `uc  1 a 1 16 ]
+"42
+[v ___altoft@c c `l  1 p 4 8 ]
+"57
+} 0
+"32 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+{
+"34
+[v ___awtoft@sign sign `uc  1 a 1 11 ]
+"32
+[v ___awtoft@c c `i  1 p 2 8 ]
+"42
+} 0
+"62 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 0 ]
+[v ___ftpack@exp exp `uc  1 p 1 3 ]
+[v ___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0
+"14 /home/fbuga/opt/microchip/xc8/v1.45/sources/pic18/plib/i2c/i2c_open.c
+[v _OpenI2C OpenI2C `(v  1 e 1 0 ]
+{
+[v OpenI2C@sync_mode sync_mode `uc  1 a 1 wreg ]
+[v OpenI2C@sync_mode sync_mode `uc  1 a 1 wreg ]
+[v OpenI2C@slew slew `uc  1 p 1 0 ]
+"16
+[v OpenI2C@sync_mode sync_mode `uc  1 a 1 1 ]
+"26
+} 0
+"73 /home/fbuga/Documents/Servo-Stabilizer/MPU6050.c
+[v _MPU6050_testConnection MPU6050_testConnection `(uc  1 e 1 0 ]
+{
+"75
+} 0
+"2696
+[v _MPU6050_getDeviceID MPU6050_getDeviceID `(uc  1 e 1 0 ]
+{
+"2699
+} 0
+"206 /home/fbuga/Documents/Servo-Stabilizer/I2Cdev.c
+[v _I2Cdev_readBits I2Cdev_readBits `(c  1 e 1 0 ]
+{
+[v I2Cdev_readBits@devAddr devAddr `uc  1 a 1 wreg ]
+"214
+[v I2Cdev_readBits@mask mask `uc  1 a 1 46 ]
+"212
+[v I2Cdev_readBits@b b `uc  1 a 1 47 ]
+[v I2Cdev_readBits@count count `uc  1 a 1 44 ]
+"206
+[v I2Cdev_readBits@devAddr devAddr `uc  1 a 1 wreg ]
+[v I2Cdev_readBits@regAddr regAddr `uc  1 p 1 36 ]
+[v I2Cdev_readBits@bitStart bitStart `uc  1 p 1 37 ]
+[v I2Cdev_readBits@length length `uc  1 p 1 38 ]
+[v I2Cdev_readBits@data data `*.39uc  1 p 2 39 ]
+"213
+[v I2Cdev_readBits@devAddr devAddr `uc  1 a 1 45 ]
+"220
+} 0
+"62 /home/fbuga/Documents/Servo-Stabilizer/MPU6050.c
+[v _MPU6050_initialize MPU6050_initialize `(v  1 e 1 0 ]
+{
+"67
+} 0
+"2382
+[v _MPU6050_setSleepEnabled MPU6050_setSleepEnabled `(v  1 e 1 0 ]
+{
+[v MPU6050_setSleepEnabled@enabled enabled `uc  1 a 1 wreg ]
+[v MPU6050_setSleepEnabled@enabled enabled `uc  1 a 1 wreg ]
+[v MPU6050_setSleepEnabled@enabled enabled `uc  1 a 1 48 ]
+"2384
+} 0
+"344 /home/fbuga/Documents/Servo-Stabilizer/I2Cdev.c
+[v _I2Cdev_writeBit I2Cdev_writeBit `(uc  1 e 1 0 ]
+{
+[v I2Cdev_writeBit@devAddr devAddr `uc  1 a 1 wreg ]
+"345
+[v I2Cdev_writeBit@b b `uc  1 a 1 47 ]
+"344
+[v I2Cdev_writeBit@devAddr devAddr `uc  1 a 1 wreg ]
+[v I2Cdev_writeBit@regAddr regAddr `uc  1 p 1 36 ]
+[v I2Cdev_writeBit@bitNum bitNum `uc  1 p 1 37 ]
+[v I2Cdev_writeBit@data data `uc  1 p 1 38 ]
+"346
+[v I2Cdev_writeBit@devAddr devAddr `uc  1 a 1 46 ]
+"349
+} 0
+"251 /home/fbuga/Documents/Servo-Stabilizer/MPU6050.c
+[v _MPU6050_setFullScaleGyroRange MPU6050_setFullScaleGyroRange `(v  1 e 1 0 ]
+{
+[v MPU6050_setFullScaleGyroRange@range range `uc  1 a 1 wreg ]
+[v MPU6050_setFullScaleGyroRange@range range `uc  1 a 1 wreg ]
+[v MPU6050_setFullScaleGyroRange@range range `uc  1 a 1 46 ]
+"253
+} 0
+"327
+[v _MPU6050_setFullScaleAccelRange MPU6050_setFullScaleAccelRange `(v  1 e 1 0 ]
+{
+[v MPU6050_setFullScaleAccelRange@range range `uc  1 a 1 wreg ]
+[v MPU6050_setFullScaleAccelRange@range range `uc  1 a 1 wreg ]
+[v MPU6050_setFullScaleAccelRange@range range `uc  1 a 1 46 ]
+"329
+} 0
+"2475
+[v _MPU6050_setClockSource MPU6050_setClockSource `(v  1 e 1 0 ]
+{
+[v MPU6050_setClockSource@source source `uc  1 a 1 wreg ]
+[v MPU6050_setClockSource@source source `uc  1 a 1 wreg ]
+[v MPU6050_setClockSource@source source `uc  1 a 1 46 ]
+"2477
+} 0
+"373 /home/fbuga/Documents/Servo-Stabilizer/I2Cdev.c
+[v _I2Cdev_writeBits I2Cdev_writeBits `(uc  1 e 1 0 ]
+{
+[v I2Cdev_writeBits@devAddr devAddr `uc  1 a 1 wreg ]
+"383
+[v I2Cdev_writeBits@mask mask `uc  1 a 1 44 ]
+"381
+[v I2Cdev_writeBits@b b `uc  1 a 1 45 ]
+"373
+[v I2Cdev_writeBits@devAddr devAddr `uc  1 a 1 wreg ]
+[v I2Cdev_writeBits@regAddr regAddr `uc  1 p 1 36 ]
+[v I2Cdev_writeBits@bitStart bitStart `uc  1 p 1 37 ]
+[v I2Cdev_writeBits@length length `uc  1 p 1 38 ]
+[v I2Cdev_writeBits@data data `uc  1 p 1 39 ]
+"382
+[v I2Cdev_writeBits@devAddr devAddr `uc  1 a 1 43 ]
+"392
+} 0
+"286
+[v _I2Cdev_writeByte I2Cdev_writeByte `(uc  1 e 1 0 ]
+{
+[v I2Cdev_writeByte@devAddr devAddr `uc  1 a 1 wreg ]
+[v I2Cdev_writeByte@devAddr devAddr `uc  1 a 1 wreg ]
+[v I2Cdev_writeByte@regAddr regAddr `uc  1 p 1 8 ]
+[v I2Cdev_writeByte@data data `uc  1 p 1 9 ]
+[v I2Cdev_writeByte@devAddr devAddr `uc  1 a 1 10 ]
+"288
+} 0
+"254
+[v _I2Cdev_writeBytes I2Cdev_writeBytes `(uc  1 e 1 0 ]
+{
+[v I2Cdev_writeBytes@devAddr devAddr `uc  1 a 1 wreg ]
+"267
+[v I2Cdev_writeBytes@i i `uc  1 a 1 7 ]
+"254
+[v I2Cdev_writeBytes@devAddr devAddr `uc  1 a 1 wreg ]
+[v I2Cdev_writeBytes@regAddr regAddr `uc  1 p 1 2 ]
+[v I2Cdev_writeBytes@length length `uc  1 p 1 3 ]
+[v I2Cdev_writeBytes@data data `*.39uc  1 p 2 4 ]
+"256
+[v I2Cdev_writeBytes@devAddr devAddr `uc  1 a 1 6 ]
+"278
+} 0
+"95
+[v _I2Cdev_readByte I2Cdev_readByte `(c  1 e 1 0 ]
+{
+[v I2Cdev_readByte@devAddr devAddr `uc  1 a 1 wreg ]
+[v I2Cdev_readByte@devAddr devAddr `uc  1 a 1 wreg ]
+[v I2Cdev_readByte@regAddr regAddr `uc  1 p 1 32 ]
+[v I2Cdev_readByte@data data `*.39uc  1 p 2 33 ]
+[v I2Cdev_readByte@devAddr devAddr `uc  1 a 1 35 ]
+"97
+} 0
+"1733 /home/fbuga/Documents/Servo-Stabilizer/MPU6050.c
+[v _MPU6050_getMotion6 MPU6050_getMotion6 `(v  1 e 1 0 ]
+{
+[v MPU6050_getMotion6@ax ax `*.39i  1 p 2 32 ]
+[v MPU6050_getMotion6@ay ay `*.39i  1 p 2 34 ]
+[v MPU6050_getMotion6@az az `*.39i  1 p 2 36 ]
+[v MPU6050_getMotion6@gx gx `*.39i  1 p 2 38 ]
+[v MPU6050_getMotion6@gy gy `*.39i  1 p 2 40 ]
+[v MPU6050_getMotion6@gz gz `*.39i  1 p 2 42 ]
+"1741
+} 0
+"43 /home/fbuga/Documents/Servo-Stabilizer/I2Cdev.c
+[v _I2Cdev_readBytes I2Cdev_readBytes `(c  1 e 1 0 ]
+{
+[v I2Cdev_readBytes@devAddr devAddr `uc  1 a 1 wreg ]
+"44
+[v I2Cdev_readBytes@count count `c  1 a 1 31 ]
+"43
+[v I2Cdev_readBytes@devAddr devAddr `uc  1 a 1 wreg ]
+[v I2Cdev_readBytes@regAddr regAddr `uc  1 p 1 20 ]
+[v I2Cdev_readBytes@length length `uc  1 p 1 21 ]
+[v I2Cdev_readBytes@data data `*.39uc  1 p 2 22 ]
+[v I2Cdev_readBytes@devAddr devAddr `uc  1 a 1 30 ]
+"87
+} 0
+"15 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 18 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 14 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 16 ]
+"53
+} 0
+"12 /home/fbuga/opt/microchip/xc8/v1.45/sources/pic18/plib/i2c/i2c_writ.c
+[v _WriteI2C WriteI2C `(c  1 e 1 0 ]
+{
+[v WriteI2C@data_out data_out `uc  1 a 1 wreg ]
+[v WriteI2C@data_out data_out `uc  1 a 1 wreg ]
+"14
+[v WriteI2C@data_out data_out `uc  1 a 1 1 ]
+"43
+} 0
+"24 /home/fbuga/opt/microchip/xc8/v1.45/sources/pic18/plib/i2c/i2c_idle.c
+[v _IdleI2C IdleI2C `(v  1 e 1 0 ]
+{
+"28
+} 0
+"11 /home/fbuga/opt/microchip/xc8/v1.45/sources/pic18/plib/i2c/i2c_read.c
+[v _ReadI2C ReadI2C `(uc  1 e 1 0 ]
+{
+"17
+} 0
+"51 /home/fbuga/Documents/Servo-Stabilizer/MPU6050.c
+[v _MPU6050 MPU6050 `(v  1 e 1 0 ]
+{
+[v MPU6050@address address `uc  1 a 1 wreg ]
+[v MPU6050@address address `uc  1 a 1 wreg ]
+[v MPU6050@address address `uc  1 a 1 0 ]
+"53
+} 0
