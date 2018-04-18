@@ -1,8 +1,30 @@
 Version 3.2 HI-TECH Software Intermediate Code
+"587 MPU6050.h
+[v _MPU6050_getMotion6 `(v ~T0 @X0 0 ef6`*i`*i`*i`*i`*i`*i ]
+[v F4551 `(v ~T0 @X0 1 tf1`ul ]
+"164 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18.h
+[v __delay `JF4551 ~T0 @X0 0 e ]
+[p i __delay ]
 [p mainexit ]
-"7984 /home/fbuga/opt/microchip/xc8/v1.45/include/pic18f4550.h
+"7984 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
 [v _OSCCON `Vuc ~T0 @X0 0 e@4051 ]
-"3189
+"5 Inits.h
+[v _initIO `(v ~T0 @X0 0 ef ]
+"6
+[v _initBT `(v ~T0 @X0 0 ef ]
+"777 C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\i2c.h
+[v _OpenI2C `(v ~T0 @X0 0 ef2`uc`uc ]
+"7184 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
+[v _SSPADD `Vuc ~T0 @X0 0 e@4040 ]
+"411 MPU6050.h
+[v _MPU6050 `(v ~T0 @X0 0 ef1`uc ]
+"195 C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdio.h
+[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
+"413 MPU6050.h
+[v _MPU6050_initialize `(v ~T0 @X0 0 ef ]
+"414
+[v _MPU6050_testConnection `(uc ~T0 @X0 0 ef ]
+"3189 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
 [s S128 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S128 . LATC0 LATC1 LATC2 . LATC6 LATC7 ]
 "3197
@@ -13,33 +35,17 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S127 . . . ]
 "3206
 [v _LATCbits `VS127 ~T0 @X0 0 e@3979 ]
-"5 Inits.h
-[v _initIO `(v ~T0 @X0 0 ef ]
-"6
-[v _initBT `(v ~T0 @X0 0 ef ]
-[v F4551 `(v ~T0 @X0 1 tf1`ul ]
-"164 /home/fbuga/opt/microchip/xc8/v1.45/include/pic18.h
-[v __delay `JF4551 ~T0 @X0 0 e ]
-[p i __delay ]
-"777 /home/fbuga/opt/microchip/xc8/v1.45/include/plib/i2c.h
-[v _OpenI2C `(v ~T0 @X0 0 ef2`uc`uc ]
-"7184 /home/fbuga/opt/microchip/xc8/v1.45/include/pic18f4550.h
-[v _SSPADD `Vuc ~T0 @X0 0 e@4040 ]
-"411 MPU6050.h
-[v _MPU6050 `(v ~T0 @X0 0 ef1`uc ]
-"195 /home/fbuga/opt/microchip/xc8/v1.45/include/stdio.h
-[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
-"413 MPU6050.h
-[v _MPU6050_initialize `(v ~T0 @X0 0 ef ]
-"414
-[v _MPU6050_testConnection `(uc ~T0 @X0 0 ef ]
-"587
-[v _MPU6050_getMotion6 `(v ~T0 @X0 0 ef6`*i`*i`*i`*i`*i`*i ]
+"41 C:\Program Files (x86)\Microchip\xc8\v1.45\include\math.h
+[v _atan `(d ~T0 @X0 0 ef1`d ]
+"34
+[v _sqrt `(d ~T0 @X0 0 ef1`d ]
+"45
+[v _pow `(d ~T0 @X0 0 ef2`d`d ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
 [; ;pic18f4550.h: 50: extern volatile unsigned char SPPDATA @ 0xF62;
-"52 /home/fbuga/opt/microchip/xc8/v1.45/include/pic18f4550.h
+"52 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
 [; ;pic18f4550.h: 52: asm("SPPDATA equ 0F62h");
 [; <" SPPDATA equ 0F62h ;# ">
 [; ;pic18f4550.h: 55: typedef union {
@@ -4553,142 +4559,521 @@ Version 3.2 HI-TECH Software Intermediate Code
 [p x XINST=OFF ]
 "27
 [p x STVREN=ON ]
-[v $root$_main `(v ~T0 @X0 0 e ]
 "29
-[v _main `(i ~T0 @X0 1 ef ]
-{
-[; ;main.c: 29: int main(void) {
-[e :U _main ]
-[f ]
+[v _x_accel `i ~T0 @X0 1 e ]
+[; ;main.c: 29: int x_accel;
 "30
-[v _data_in `uc ~T0 @X0 1 a ]
-[; ;main.c: 30: char data_in=0;
-[e = _data_in -> -> 0 `i `uc ]
+[v _y_accel `i ~T0 @X0 1 e ]
+[; ;main.c: 30: int y_accel;
 "31
-[v _ax `i ~T0 @X0 1 a ]
-[v _ay `i ~T0 @X0 1 a ]
-[v _az `i ~T0 @X0 1 a ]
-[v _gx `i ~T0 @X0 1 a ]
-[v _gy `i ~T0 @X0 1 a ]
-[v _gz `i ~T0 @X0 1 a ]
+[v _z_accel `i ~T0 @X0 1 e ]
+[; ;main.c: 31: int z_accel;
 "32
-[v _fax `f ~T0 @X0 1 a ]
-[v _fay `f ~T0 @X0 1 a ]
-[v _faz `f ~T0 @X0 1 a ]
-[v _fgz `f ~T0 @X0 1 a ]
-[v _fgy `f ~T0 @X0 1 a ]
-[v _fgx `f ~T0 @X0 1 a ]
+[v _temperature `i ~T0 @X0 1 e ]
+[; ;main.c: 32: int temperature;
 "33
-[v _angle `f ~T0 @X0 1 a ]
-[; ;main.c: 31: int16_t ax, ay, az, gx, gy, gz;
-[; ;main.c: 32: float fax, fay, faz, fgz, fgy, fgx;
-[; ;main.c: 33: float angle=180;
-[e = _angle -> -> 180 `i `f ]
+[v _x_gyro `i ~T0 @X0 1 e ]
+[; ;main.c: 33: int x_gyro;
 "34
-[v _A `f ~T0 @X0 1 a ]
-[; ;main.c: 34: float A = 0.962;
-[e = _A -> .0.962 `f ]
+[v _y_gyro `i ~T0 @X0 1 e ]
+[; ;main.c: 34: int y_gyro;
 "35
-[v _dt `f ~T0 @X0 1 a ]
-[; ;main.c: 35: float dt = 0.02;
-[e = _dt -> .0.02 `f ]
-"36
-[v _error_angle `f ~T0 @X0 1 a ]
-[; ;main.c: 36: float error_angle;
-[; ;main.c: 38: OSCCON = 0x72;
+[v _z_gyro `i ~T0 @X0 1 e ]
+[; ;main.c: 35: int z_gyro;
+"37
+[v _last_read_time `ul ~T0 @X0 1 e ]
+[; ;main.c: 37: unsigned long last_read_time;
 "38
-[e = _OSCCON -> -> 114 `i `uc ]
-[; ;main.c: 40: LATCbits.LATC2=1;
+[v _last_x_angle `f ~T0 @X0 1 e ]
+[; ;main.c: 38: float last_x_angle;
+"39
+[v _last_y_angle `f ~T0 @X0 1 e ]
+[; ;main.c: 39: float last_y_angle;
 "40
-[e = . . _LATCbits 0 2 -> -> 1 `i `uc ]
-[; ;main.c: 42: initIO();
+[v _last_z_angle `f ~T0 @X0 1 e ]
+[; ;main.c: 40: float last_z_angle;
+"41
+[v _last_gyro_x_angle `f ~T0 @X0 1 e ]
+[; ;main.c: 41: float last_gyro_x_angle;
 "42
-[e ( _initIO ..  ]
-[; ;main.c: 43: initBT();
+[v _last_gyro_y_angle `f ~T0 @X0 1 e ]
+[; ;main.c: 42: float last_gyro_y_angle;
 "43
-[e ( _initBT ..  ]
-[; ;main.c: 45: _delay((unsigned long)((30)*(8000000/4000.0)));
-"45
-[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;main.c: 47: OpenI2C(0b00001000, 0b10000000);
+[v _last_gyro_z_angle `f ~T0 @X0 1 e ]
+[; ;main.c: 43: float last_gyro_z_angle;
 "47
-[e ( _OpenI2C (2 , -> -> 8 `i `uc -> -> 128 `i `uc ]
-[; ;main.c: 48: SSPADD = 14;
+[v _base_x_accel `f ~T0 @X0 1 e ]
+[; ;main.c: 47: float base_x_accel;
 "48
-[e = _SSPADD -> -> 14 `i `uc ]
-[; ;main.c: 50: MPU6050(0x68);
-"50
-[e ( _MPU6050 (1 -> -> 104 `i `uc ]
-[; ;main.c: 51: printf("Init MPU... \r\n");
+[v _base_y_accel `f ~T0 @X0 1 e ]
+[; ;main.c: 48: float base_y_accel;
+"49
+[v _base_z_accel `f ~T0 @X0 1 e ]
+[; ;main.c: 49: float base_z_accel;
 "51
-[e ( _printf :s 1C ]
-[; ;main.c: 52: MPU6050_initialize();
+[v _base_x_gyro `f ~T0 @X0 1 e ]
+[; ;main.c: 51: float base_x_gyro;
 "52
-[e ( _MPU6050_initialize ..  ]
-[; ;main.c: 53: _delay((unsigned long)((30)*(8000000/4000.0)));
+[v _base_y_gyro `f ~T0 @X0 1 e ]
+[; ;main.c: 52: float base_y_gyro;
 "53
-[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;main.c: 54: if(MPU6050_testConnection())
-"54
-[e $ ! != -> ( _MPU6050_testConnection ..  `i -> -> -> 0 `i `uc `i 400  ]
-[; ;main.c: 55: printf("MPU enabled!\r\n");
+[v _base_z_gyro `f ~T0 @X0 1 e ]
+[; ;main.c: 53: float base_z_gyro;
 "55
-[e ( _printf :s 2C ]
-[e $U 401  ]
-"56
-[e :U 400 ]
-[; ;main.c: 56: else printf("MPU failure\r\n");
-[e ( _printf :s 3C ]
-[e :U 401 ]
-[; ;main.c: 58: while (1) {
-"58
-[e :U 403 ]
+[v _ax `i ~T0 @X0 1 e ]
+[v _ay `i ~T0 @X0 1 e ]
+[v _az `i ~T0 @X0 1 e ]
+[v _gx `i ~T0 @X0 1 e ]
+[v _gy `i ~T0 @X0 1 e ]
+[v _gz `i ~T0 @X0 1 e ]
+[; ;main.c: 55: int16_t ax, ay, az, gx, gy, gz;
+[v F5236 `(ul ~T0 @X0 1 tf ]
+"57
+[v _get_last_time `TF5236 ~T0 @X0 1 e ]
 {
-[; ;main.c: 59: MPU6050_getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
-"59
-[e ( _MPU6050_getMotion6 (4 , , , , , &U _ax &U _ay &U _az &U _gx &U _gy &U _gz ]
-[; ;main.c: 62: angle = angle + gx*dt;
-"62
-[e = _angle + _angle * -> _gx `f _dt ]
-[; ;main.c: 63: error_angle = ax - angle;
-"63
-[e = _error_angle - -> _ax `f _angle ]
-[; ;main.c: 64: angle = angle + (1-A)*error_angle;
-"64
-[e = _angle + _angle * - -> -> 1 `i `f _A _error_angle ]
-[; ;main.c: 67: printf("%f\r\n", angle);
-"67
-[e ( _printf , (. :s 4C -> _angle `d ]
-[; ;main.c: 69: if(angle>360) angle-=360;
-"69
-[e $ ! > _angle -> -> 360 `i `f 405  ]
-[e =- _angle -> -> 360 `i `f ]
-[e :U 405 ]
-[; ;main.c: 70: _delay((unsigned long)((10)*(8000000/4000.0)));
-"70
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;main.c: 71: LATCbits.LC2=1;
-"71
-[e = . . _LATCbits 1 2 -> -> 1 `i `uc ]
-[; ;main.c: 72: _delay((unsigned long)((10)*(8000000/4000.0)));
-"72
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;main.c: 73: LATCbits.LC2=0;
-"73
-[e = . . _LATCbits 1 2 -> -> 0 `i `uc ]
-"74
-}
-[e :U 402 ]
-"58
-[e $U 403  ]
-[e :U 404 ]
-[; ;main.c: 74: }
-[; ;main.c: 75: }
-"75
+[; ;main.c: 57: inline unsigned long get_last_time() {return last_read_time;}
+[e :U _get_last_time ]
+[f ]
+[e ) _last_read_time ]
+[e $UE 399  ]
 [e :UE 399 ]
 }
+[v F5238 `(f ~T0 @X0 1 tf ]
+"58
+[v _get_last_x_angle `TF5238 ~T0 @X0 1 e ]
+{
+[; ;main.c: 58: inline float get_last_x_angle() {return last_x_angle;}
+[e :U _get_last_x_angle ]
+[f ]
+[e ) _last_x_angle ]
+[e $UE 400  ]
+[e :UE 400 ]
+}
+[v F5240 `(f ~T0 @X0 1 tf ]
+"59
+[v _get_last_y_angle `TF5240 ~T0 @X0 1 e ]
+{
+[; ;main.c: 59: inline float get_last_y_angle() {return last_y_angle;}
+[e :U _get_last_y_angle ]
+[f ]
+[e ) _last_y_angle ]
+[e $UE 401  ]
+[e :UE 401 ]
+}
+[v F5242 `(f ~T0 @X0 1 tf ]
+"60
+[v _get_last_z_angle `TF5242 ~T0 @X0 1 e ]
+{
+[; ;main.c: 60: inline float get_last_z_angle() {return last_z_angle;}
+[e :U _get_last_z_angle ]
+[f ]
+[e ) _last_z_angle ]
+[e $UE 402  ]
+[e :UE 402 ]
+}
+[v F5244 `(f ~T0 @X0 1 tf ]
+"61
+[v _get_last_gyro_x_angle `TF5244 ~T0 @X0 1 e ]
+{
+[; ;main.c: 61: inline float get_last_gyro_x_angle() {return last_gyro_x_angle;}
+[e :U _get_last_gyro_x_angle ]
+[f ]
+[e ) _last_gyro_x_angle ]
+[e $UE 403  ]
+[e :UE 403 ]
+}
+[v F5246 `(f ~T0 @X0 1 tf ]
+"62
+[v _get_last_gyro_y_angle `TF5246 ~T0 @X0 1 e ]
+{
+[; ;main.c: 62: inline float get_last_gyro_y_angle() {return last_gyro_y_angle;}
+[e :U _get_last_gyro_y_angle ]
+[f ]
+[e ) _last_gyro_y_angle ]
+[e $UE 404  ]
+[e :UE 404 ]
+}
+[v F5248 `(f ~T0 @X0 1 tf ]
+"63
+[v _get_last_gyro_z_angle `TF5248 ~T0 @X0 1 e ]
+{
+[; ;main.c: 63: inline float get_last_gyro_z_angle() {return last_gyro_z_angle;}
+[e :U _get_last_gyro_z_angle ]
+[f ]
+[e ) _last_gyro_z_angle ]
+[e $UE 405  ]
+[e :UE 405 ]
+}
+"65
+[v _read_gyro_accel_vals `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 65: void read_gyro_accel_vals(void) {
+[e :U _read_gyro_accel_vals ]
+[f ]
+[; ;main.c: 76: MPU6050_getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
+"76
+[e ( _MPU6050_getMotion6 (4 , , , , , &U _ax &U _ay &U _az &U _gx &U _gy &U _gz ]
+[; ;main.c: 78: x_accel = ax;
+"78
+[e = _x_accel _ax ]
+[; ;main.c: 79: y_accel = ay;
+"79
+[e = _y_accel _ay ]
+[; ;main.c: 80: z_accel = az;
+"80
+[e = _z_accel _az ]
+[; ;main.c: 81: x_gyro = gx;
+"81
+[e = _x_gyro _gx ]
+[; ;main.c: 82: y_gyro = gy;
+"82
+[e = _y_gyro _gy ]
+[; ;main.c: 83: z_gyro = gz;
+"83
+[e = _z_gyro _gz ]
+[; ;main.c: 84: }
+"84
+[e :UE 406 ]
+}
+"86
+[v _set_last_read_angle_data `(v ~T0 @X0 1 ef7`ul`f`f`f`f`f`f ]
+{
+[; ;main.c: 86: void set_last_read_angle_data(unsigned long time, float x, float y, float z, float x_gyro, float y_gyro, float z_gyro) {
+[e :U _set_last_read_angle_data ]
+[v _time `ul ~T0 @X0 1 r1 ]
+[v _x `f ~T0 @X0 1 r2 ]
+[v _y `f ~T0 @X0 1 r3 ]
+[v _z `f ~T0 @X0 1 r4 ]
+[v _x_gyro `f ~T0 @X0 1 r5 ]
+[v _y_gyro `f ~T0 @X0 1 r6 ]
+[v _z_gyro `f ~T0 @X0 1 r7 ]
+[f ]
+[; ;main.c: 87: last_read_time = time;
+"87
+[e = _last_read_time _time ]
+[; ;main.c: 88: last_x_angle = x;
+"88
+[e = _last_x_angle _x ]
+[; ;main.c: 89: last_y_angle = y;
+"89
+[e = _last_y_angle _y ]
+[; ;main.c: 90: last_z_angle = z;
+"90
+[e = _last_z_angle _z ]
+[; ;main.c: 91: last_gyro_x_angle = x_gyro;
+"91
+[e = _last_gyro_x_angle _x_gyro ]
+[; ;main.c: 92: last_gyro_y_angle = y_gyro;
+"92
+[e = _last_gyro_y_angle _y_gyro ]
+[; ;main.c: 93: last_gyro_z_angle = z_gyro;
+"93
+[e = _last_gyro_z_angle _z_gyro ]
+[; ;main.c: 94: }
+"94
+[e :UE 407 ]
+}
+"96
+[v _calibrate_sensors `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 96: void calibrate_sensors() {
+[e :U _calibrate_sensors ]
+[f ]
+"97
+[v _num_readings `i ~T0 @X0 1 a ]
+[; ;main.c: 97: int num_readings = 10;
+[e = _num_readings -> 10 `i ]
+"98
+[v __x_accel `f ~T0 @X0 1 a ]
+[; ;main.c: 98: float _x_accel = 0;
+[e = __x_accel -> -> 0 `i `f ]
+"99
+[v __y_accel `f ~T0 @X0 1 a ]
+[; ;main.c: 99: float _y_accel = 0;
+[e = __y_accel -> -> 0 `i `f ]
+"100
+[v __z_accel `f ~T0 @X0 1 a ]
+[; ;main.c: 100: float _z_accel = 0;
+[e = __z_accel -> -> 0 `i `f ]
+"101
+[v __x_gyro `f ~T0 @X0 1 a ]
+[; ;main.c: 101: float _x_gyro = 0;
+[e = __x_gyro -> -> 0 `i `f ]
+"102
+[v __y_gyro `f ~T0 @X0 1 a ]
+[; ;main.c: 102: float _y_gyro = 0;
+[e = __y_gyro -> -> 0 `i `f ]
+"103
+[v __z_gyro `f ~T0 @X0 1 a ]
+[; ;main.c: 103: float _z_gyro = 0;
+[e = __z_gyro -> -> 0 `i `f ]
+[; ;main.c: 108: read_gyro_accel_vals();
+"108
+[e ( _read_gyro_accel_vals ..  ]
+[; ;main.c: 111: for (int i = 0; i < num_readings; i++) {
+"111
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $U 412  ]
+[e :U 409 ]
+{
+[; ;main.c: 112: read_gyro_accel_vals();
+"112
+[e ( _read_gyro_accel_vals ..  ]
+[; ;main.c: 113: _x_accel += x_accel;
+"113
+[e =+ __x_accel -> _x_accel `f ]
+[; ;main.c: 114: _y_accel += y_accel;
+"114
+[e =+ __y_accel -> _y_accel `f ]
+[; ;main.c: 115: _z_accel += z_accel;
+"115
+[e =+ __z_accel -> _z_accel `f ]
+[; ;main.c: 116: _x_gyro += x_gyro;
+"116
+[e =+ __x_gyro -> _x_gyro `f ]
+[; ;main.c: 117: _y_gyro += y_gyro;
+"117
+[e =+ __y_gyro -> _y_gyro `f ]
+[; ;main.c: 118: _z_gyro += z_gyro;
+"118
+[e =+ __z_gyro -> _z_gyro `f ]
+[; ;main.c: 119: _delay((unsigned long)((100)*(8000000/4000.0)));
+"119
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"120
+}
+"111
+[e ++ _i -> 1 `i ]
+[e :U 412 ]
+[e $ < _i _num_readings 409  ]
+[e :U 410 ]
+"120
+}
+[; ;main.c: 120: }
+[; ;main.c: 121: _x_accel /= num_readings;
+"121
+[e =/ __x_accel -> _num_readings `f ]
+[; ;main.c: 122: _y_accel /= num_readings;
+"122
+[e =/ __y_accel -> _num_readings `f ]
+[; ;main.c: 123: _z_accel /= num_readings;
+"123
+[e =/ __z_accel -> _num_readings `f ]
+[; ;main.c: 124: _x_gyro /= num_readings;
+"124
+[e =/ __x_gyro -> _num_readings `f ]
+[; ;main.c: 125: _y_gyro /= num_readings;
+"125
+[e =/ __y_gyro -> _num_readings `f ]
+[; ;main.c: 126: _z_gyro /= num_readings;
+"126
+[e =/ __z_gyro -> _num_readings `f ]
+[; ;main.c: 129: base_x_accel = _x_accel;
+"129
+[e = _base_x_accel __x_accel ]
+[; ;main.c: 130: base_y_accel = _y_accel;
+"130
+[e = _base_y_accel __y_accel ]
+[; ;main.c: 131: base_z_accel = _z_accel;
+"131
+[e = _base_z_accel __z_accel ]
+[; ;main.c: 132: base_x_gyro = _x_gyro;
+"132
+[e = _base_x_gyro __x_gyro ]
+[; ;main.c: 133: base_y_gyro = _y_gyro;
+"133
+[e = _base_y_gyro __y_gyro ]
+[; ;main.c: 134: base_z_gyro = _z_gyro;
+"134
+[e = _base_z_gyro __z_gyro ]
+[; ;main.c: 137: }
+"137
+[e :UE 408 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"139
+[v _main `(i ~T0 @X0 1 ef ]
+{
+[; ;main.c: 139: int main(void) {
+[e :U _main ]
+[f ]
+"142
+[v _RADIANS_TO_DEGREES `f ~T0 @X0 1 a ]
+[; ;main.c: 142: float RADIANS_TO_DEGREES = 180/3.14159;
+[e = _RADIANS_TO_DEGREES -> / -> -> 180 `i `d .3.14159 `f ]
+"143
+[v _alpha `f ~T0 @X0 1 a ]
+[; ;main.c: 143: float alpha = 0.96;
+[e = _alpha -> .0.96 `f ]
+"144
+[v _alphaInv `f ~T0 @X0 1 a ]
+[; ;main.c: 144: float alphaInv = (1.0-alpha);
+[e = _alphaInv -> - .1.0 -> _alpha `d `f ]
+"145
+[v _dt `f ~T0 @X0 1 a ]
+[; ;main.c: 145: float dt = 0.02;
+[e = _dt -> .0.02 `f ]
+"146
+[v _FS_SEL `f ~T0 @X0 1 a ]
+[; ;main.c: 146: float FS_SEL = 131;
+[e = _FS_SEL -> -> 131 `i `f ]
+[; ;main.c: 148: OSCCON = 0x72;
+"148
+[e = _OSCCON -> -> 114 `i `uc ]
+[; ;main.c: 150: initIO();
+"150
+[e ( _initIO ..  ]
+[; ;main.c: 151: initBT();
+"151
+[e ( _initBT ..  ]
+[; ;main.c: 154: _delay((unsigned long)((30)*(8000000/4000.0)));
+"154
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;main.c: 156: OpenI2C(0b00001000, 0b10000000);
+"156
+[e ( _OpenI2C (2 , -> -> 8 `i `uc -> -> 128 `i `uc ]
+[; ;main.c: 157: SSPADD = 14;
+"157
+[e = _SSPADD -> -> 14 `i `uc ]
+[; ;main.c: 159: MPU6050(0x68);
+"159
+[e ( _MPU6050 (1 -> -> 104 `i `uc ]
+[; ;main.c: 160: printf("Init MPU... \r\n");
+"160
+[e ( _printf :s 1C ]
+[; ;main.c: 161: MPU6050_initialize();
+"161
+[e ( _MPU6050_initialize ..  ]
+[; ;main.c: 162: _delay((unsigned long)((30)*(8000000/4000.0)));
+"162
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;main.c: 163: if(MPU6050_testConnection())
+"163
+[e $ ! != -> ( _MPU6050_testConnection ..  `i -> -> -> 0 `i `uc `i 414  ]
+[; ;main.c: 164: printf("MPU enabled!\r\n");
+"164
+[e ( _printf :s 2C ]
+[e $U 415  ]
+"165
+[e :U 414 ]
+[; ;main.c: 165: else printf("MPU failure\r\n");
+[e ( _printf :s 3C ]
+[e :U 415 ]
+[; ;main.c: 167: _delay((unsigned long)((1000)*(8000000/4000.0)));
+"167
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;main.c: 168: calibrate_sensors();
+"168
+[e ( _calibrate_sensors ..  ]
+[; ;main.c: 170: while (1) {
+"170
+[e :U 417 ]
+{
+[; ;main.c: 171: LATCbits.LC2=1;
+"171
+[e = . . _LATCbits 1 2 -> -> 1 `i `uc ]
+[; ;main.c: 174: read_gyro_accel_vals();
+"174
+[e ( _read_gyro_accel_vals ..  ]
+"179
+[v _gyro_x `f ~T0 @X0 1 a ]
+[; ;main.c: 179: float gyro_x = (x_gyro - base_x_gyro)/FS_SEL;
+[e = _gyro_x / - -> _x_gyro `f _base_x_gyro _FS_SEL ]
+"180
+[v _gyro_y `f ~T0 @X0 1 a ]
+[; ;main.c: 180: float gyro_y = (y_gyro - base_y_gyro)/FS_SEL;
+[e = _gyro_y / - -> _y_gyro `f _base_y_gyro _FS_SEL ]
+"181
+[v _gyro_z `f ~T0 @X0 1 a ]
+[; ;main.c: 181: float gyro_z = (z_gyro - base_z_gyro)/FS_SEL;
+[e = _gyro_z / - -> _z_gyro `f _base_z_gyro _FS_SEL ]
+"186
+[v _accel_x `f ~T0 @X0 1 a ]
+[; ;main.c: 186: float accel_x = x_accel;
+[e = _accel_x -> _x_accel `f ]
+"187
+[v _accel_y `f ~T0 @X0 1 a ]
+[; ;main.c: 187: float accel_y = y_accel;
+[e = _accel_y -> _y_accel `f ]
+"188
+[v _accel_z `f ~T0 @X0 1 a ]
+[; ;main.c: 188: float accel_z = z_accel;
+[e = _accel_z -> _z_accel `f ]
+"191
+[v _accel_angle_y `f ~T0 @X0 1 a ]
+[; ;main.c: 191: float accel_angle_y = atan(-1*accel_x/sqrt(pow(accel_y,2) + pow(accel_z,2)))*RADIANS_TO_DEGREES;
+[e = _accel_angle_y -> * ( _atan (1 / -> * -> -U -> 1 `i `f _accel_x `d ( _sqrt (1 + ( _pow (2 , -> _accel_y `d -> -> 2 `i `d ( _pow (2 , -> _accel_z `d -> -> 2 `i `d -> _RADIANS_TO_DEGREES `d `f ]
+"192
+[v _accel_angle_x `f ~T0 @X0 1 a ]
+[; ;main.c: 192: float accel_angle_x = atan(accel_y/sqrt(pow(accel_x,2) + pow(accel_z,2)))*RADIANS_TO_DEGREES;
+[e = _accel_angle_x -> * ( _atan (1 / -> _accel_y `d ( _sqrt (1 + ( _pow (2 , -> _accel_x `d -> -> 2 `i `d ( _pow (2 , -> _accel_z `d -> -> 2 `i `d -> _RADIANS_TO_DEGREES `d `f ]
+"193
+[v _accel_angle_z `f ~T0 @X0 1 a ]
+[; ;main.c: 193: float accel_angle_z = 0;
+[e = _accel_angle_z -> -> 0 `i `f ]
+"197
+[v _gyro_angle_x `f ~T0 @X0 1 a ]
+[; ;main.c: 197: float gyro_angle_x = gyro_x*dt + get_last_x_angle();
+[e = _gyro_angle_x + * _gyro_x _dt ( _get_last_x_angle ..  ]
+"198
+[v _gyro_angle_y `f ~T0 @X0 1 a ]
+[; ;main.c: 198: float gyro_angle_y = gyro_y*dt + get_last_y_angle();
+[e = _gyro_angle_y + * _gyro_y _dt ( _get_last_y_angle ..  ]
+"199
+[v _gyro_angle_z `f ~T0 @X0 1 a ]
+[; ;main.c: 199: float gyro_angle_z = gyro_z*dt + get_last_z_angle();
+[e = _gyro_angle_z + * _gyro_z _dt ( _get_last_z_angle ..  ]
+"202
+[v _unfiltered_gyro_angle_x `f ~T0 @X0 1 a ]
+[; ;main.c: 202: float unfiltered_gyro_angle_x = gyro_x*dt + get_last_gyro_x_angle();
+[e = _unfiltered_gyro_angle_x + * _gyro_x _dt ( _get_last_gyro_x_angle ..  ]
+"203
+[v _unfiltered_gyro_angle_y `f ~T0 @X0 1 a ]
+[; ;main.c: 203: float unfiltered_gyro_angle_y = gyro_y*dt + get_last_gyro_y_angle();
+[e = _unfiltered_gyro_angle_y + * _gyro_y _dt ( _get_last_gyro_y_angle ..  ]
+"204
+[v _unfiltered_gyro_angle_z `f ~T0 @X0 1 a ]
+[; ;main.c: 204: float unfiltered_gyro_angle_z = gyro_z*dt + get_last_gyro_z_angle();
+[e = _unfiltered_gyro_angle_z + * _gyro_z _dt ( _get_last_gyro_z_angle ..  ]
+"208
+[v _angle_x `f ~T0 @X0 1 a ]
+[; ;main.c: 208: float angle_x = alpha*gyro_angle_x + alphaInv*accel_angle_x;
+[e = _angle_x + * _alpha _gyro_angle_x * _alphaInv _accel_angle_x ]
+"209
+[v _angle_y `f ~T0 @X0 1 a ]
+[; ;main.c: 209: float angle_y = alpha*gyro_angle_y + alphaInv*accel_angle_y;
+[e = _angle_y + * _alpha _gyro_angle_y * _alphaInv _accel_angle_y ]
+"210
+[v _angle_z `f ~T0 @X0 1 a ]
+[; ;main.c: 210: float angle_z = gyro_angle_z;
+[e = _angle_z _gyro_angle_z ]
+[; ;main.c: 214: set_last_read_angle_data(0, angle_x, angle_y, angle_z, unfiltered_gyro_angle_x, unfiltered_gyro_angle_y, unfiltered_gyro_angle_z);
+"214
+[e ( _set_last_read_angle_data (4 , , , , , , -> -> -> 0 `i `l `ul _angle_x _angle_y _angle_z _unfiltered_gyro_angle_x _unfiltered_gyro_angle_y _unfiltered_gyro_angle_z ]
+[; ;main.c: 216: printf("%f, %f, %f\r\n", angle_x, angle_y, angle_z);
+"216
+[e ( _printf , , , (. :s 4C -> _angle_x `d -> _angle_y `d -> _angle_z `d ]
+[; ;main.c: 219: _delay((unsigned long)((20)*(8000000/4000.0)));
+"219
+[e ( __delay (1 -> * -> -> 20 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;main.c: 220: LATCbits.LC2=0;
+"220
+[e = . . _LATCbits 1 2 -> -> 0 `i `uc ]
+"222
+}
+[e :U 416 ]
+"170
+[e $U 417  ]
+[e :U 418 ]
+[; ;main.c: 222: }
+[; ;main.c: 223: }
+"223
+[e :UE 413 ]
+}
 [p f _printf 8396800 ]
-[a 4C 37 102 13 10 0 ]
+[a 4C 37 102 44 32 37 102 44 32 37 102 13 10 0 ]
 [a 3C 77 80 85 32 102 97 105 108 117 114 101 13 10 0 ]
 [a 2C 77 80 85 32 101 110 97 98 108 101 100 33 13 10 0 ]
 [a 1C 73 110 105 116 32 77 80 85 46 46 46 32 13 10 0 ]

@@ -1,5 +1,5 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"10255 /home/fbuga/opt/microchip/xc8/v1.45/include/pic18f4550.h
+"10255 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
 [v _TRISC6 `Vb ~T0 @X0 0 e@31910 ]
 "10257
 [v _TRISC7 `Vb ~T0 @X0 0 e@31911 ]
@@ -58,7 +58,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 "9927
 [v _RCIF `Vb ~T0 @X0 0 e@31989 ]
 [; ;pic18f4550.h: 50: extern volatile unsigned char SPPDATA @ 0xF62;
-"52 /home/fbuga/opt/microchip/xc8/v1.45/include/pic18f4550.h
+"52 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
 [; ;pic18f4550.h: 52: asm("SPPDATA equ 0F62h");
 [; <" SPPDATA equ 0F62h ;# ">
 [; ;pic18f4550.h: 55: typedef union {

@@ -1,17 +1,17 @@
 
 # 1 "MPU6050.c"
 
-# 26 "/home/fbuga/opt/microchip/xc8/v1.45/include/htc.h"
+# 26 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\htc.h"
 extern const char __xc8_OPTIM_SPEED;
 
 extern double __fpnormalize(double);
 
 
-# 13 "/home/fbuga/opt/microchip/xc8/v1.45/include/xc8debug.h"
+# 13 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\xc8debug.h"
 #pragma intrinsic(__builtin_software_breakpoint)
 extern void __builtin_software_breakpoint(void);
 
-# 50 "/home/fbuga/opt/microchip/xc8/v1.45/include/pic18f4550.h"
+# 50 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h"
 extern volatile unsigned char SPPDATA @ 0xF62;
 
 asm("SPPDATA equ 0F62h");
@@ -4778,7 +4778,7 @@ extern volatile __bit nW @ (((unsigned) &SSPSTAT)*8) + 2;
 
 extern volatile __bit nWRITE @ (((unsigned) &SSPSTAT)*8) + 2;
 
-# 2008 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/adc.h"
+# 2008 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\adc.h"
 union ADCResult
 {
 int lr;
@@ -4805,11 +4805,11 @@ void SetChanADC(unsigned char );
 # 2100
 void SelChanConvADC( unsigned char );
 
-# 38 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/ancomp.h"
+# 38 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\ancomp.h"
 void Close_ancomp( void );
 void Open_ancomp(unsigned char config);
 
-# 584 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/spi.h"
+# 584 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\spi.h"
 void OpenSPI( unsigned char sync_mode,
 unsigned char bus_mode,
 unsigned char smp_phase );
@@ -4822,7 +4822,7 @@ void putsSPI( unsigned char *wrptr );
 
 unsigned char ReadSPI( void );
 
-# 414 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/can2510.h"
+# 414 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\can2510.h"
 void CAN2510Initialize(  unsigned int configuration,
  unsigned char brp,
  unsigned char interruptFlags,
@@ -4929,7 +4929,7 @@ unsigned char CAN2510DataRead(  unsigned char bufferNum,
  unsigned char *numBytes,
  unsigned char *data );
 
-# 64 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/capture.h"
+# 64 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\capture.h"
 union capstatus
 {
 
@@ -4968,7 +4968,7 @@ void OpenCapture2 ( unsigned char config);
 unsigned int ReadCapture2 (void);
 void CloseCapture2 (void);
 
-# 385 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/compare.h"
+# 385 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\compare.h"
 void OpenCompare1(unsigned char config,unsigned int period);
 void CloseCompare1(void);
 
@@ -4976,18 +4976,18 @@ void CloseCompare1(void);
 void OpenCompare2(unsigned char config, unsigned int period);
 void CloseCompare2(void);
 
-# 36 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/EEP.h"
+# 36 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\EEP.h"
 void Busy_eep ( void );
 unsigned char Read_b_eep( unsigned int badd );
 void Write_b_eep( unsigned int badd, unsigned char bdat );
 
-# 4 "/home/fbuga/opt/microchip/xc8/v1.45/include/__size_t.h"
+# 4 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\__size_t.h"
 typedef unsigned size_t;
 
-# 6 "/home/fbuga/opt/microchip/xc8/v1.45/include/stddef.h"
+# 6 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stddef.h"
 typedef int ptrdiff_t;
 
-# 65 "/home/fbuga/opt/microchip/xc8/v1.45/include/GenericTypeDefs.h"
+# 65 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\GenericTypeDefs.h"
 typedef enum _BOOL { FALSE = 0, TRUE } BOOL;
 
 
@@ -5367,7 +5367,7 @@ struct
 } bits;
 } QWORD_VAL;
 
-# 113 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/flash.h"
+# 113 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\flash.h"
 extern void ReadFlash(unsigned long startaddr, unsigned int num_bytes, unsigned char *flash_array);
 
 # 120
@@ -5377,7 +5377,7 @@ extern void WriteBlockFlash(unsigned long startaddr, unsigned char num_blocks, u
 
 extern void WriteBytesFlash(unsigned long startaddr, unsigned int num_bytes, unsigned char *flash_array);
 
-# 775 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/i2c.h"
+# 775 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\i2c.h"
 void IdleI2C( void );
 
 void OpenI2C( unsigned char sync_mode, unsigned char slew );
@@ -5415,7 +5415,7 @@ unsigned char address,
 unsigned char *rdptr,
 unsigned char length );
 
-# 325 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/mwire.h"
+# 325 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\mwire.h"
 void OpenMwire( unsigned char sync_mode );
 
 unsigned char ReadMwire( unsigned char high_byte,
@@ -5427,7 +5427,7 @@ signed char WriteMwire( unsigned char data_out );
 # 354
 void getsMwire( unsigned char *rdptr, unsigned char length );
 
-# 126 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/portb.h"
+# 126 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\portb.h"
 void OpenPORTB( unsigned char config);
 
 # 176
@@ -5439,7 +5439,7 @@ void OpenRB1INT( unsigned char config);
 # 211
 void OpenRB2INT( unsigned char config);
 
-# 85 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/pwm.h"
+# 85 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\pwm.h"
 union PWMDC
 {
 unsigned int lpwm;
@@ -5463,7 +5463,7 @@ void SetDCPWM2( unsigned int duty_cycle);
 # 492
 void ClosePWM2 (void);
 
-# 16 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/reset.h"
+# 16 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\reset.h"
 char isMCLR(void);
 void StatusReset(void);
 char isPOR(void);
@@ -5481,12 +5481,12 @@ char isWDTWU(void);
 
 char isLVD(void);
 
-# 687 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/rtcc.h"
+# 687 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\rtcc.h"
 void Open_RTCC(void);
 void Close_RTCC(void);
 unsigned char update_RTCC(void);
 
-# 97 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/sw_i2c.h"
+# 97 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\sw_i2c.h"
 void SWStopI2C ( void );
 void SWStartI2C ( void );
 void SWRestartI2C ( void );
@@ -5499,7 +5499,7 @@ signed char SWWriteI2C(  unsigned char data_out );
 signed char SWGetsI2C(  unsigned char *rdptr,  unsigned char length );
 signed char SWPutsI2C(  unsigned char *wrptr );
 
-# 84 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/sw_spi.h"
+# 84 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\sw_spi.h"
 void OpenSWSPI(void);
 
 
@@ -5511,7 +5511,7 @@ void SetCSSWSPI(void);
 
 void ClearCSSWSPI(void);
 
-# 47 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/sw_uart.h"
+# 47 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\sw_uart.h"
 void OpenUART(void);
 
 unsigned char ReadUART(void);
@@ -5527,7 +5527,7 @@ extern void DelayRXBitUART (void);
 extern void DelayRXHalfBitUART(void);
 extern void DelayTXBitUART (void);
 
-# 36 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/timers.h"
+# 36 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\timers.h"
 union Timers
 {
 unsigned int lt;
@@ -5559,7 +5559,7 @@ void WriteTimer3 ( unsigned int timer3);
 # 1179
 void SetTmrCCPSrc( unsigned char );
 
-# 568 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/usart.h"
+# 568 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\usart.h"
 union USART
 {
 unsigned char val;
@@ -5585,7 +5585,7 @@ void putrsUSART ( const  char *data);
 # 654
 void baudUSART ( unsigned char baudconfig);
 
-# 87 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/xlcd.h"
+# 87 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\xlcd.h"
 void OpenXLCD( unsigned char);
 
 # 92
@@ -5620,7 +5620,7 @@ extern void DelayFor18TCY(void);
 extern void DelayPORXLCD(void);
 extern void DelayXLCD(void);
 
-# 13 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/delays.h"
+# 13 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\delays.h"
 void Delay1TCYx(unsigned char);
 
 # 19
@@ -5635,7 +5635,7 @@ void Delay1KTCYx(unsigned char);
 # 37
 void Delay10KTCYx(unsigned char);
 
-# 18 "/home/fbuga/opt/microchip/xc8/v1.45/include/pic18.h"
+# 18 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18.h"
 __attribute__((__unsupported__("The " "flash_write" " routine is no longer supported. Please use the MPLAB X MCC."))) void flash_write(const unsigned char *, unsigned int, __far unsigned char *);
 __attribute__((__unsupported__("The " "EraseFlash" " routine is no longer supported. Please use the MPLAB X MCC."))) void EraseFlash(unsigned long startaddr, unsigned long endaddr);
 
@@ -5662,7 +5662,7 @@ extern __nonreentrant void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __nonreentrant void _delay3(unsigned char);
 
-# 13 "/home/fbuga/opt/microchip/xc8/v1.45/include/stdint.h"
+# 13 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdint.h"
 typedef signed char int8_t;
 
 # 20
@@ -5752,7 +5752,7 @@ typedef int16_t intptr_t;
 
 typedef uint16_t uintptr_t;
 
-# 12 "/home/fbuga/opt/microchip/xc8/v1.45/include/stdbool.h"
+# 12 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdbool.h"
 typedef unsigned char bool;
 
 # 46 "I2Cdev.h"

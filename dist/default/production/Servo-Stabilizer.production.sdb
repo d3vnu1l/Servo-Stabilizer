@@ -3,67 +3,87 @@
 [d edition pro ]
 [d chip 18F4550 ]
 [d frameptr 4065 ]
-"42 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/altoft.c
+"42 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
 [v ___altoft __altoft `(f  1 e 3 0 ]
-"8 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/awdiv.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atan.c
+[v _atan atan `(d  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
-"8 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/awmod.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awmod.c
 [v ___awmod __awmod `(i  1 e 2 0 ]
-"32 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/awtoft.c
+"32 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
 [v ___awtoft __awtoft `(f  1 e 3 0 ]
-"409 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/doprnt.c
+"409 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
 [v _fround fround `(d  1 s 3 fround ]
 "425
 [v _scale scale `(d  1 s 3 scale ]
 "464
 [v _printf printf `(i  1 e 2 0 ]
-"60 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/fldivl.c
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\evalpoly.c
+[v _eval_poly eval_poly `(d  1 e 3 0 ]
+"12 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\exp.c
+[v _exp exp `(d  1 e 3 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fabs.c
+[v _fabs fabs `(d  1 e 3 0 ]
+"60 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fldivl.c
 [v __div_to_l_ _div_to_l_ `(ul  1 e 4 0 ]
-"62 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/float.c
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
 [v ___ftpack __ftpack `(f  1 e 3 0 ]
-"86 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/ftadd.c
+"13 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
+[v _floor floor `(d  1 e 3 0 ]
+"254 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+[v _frexp frexp `(d  1 e 3 0 ]
+"277
+[v _ldexp ldexp `(d  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
 [v ___ftadd __ftadd `(f  1 e 3 0 ]
-"54 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/ftdiv.c
+"54 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 3 0 ]
-"60 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/ftdivl.c
+"60 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdivl.c
 [v __tdiv_to_l_ _tdiv_to_l_ `(ul  1 e 4 0 ]
-"4 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/ftge.c
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
 [v ___ftge __ftge `(b  1 e 0 0 ]
-"62 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/ftmul.c
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
 [v ___ftmul __ftmul `(f  1 e 3 0 ]
-"15 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/ftneg.c
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftneg.c
 [v ___ftneg __ftneg `(f  1 e 3 0 ]
-"20 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/ftsub.c
+"20 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftsub.c
 [v ___ftsub __ftsub `(f  1 e 3 0 ]
-"44 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/fttol.c
+"44 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
 [v ___fttol __fttol `(l  1 e 4 0 ]
-"8 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/lldiv.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
 [v ___lldiv __lldiv `(ul  1 e 4 0 ]
-"8 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/llmod.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\llmod.c
 [v ___llmod __llmod `(ul  1 e 4 0 ]
-"35 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/lltoft.c
+"35 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lltoft.c
 [v ___lltoft __lltoft `(f  1 e 3 0 ]
-"10 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/sprcadd.c
+"5 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
+[v _log log `(d  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
+[v _pow pow `(d  1 e 3 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 3 0 ]
 "245
 [v ___flsub __flsub `(d  1 e 3 0 ]
-"11 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/sprcdiv.c
+"11 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcdiv.c
 [v ___fldiv __fldiv `(d  1 e 3 0 ]
-"8 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/sprcmul.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 3 0 ]
-"15 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/Umul16.c
+"9 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcsqrt.c
+[v _sqrt sqrt `(d  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
-"15 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/Umul32.c
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"24 /home/fbuga/opt/microchip/xc8/v1.45/sources/pic18/plib/i2c/i2c_idle.c
+"24 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic18\plib\i2c\i2c_idle.c
 [v _IdleI2C IdleI2C `(v  1 e 1 0 ]
-"14 /home/fbuga/opt/microchip/xc8/v1.45/sources/pic18/plib/i2c/i2c_open.c
+"14 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic18\plib\i2c\i2c_open.c
 [v _OpenI2C OpenI2C `(v  1 e 1 0 ]
-"11 /home/fbuga/opt/microchip/xc8/v1.45/sources/pic18/plib/i2c/i2c_read.c
+"11 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic18\plib\i2c\i2c_read.c
 [v _ReadI2C ReadI2C `(uc  1 e 1 0 ]
-"12 /home/fbuga/opt/microchip/xc8/v1.45/sources/pic18/plib/i2c/i2c_writ.c
+"12 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic18\plib\i2c\i2c_writ.c
 [v _WriteI2C WriteI2C `(c  1 e 1 0 ]
-"43 /home/fbuga/Documents/Servo-Stabilizer/I2Cdev.c
+"43 C:\Users\ryan\Documents\Servo-Stabilizer\I2Cdev.c
 [v _I2Cdev_readBytes I2Cdev_readBytes `(c  1 e 1 0 ]
 "95
 [v _I2Cdev_readByte I2Cdev_readByte `(c  1 e 1 0 ]
@@ -87,13 +107,31 @@
 [v _I2Cdev_writeBit I2Cdev_writeBit `(uc  1 e 1 0 ]
 "373
 [v _I2Cdev_writeBits I2Cdev_writeBits `(uc  1 e 1 0 ]
-"14 /home/fbuga/Documents/Servo-Stabilizer/Inits.c
+"14 C:\Users\ryan\Documents\Servo-Stabilizer\Inits.c
 [v _initIO initIO `(v  1 e 1 0 ]
 "22
 [v _initBT initBT `(v  1 e 1 0 ]
-"29 /home/fbuga/Documents/Servo-Stabilizer/main.c
+"58 C:\Users\ryan\Documents\Servo-Stabilizer\main.c
+[v _get_last_x_angle get_last_x_angle `T(f  1 e 3 0 ]
+"59
+[v _get_last_y_angle get_last_y_angle `T(f  1 e 3 0 ]
+"60
+[v _get_last_z_angle get_last_z_angle `T(f  1 e 3 0 ]
+"61
+[v _get_last_gyro_x_angle get_last_gyro_x_angle `T(f  1 e 3 0 ]
+"62
+[v _get_last_gyro_y_angle get_last_gyro_y_angle `T(f  1 e 3 0 ]
+"63
+[v _get_last_gyro_z_angle get_last_gyro_z_angle `T(f  1 e 3 0 ]
+"65
+[v _read_gyro_accel_vals read_gyro_accel_vals `(v  1 e 1 0 ]
+"86
+[v _set_last_read_angle_data set_last_read_angle_data `(v  1 e 1 0 ]
+"96
+[v _calibrate_sensors calibrate_sensors `(v  1 e 1 0 ]
+"139
 [v _main main `(i  1 e 2 0 ]
-"51 /home/fbuga/Documents/Servo-Stabilizer/MPU6050.c
+"51 C:\Users\ryan\Documents\Servo-Stabilizer\MPU6050.c
 [v _MPU6050 MPU6050 `(v  1 e 1 0 ]
 "62
 [v _MPU6050_initialize MPU6050_initialize `(v  1 e 1 0 ]
@@ -115,17 +153,17 @@
 [v _MPU6050_setMemoryBank MPU6050_setMemoryBank `(v  1 e 1 0 ]
 "2921
 [v _MPU6050_setMemoryStartAddress MPU6050_setMemoryStartAddress `(v  1 e 1 0 ]
-"8 /home/fbuga/Documents/Servo-Stabilizer/USART_Source_File.c
+"8 C:\Users\ryan\Documents\Servo-Stabilizer\USART_Source_File.c
 [v _USART_Init USART_Init `(v  1 e 1 0 ]
 "19
 [v _putch putch `(v  1 e 1 0 ]
-"2971 /home/fbuga/opt/microchip/xc8/v1.45/include/pic18f4550.h
+"2971 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
 [v _LATA LATA `VEuc  1 e 1 @3977 ]
 "3071
 [v _LATB LATB `VEuc  1 e 1 @3978 ]
 "3183
 [v _LATC LATC `VEuc  1 e 1 @3979 ]
-[s S22 . 1 `uc 1 LATC0 1 0 :1:0 
+[s S71 . 1 `uc 1 LATC0 1 0 :1:0 
 `uc 1 LATC1 1 0 :1:1 
 `uc 1 LATC2 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
@@ -133,15 +171,15 @@
 `uc 1 LATC7 1 0 :1:7 
 ]
 "3206
-[s S29 . 1 `uc 1 LC0 1 0 :1:0 
+[s S78 . 1 `uc 1 LC0 1 0 :1:0 
 `uc 1 LC1 1 0 :1:1 
 `uc 1 LC2 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
 `uc 1 LC6 1 0 :1:6 
 `uc 1 LC7 1 0 :1:7 
 ]
-[u S36 . 1 `S22 1 . 1 0 `S29 1 . 1 0 ]
-[v _LATCbits LATCbits `VES36  1 e 1 @3979 ]
+[u S85 . 1 `S71 1 . 1 0 `S78 1 . 1 0 ]
+[v _LATCbits LATCbits `VES85  1 e 1 @3979 ]
 "3261
 [v _LATD LATD `VEuc  1 e 1 @3980 ]
 "3373
@@ -150,7 +188,7 @@
 [v _TRISA TRISA `VEuc  1 e 1 @3986 ]
 "3623
 [v _TRISB TRISB `VEuc  1 e 1 @3987 ]
-[s S1134 . 1 `uc 1 TRISB0 1 0 :1:0 
+[s S1217 . 1 `uc 1 TRISB0 1 0 :1:0 
 `uc 1 TRISB1 1 0 :1:1 
 `uc 1 TRISB2 1 0 :1:2 
 `uc 1 TRISB3 1 0 :1:3 
@@ -160,7 +198,7 @@
 `uc 1 TRISB7 1 0 :1:7 
 ]
 "4205
-[s S1143 . 1 `uc 1 RB0 1 0 :1:0 
+[s S1226 . 1 `uc 1 RB0 1 0 :1:0 
 `uc 1 RB1 1 0 :1:1 
 `uc 1 RB2 1 0 :1:2 
 `uc 1 RB3 1 0 :1:3 
@@ -169,11 +207,11 @@
 `uc 1 RB6 1 0 :1:6 
 `uc 1 RB7 1 0 :1:7 
 ]
-[u S1152 . 1 `S1134 1 . 1 0 `S1143 1 . 1 0 ]
-[v _TRISBbits TRISBbits `VES1152  1 e 1 @3987 ]
+[u S1235 . 1 `S1217 1 . 1 0 `S1226 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES1235  1 e 1 @3987 ]
 "4934
 [v _RCSTA RCSTA `VEuc  1 e 1 @4011 ]
-[s S146 . 1 `uc 1 RX9D 1 0 :1:0 
+[s S229 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -183,23 +221,23 @@
 `uc 1 SPEN 1 0 :1:7 
 ]
 "4975
-[s S155 . 1 `uc 1 . 1 0 :3:0 
+[s S238 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 ADEN 1 0 :1:3 
 ]
-[s S158 . 1 `uc 1 . 1 0 :5:0 
+[s S241 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 SRENA 1 0 :1:5 
 ]
-[s S161 . 1 `uc 1 . 1 0 :6:0 
+[s S244 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 RC8_9 1 0 :1:6 
 ]
-[s S164 . 1 `uc 1 . 1 0 :6:0 
+[s S247 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 RC9 1 0 :1:6 
 ]
-[s S167 . 1 `uc 1 RCD8 1 0 :1:0 
+[s S250 . 1 `uc 1 RCD8 1 0 :1:0 
 ]
-[u S169 . 1 `S146 1 . 1 0 `S155 1 . 1 0 `S158 1 . 1 0 `S161 1 . 1 0 `S164 1 . 1 0 `S167 1 . 1 0 ]
-[v _RCSTAbits RCSTAbits `VES169  1 e 1 @4011 ]
-[s S1333 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[u S252 . 1 `S229 1 . 1 0 `S238 1 . 1 0 `S241 1 . 1 0 `S244 1 . 1 0 `S247 1 . 1 0 `S250 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES252  1 e 1 @4011 ]
+[s S1416 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 CCP1IF 1 0 :1:2 
 `uc 1 SSPIF 1 0 :1:3 
@@ -209,20 +247,20 @@
 `uc 1 SPPIF 1 0 :1:7 
 ]
 "5062
-[s S1342 . 1 `uc 1 . 1 0 :7:0 
+[s S1425 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 PSPIF 1 0 :1:7 
 ]
-[s S1345 . 1 `uc 1 . 1 0 :5:0 
+[s S1428 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 RC1IF 1 0 :1:5 
 ]
-[s S1348 . 1 `uc 1 . 1 0 :4:0 
+[s S1431 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 TX1IF 1 0 :1:4 
 ]
-[u S1351 . 1 `S1333 1 . 1 0 `S1342 1 . 1 0 `S1345 1 . 1 0 `S1348 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES1351  1 e 1 @3998 ]
+[u S1434 . 1 `S1416 1 . 1 0 `S1425 1 . 1 0 `S1428 1 . 1 0 `S1431 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES1434  1 e 1 @3998 ]
 "5144
 [v _TXSTA TXSTA `VEuc  1 e 1 @4012 ]
-[s S201 . 1 `uc 1 TX9D 1 0 :1:0 
+[s S284 . 1 `uc 1 TX9D 1 0 :1:0 
 `uc 1 TRMT 1 0 :1:1 
 `uc 1 BRGH 1 0 :1:2 
 `uc 1 SENDB 1 0 :1:3 
@@ -232,7 +270,7 @@
 `uc 1 CSRC 1 0 :1:7 
 ]
 "5305
-[s S210 . 1 `uc 1 TX9D1 1 0 :1:0 
+[s S293 . 1 `uc 1 TX9D1 1 0 :1:0 
 `uc 1 TRMT1 1 0 :1:1 
 `uc 1 BRGH1 1 0 :1:2 
 `uc 1 SENDB1 1 0 :1:3 
@@ -241,13 +279,13 @@
 `uc 1 TX91 1 0 :1:6 
 `uc 1 CSRC1 1 0 :1:7 
 ]
-[s S219 . 1 `uc 1 . 1 0 :6:0 
+[s S302 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 TX8_9 1 0 :1:6 
 ]
-[s S222 . 1 `uc 1 TXD8 1 0 :1:0 
+[s S305 . 1 `uc 1 TXD8 1 0 :1:0 
 ]
-[u S224 . 1 `S201 1 . 1 0 `S210 1 . 1 0 `S219 1 . 1 0 `S222 1 . 1 0 ]
-[v _TXSTA1bits TXSTA1bits `VES224  1 e 1 @4012 ]
+[u S307 . 1 `S284 1 . 1 0 `S293 1 . 1 0 `S302 1 . 1 0 `S305 1 . 1 0 ]
+[v _TXSTA1bits TXSTA1bits `VES307  1 e 1 @4012 ]
 "5405
 [v _TXREG1 TXREG1 `VEuc  1 e 1 @4013 ]
 "5412
@@ -256,7 +294,7 @@
 [v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
 "6325
 [v _CCP1CON CCP1CON `VEuc  1 e 1 @4029 ]
-[s S300 . 1 `uc 1 SEN 1 0 :1:0 
+[s S383 . 1 `uc 1 SEN 1 0 :1:0 
 `uc 1 RSEN 1 0 :1:1 
 `uc 1 PEN 1 0 :1:2 
 `uc 1 RCEN 1 0 :1:3 
@@ -266,38 +304,38 @@
 `uc 1 GCEN 1 0 :1:7 
 ]
 "6821
-[u S309 . 1 `S300 1 . 1 0 ]
-[v _SSPCON2bits SSPCON2bits `VES309  1 e 1 @4037 ]
+[u S392 . 1 `S383 1 . 1 0 ]
+[v _SSPCON2bits SSPCON2bits `VES392  1 e 1 @4037 ]
 "7184
 [v _SSPADD SSPADD `VEuc  1 e 1 @4040 ]
 "7403
 [v _SSPCON2 SSPCON2 `VEuc  1 e 1 @4037 ]
 "7464
 [v _SSPCON1 SSPCON1 `VEuc  1 e 1 @4038 ]
-[s S1306 . 1 `uc 1 SSPM 1 0 :4:0 
+[s S1389 . 1 `uc 1 SSPM 1 0 :4:0 
 `uc 1 CKP 1 0 :1:4 
 `uc 1 SSPEN 1 0 :1:5 
 `uc 1 SSPOV 1 0 :1:6 
 `uc 1 WCOL 1 0 :1:7 
 ]
 "7484
-[s S1312 . 1 `uc 1 SSPM0 1 0 :1:0 
+[s S1395 . 1 `uc 1 SSPM0 1 0 :1:0 
 `uc 1 SSPM1 1 0 :1:1 
 `uc 1 SSPM2 1 0 :1:2 
 `uc 1 SSPM3 1 0 :1:3 
 ]
-[u S1317 . 1 `S1306 1 . 1 0 `S1312 1 . 1 0 ]
-[v _SSPCON1bits SSPCON1bits `VES1317  1 e 1 @4038 ]
+[u S1400 . 1 `S1389 1 . 1 0 `S1395 1 . 1 0 ]
+[v _SSPCON1bits SSPCON1bits `VES1400  1 e 1 @4038 ]
 "7533
 [v _SSPSTAT SSPSTAT `VEuc  1 e 1 @4039 ]
-[s S953 . 1 `uc 1 . 1 0 :2:0 
+[s S1036 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R_NOT_W 1 0 :1:2 
 ]
 "7635
-[s S956 . 1 `uc 1 . 1 0 :5:0 
+[s S1039 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 D_NOT_A 1 0 :1:5 
 ]
-[s S959 . 1 `uc 1 BF 1 0 :1:0 
+[s S1042 . 1 `uc 1 BF 1 0 :1:0 
 `uc 1 UA 1 0 :1:1 
 `uc 1 R_nW 1 0 :1:2 
 `uc 1 S 1 0 :1:3 
@@ -306,63 +344,63 @@
 `uc 1 CKE 1 0 :1:6 
 `uc 1 SMP 1 0 :1:7 
 ]
-[s S974 . 1 `uc 1 . 1 0 :2:0 
+[s S1057 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R_W 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 D_A 1 0 :1:5 
 ]
-[s S979 . 1 `uc 1 . 1 0 :2:0 
+[s S1062 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 I2C_READ 1 0 :1:2 
 `uc 1 I2C_START 1 0 :1:3 
 `uc 1 I2C_STOP 1 0 :1:4 
 `uc 1 I2C_DAT 1 0 :1:5 
 ]
-[s S985 . 1 `uc 1 . 1 0 :2:0 
+[s S1068 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nW 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 nA 1 0 :1:5 
 ]
-[s S990 . 1 `uc 1 . 1 0 :2:0 
+[s S1073 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 NOT_WRITE 1 0 :1:2 
 ]
-[s S993 . 1 `uc 1 . 1 0 :5:0 
+[s S1076 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 NOT_ADDRESS 1 0 :1:5 
 ]
-[s S996 . 1 `uc 1 . 1 0 :2:0 
+[s S1079 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nWRITE 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 nADDRESS 1 0 :1:5 
 ]
-[s S1001 . 1 `uc 1 . 1 0 :2:0 
+[s S1084 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 READ_WRITE 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 DATA_ADDRESS 1 0 :1:5 
 ]
-[s S1006 . 1 `uc 1 . 1 0 :2:0 
+[s S1089 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 D 1 0 :1:5 
 ]
-[s S1011 . 1 `uc 1 . 1 0 :5:0 
+[s S1094 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 DA 1 0 :1:5 
 ]
-[s S1014 . 1 `uc 1 . 1 0 :2:0 
+[s S1097 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 RW 1 0 :1:2 
 ]
-[s S1017 . 1 `uc 1 . 1 0 :3:0 
+[s S1100 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 START 1 0 :1:3 
 ]
-[s S1020 . 1 `uc 1 . 1 0 :4:0 
+[s S1103 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 STOP 1 0 :1:4 
 ]
-[s S1023 . 1 `uc 1 . 1 0 :2:0 
+[s S1106 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 NOT_W 1 0 :1:2 
 ]
-[s S1026 . 1 `uc 1 . 1 0 :5:0 
+[s S1109 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 NOT_A 1 0 :1:5 
 ]
-[u S1029 . 1 `S953 1 . 1 0 `S956 1 . 1 0 `S959 1 . 1 0 `S953 1 . 1 0 `S956 1 . 1 0 `S974 1 . 1 0 `S979 1 . 1 0 `S985 1 . 1 0 `S990 1 . 1 0 `S993 1 . 1 0 `S996 1 . 1 0 `S1001 1 . 1 0 `S1006 1 . 1 0 `S1011 1 . 1 0 `S1014 1 . 1 0 `S1017 1 . 1 0 `S1020 1 . 1 0 `S1023 1 . 1 0 `S1026 1 . 1 0 ]
-[v _SSPSTATbits SSPSTATbits `VES1029  1 e 1 @4039 ]
+[u S1112 . 1 `S1036 1 . 1 0 `S1039 1 . 1 0 `S1042 1 . 1 0 `S1036 1 . 1 0 `S1039 1 . 1 0 `S1057 1 . 1 0 `S1062 1 . 1 0 `S1068 1 . 1 0 `S1073 1 . 1 0 `S1076 1 . 1 0 `S1079 1 . 1 0 `S1084 1 . 1 0 `S1089 1 . 1 0 `S1094 1 . 1 0 `S1097 1 . 1 0 `S1100 1 . 1 0 `S1103 1 . 1 0 `S1106 1 . 1 0 `S1109 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES1112  1 e 1 @4039 ]
 "7805
 [v _SSPBUF SSPBUF `VEuc  1 e 1 @4041 ]
 "7984
@@ -379,43 +417,145 @@
 [v _TRISC7 TRISC7 `VEb  1 e 0 @31911 ]
 "10327
 [v _TXIF TXIF `VEb  1 e 0 @31988 ]
-"354 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/doprnt.c
+"354 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
 [v _dpowers dpowers `C[10]ul  1 s 40 dpowers ]
-"7 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/powers.c
+"3 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\errno.c
+[v _errno errno `i  1 e 2 0 ]
+"7 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\powers.c
 [v __powers_ _powers_ `C[13]d  1 e 39 0 ]
 "39
 [v __npowers_ _npowers_ `C[13]d  1 e 39 0 ]
-[s S447 MPU6050_t 15 `uc 1 devAddr 1 0 `[14]uc 1 buffer 14 1 ]
-"43 /home/fbuga/Documents/Servo-Stabilizer/MPU6050.c
-[v _mpu6050 mpu6050 `S447  1 e 15 0 ]
-"29 /home/fbuga/Documents/Servo-Stabilizer/main.c
+"29 C:\Users\ryan\Documents\Servo-Stabilizer\main.c
+[v _x_accel x_accel `i  1 e 2 0 ]
+"30
+[v _y_accel y_accel `i  1 e 2 0 ]
+"31
+[v _z_accel z_accel `i  1 e 2 0 ]
+"33
+[v _x_gyro x_gyro `i  1 e 2 0 ]
+"34
+[v _y_gyro y_gyro `i  1 e 2 0 ]
+"35
+[v _z_gyro z_gyro `i  1 e 2 0 ]
+"37
+[v _last_read_time last_read_time `ul  1 e 4 0 ]
+"38
+[v _last_x_angle last_x_angle `f  1 e 3 0 ]
+"39
+[v _last_y_angle last_y_angle `f  1 e 3 0 ]
+"40
+[v _last_z_angle last_z_angle `f  1 e 3 0 ]
+"41
+[v _last_gyro_x_angle last_gyro_x_angle `f  1 e 3 0 ]
+"42
+[v _last_gyro_y_angle last_gyro_y_angle `f  1 e 3 0 ]
+"43
+[v _last_gyro_z_angle last_gyro_z_angle `f  1 e 3 0 ]
+"47
+[v _base_x_accel base_x_accel `f  1 e 3 0 ]
+"48
+[v _base_y_accel base_y_accel `f  1 e 3 0 ]
+"49
+[v _base_z_accel base_z_accel `f  1 e 3 0 ]
+"51
+[v _base_x_gyro base_x_gyro `f  1 e 3 0 ]
+"52
+[v _base_y_gyro base_y_gyro `f  1 e 3 0 ]
+"53
+[v _base_z_gyro base_z_gyro `f  1 e 3 0 ]
+"55
+[v _ax ax `i  1 e 2 0 ]
+[v _ay ay `i  1 e 2 0 ]
+[v _az az `i  1 e 2 0 ]
+[v _gx gx `i  1 e 2 0 ]
+[v _gy gy `i  1 e 2 0 ]
+[v _gz gz `i  1 e 2 0 ]
+[s S530 MPU6050_t 15 `uc 1 devAddr 1 0 `[14]uc 1 buffer 14 1 ]
+"43 C:\Users\ryan\Documents\Servo-Stabilizer\MPU6050.c
+[v _mpu6050 mpu6050 `S530  1 e 15 0 ]
+"139 C:\Users\ryan\Documents\Servo-Stabilizer\main.c
 [v _main main `(i  1 e 2 0 ]
 {
-"33
-[v main@angle angle `f  1 a 3 48 ]
-"36
-[v main@error_angle error_angle `f  1 a 3 30 ]
-"35
-[v main@dt dt `f  1 a 3 27 ]
-"34
-[v main@A A `f  1 a 3 24 ]
-"31
-[v main@gx gx `i  1 a 2 46 ]
-[v main@ax ax `i  1 a 2 44 ]
-[v main@gz gz `i  1 a 2 42 ]
-[v main@gy gy `i  1 a 2 40 ]
-[v main@az az `i  1 a 2 38 ]
-[v main@ay ay `i  1 a 2 36 ]
-"30
-[v main@data_in data_in `uc  1 a 1 23 ]
-"75
+"210
+[v main@angle_z angle_z `f  1 a 3 120 ]
+"209
+[v main@angle_y angle_y `f  1 a 3 117 ]
+"208
+[v main@angle_x angle_x `f  1 a 3 114 ]
+"188
+[v main@accel_z accel_z `f  1 a 3 111 ]
+"187
+[v main@accel_y accel_y `f  1 a 3 108 ]
+"186
+[v main@accel_x accel_x `f  1 a 3 105 ]
+"181
+[v main@gyro_z gyro_z `f  1 a 3 102 ]
+"180
+[v main@gyro_y gyro_y `f  1 a 3 99 ]
+"179
+[v main@gyro_x gyro_x `f  1 a 3 96 ]
+"204
+[v main@unfiltered_gyro_angle_z unfiltered_gyro_angle_z `f  1 a 3 87 ]
+"203
+[v main@unfiltered_gyro_angle_y unfiltered_gyro_angle_y `f  1 a 3 84 ]
+"202
+[v main@unfiltered_gyro_angle_x unfiltered_gyro_angle_x `f  1 a 3 81 ]
+"199
+[v main@gyro_angle_z gyro_angle_z `f  1 a 3 78 ]
+"198
+[v main@gyro_angle_y gyro_angle_y `f  1 a 3 75 ]
+"197
+[v main@gyro_angle_x gyro_angle_x `f  1 a 3 72 ]
+"192
+[v main@accel_angle_x accel_angle_x `f  1 a 3 69 ]
+"191
+[v main@accel_angle_y accel_angle_y `f  1 a 3 66 ]
+"193
+[v main@accel_angle_z accel_angle_z `f  1 a 3 63 ]
+"145
+[v main@dt dt `f  1 a 3 144 ]
+"146
+[v main@FS_SEL FS_SEL `f  1 a 3 141 ]
+"143
+[v main@alpha alpha `f  1 a 3 138 ]
+"144
+[v main@alphaInv alphaInv `f  1 a 3 93 ]
+"142
+[v main@RADIANS_TO_DEGREES RADIANS_TO_DEGREES `f  1 a 3 90 ]
+"223
 } 0
-"464 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/doprnt.c
+"9 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcsqrt.c
+[v _sqrt sqrt `(d  1 e 3 0 ]
+{
+"134
+[v sqrt@x x `d  1 a 3 42 ]
+[v sqrt@q q `d  1 a 3 39 ]
+[v sqrt@z z `d  1 a 3 35 ]
+[v sqrt@og og `d  1 a 3 32 ]
+"135
+[v sqrt@i i `uc  1 a 1 38 ]
+"9
+[v sqrt@a a `d  1 p 3 26 ]
+"159
+} 0
+"86 C:\Users\ryan\Documents\Servo-Stabilizer\main.c
+[v _set_last_read_angle_data set_last_read_angle_data `(v  1 e 1 0 ]
+{
+[v set_last_read_angle_data@time time `ul  1 p 4 0 ]
+[v set_last_read_angle_data@x x `f  1 p 3 4 ]
+[v set_last_read_angle_data@y y `f  1 p 3 7 ]
+[v set_last_read_angle_data@z z `f  1 p 3 10 ]
+[v set_last_read_angle_data@x_gyro x_gyro `f  1 p 3 13 ]
+[v set_last_read_angle_data@y_gyro y_gyro `f  1 p 3 16 ]
+[v set_last_read_angle_data@z_gyro z_gyro `f  1 p 3 19 ]
+"94
+} 0
+"464 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
 [v _printf printf `(i  1 e 2 0 ]
 {
-[u S940 . 4 `ul 1 vd 4 0 `d 1 integ 3 0 ]
+[u S1023 . 4 `ul 1 vd 4 0 `d 1 integ 3 0 ]
 "526
-[v printf@tmpval tmpval `S940  1 a 4 15 ]
+[v printf@tmpval tmpval `S1023  1 a 4 15 ]
 "528
 [v printf@val val `ul  1 a 4 9 ]
 "516
@@ -430,7 +570,7 @@
 "499
 [v printf@c c `c  1 a 1 22 ]
 "464
-[v printf@f f `*.25Cuc  1 p 2 63 ]
+[v printf@f f `*.25Cuc  1 p 2 69 ]
 "1541
 } 0
 "425
@@ -439,10 +579,10 @@
 [v scale@scl scl `c  1 a 1 wreg ]
 [v scale@scl scl `c  1 a 1 wreg ]
 "428
-[v scale@scl scl `c  1 a 1 41 ]
+[v scale@scl scl `c  1 a 1 53 ]
 "441
 } 0
-"19 /home/fbuga/Documents/Servo-Stabilizer/USART_Source_File.c
+"19 C:\Users\ryan\Documents\Servo-Stabilizer\USART_Source_File.c
 [v _putch putch `(v  1 e 1 0 ]
 {
 [v putch@byte byte `uc  1 a 1 wreg ]
@@ -454,30 +594,16 @@
 [v putch@byte byte `uc  1 a 1 1 ]
 "36
 } 0
-"409 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/doprnt.c
+"409 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
 [v _fround fround `(d  1 s 3 fround ]
 {
 [v fround@prec prec `uc  1 a 1 wreg ]
 [v fround@prec prec `uc  1 a 1 wreg ]
 "413
-[v fround@prec prec `uc  1 a 1 44 ]
+[v fround@prec prec `uc  1 a 1 56 ]
 "418
 } 0
-"62 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/ftmul.c
-[v ___ftmul __ftmul `(f  1 e 3 0 ]
-{
-"65
-[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 30 ]
-"64
-[v ___ftmul@sign sign `uc  1 a 1 34 ]
-[v ___ftmul@cntr cntr `uc  1 a 1 33 ]
-[v ___ftmul@exp exp `uc  1 a 1 29 ]
-"62
-[v ___ftmul@f1 f1 `f  1 p 3 20 ]
-[v ___ftmul@f2 f2 `f  1 p 3 23 ]
-"157
-} 0
-"8 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/awmod.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awmod.c
 [v ___awmod __awmod `(i  1 e 2 0 ]
 {
 "11
@@ -488,7 +614,7 @@
 [v ___awmod@divisor divisor `i  1 p 2 2 ]
 "35
 } 0
-"8 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/awdiv.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
 {
 "11
@@ -501,7 +627,7 @@
 [v ___awdiv@divisor divisor `i  1 p 2 8 ]
 "42
 } 0
-"60 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/ftdivl.c
+"60 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdivl.c
 [v __tdiv_to_l_ _tdiv_to_l_ `(ul  1 e 4 0 ]
 {
 "63
@@ -514,7 +640,7 @@
 [v __tdiv_to_l_@f2 f2 `f  1 p 3 3 ]
 "101
 } 0
-"60 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/fldivl.c
+"60 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fldivl.c
 [v __div_to_l_ _div_to_l_ `(ul  1 e 4 0 ]
 {
 "63
@@ -527,16 +653,7 @@
 [v __div_to_l_@f2 f2 `d  1 p 3 3 ]
 "101
 } 0
-"35 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/lltoft.c
-[v ___lltoft __lltoft `(f  1 e 3 0 ]
-{
-"37
-[v ___lltoft@exp exp `uc  1 a 1 16 ]
-"35
-[v ___lltoft@c c `ul  1 p 4 8 ]
-"46
-} 0
-"8 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/llmod.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\llmod.c
 [v ___llmod __llmod `(ul  1 e 4 0 ]
 {
 "11
@@ -546,7 +663,7 @@
 [v ___llmod@divisor divisor `ul  1 p 4 4 ]
 "26
 } 0
-"8 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/lldiv.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
 [v ___lldiv __lldiv `(ul  1 e 4 0 ]
 {
 "11
@@ -558,27 +675,84 @@
 [v ___lldiv@divisor divisor `ul  1 p 4 4 ]
 "31
 } 0
-"20 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/ftsub.c
+"5 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\pow.c
+[v _pow pow `(d  1 e 3 0 ]
+{
+"8
+[v pow@yi yi `ul  1 a 4 22 ]
+"7
+[v pow@sign sign `uc  1 a 1 21 ]
+"5
+[v pow@x x `d  1 p 3 9 ]
+[v pow@y y `d  1 p 3 12 ]
+"31
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
+[v _log log `(d  1 e 3 0 ]
+{
+"7
+[v log@exponent exponent `i  1 a 2 62 ]
+"5
+[v log@x x `d  1 p 3 59 ]
+"9
+[v log@coeff coeff `C[9]d  1 s 27 coeff ]
+"36
+} 0
+"12 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\exp.c
+[v _exp exp `(d  1 e 3 0 ]
+{
+"14
+[v exp@exponent exponent `i  1 a 2 6 ]
+"15
+[v exp@sign sign `uc  1 a 1 8 ]
+"12
+[v exp@x x `d  1 p 3 0 ]
+"17
+[v exp@coeff coeff `C[10]d  1 s 30 coeff ]
+"57
+} 0
+"277 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+[v _ldexp ldexp `(d  1 e 3 0 ]
+{
+[v ldexp@value value `d  1 p 3 59 ]
+[v ldexp@newexp newexp `i  1 p 2 62 ]
+"307
+} 0
+"13 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\floor.c
+[v _floor floor `(d  1 e 3 0 ]
+{
+"15
+[v floor@i i `d  1 a 3 82 ]
+"16
+[v floor@expon expon `i  1 a 2 85 ]
+"13
+[v floor@x x `d  1 p 3 79 ]
+"30
+} 0
+"254 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+[v _frexp frexp `(d  1 e 3 0 ]
+{
+[v frexp@value value `d  1 p 3 0 ]
+[v frexp@eptr eptr `*.39i  1 p 2 3 ]
+"274
+} 0
+"20 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftsub.c
 [v ___ftsub __ftsub `(f  1 e 3 0 ]
 {
-[v ___ftsub@f1 f1 `f  1 p 3 57 ]
-[v ___ftsub@f2 f2 `f  1 p 3 60 ]
+[v ___ftsub@f1 f1 `f  1 p 3 32 ]
+[v ___ftsub@f2 f2 `f  1 p 3 35 ]
 "27
 } 0
-"15 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/ftneg.c
-[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"35 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
 {
-[v ___ftneg@f1 f1 `f  1 p 3 0 ]
-"20
+"37
+[v ___lltoft@exp exp `uc  1 a 1 16 ]
+"35
+[v ___lltoft@c c `ul  1 p 4 8 ]
+"46
 } 0
-"4 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/ftge.c
-[v ___ftge __ftge `(b  1 e 0 0 ]
-{
-[v ___ftge@ff1 ff1 `f  1 p 3 0 ]
-[v ___ftge@ff2 ff2 `f  1 p 3 3 ]
-"13
-} 0
-"14 /home/fbuga/Documents/Servo-Stabilizer/Inits.c
+"14 C:\Users\ryan\Documents\Servo-Stabilizer\Inits.c
 [v _initIO initIO `(v  1 e 1 0 ]
 {
 "20
@@ -588,64 +762,99 @@
 {
 "25
 } 0
-"8 /home/fbuga/Documents/Servo-Stabilizer/USART_Source_File.c
+"8 C:\Users\ryan\Documents\Servo-Stabilizer\USART_Source_File.c
 [v _USART_Init USART_Init `(v  1 e 1 0 ]
 {
 "10
-[v USART_Init@temp temp `f  1 a 3 61 ]
+[v USART_Init@temp temp `f  1 a 3 4 ]
 "8
-[v USART_Init@baud_rate baud_rate `l  1 p 4 57 ]
+[v USART_Init@baud_rate baud_rate `l  1 p 4 0 ]
 "17
 } 0
-"44 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/fttol.c
+"44 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
 [v ___fttol __fttol `(l  1 e 4 0 ]
 {
 "47
-[v ___fttol@lval lval `ul  1 a 4 52 ]
+[v ___fttol@lval lval `ul  1 a 4 64 ]
 "46
-[v ___fttol@exp1 exp1 `uc  1 a 1 56 ]
-[v ___fttol@sign1 sign1 `uc  1 a 1 51 ]
+[v ___fttol@exp1 exp1 `uc  1 a 1 68 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 63 ]
 "44
-[v ___fttol@f1 f1 `f  1 p 3 42 ]
+[v ___fttol@f1 f1 `f  1 p 3 54 ]
 "73
 } 0
-"54 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/ftdiv.c
-[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
-{
-"60
-[v ___ftdiv@f3 f3 `f  1 a 3 28 ]
-"59
-[v ___ftdiv@sign sign `uc  1 a 1 32 ]
-[v ___ftdiv@exp exp `uc  1 a 1 31 ]
-[v ___ftdiv@cntr cntr `uc  1 a 1 27 ]
-"54
-[v ___ftdiv@f1 f1 `f  1 p 3 18 ]
-[v ___ftdiv@f2 f2 `f  1 p 3 21 ]
-"86
-} 0
-"86 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/ftadd.c
-[v ___ftadd __ftadd `(f  1 e 3 0 ]
-{
-"88
-[v ___ftadd@exp1 exp1 `uc  1 a 1 56 ]
-[v ___ftadd@exp2 exp2 `uc  1 a 1 55 ]
-[v ___ftadd@sign sign `uc  1 a 1 54 ]
-"86
-[v ___ftadd@f1 f1 `f  1 p 3 45 ]
-[v ___ftadd@f2 f2 `f  1 p 3 48 ]
-"148
-} 0
-"42 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/altoft.c
+"42 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\altoft.c
 [v ___altoft __altoft `(f  1 e 3 0 ]
 {
 "44
-[v ___altoft@sign sign `uc  1 a 1 17 ]
-[v ___altoft@exp exp `uc  1 a 1 16 ]
+[v ___altoft@sign sign `uc  1 a 1 78 ]
+[v ___altoft@exp exp `uc  1 a 1 77 ]
 "42
-[v ___altoft@c c `l  1 p 4 8 ]
+[v ___altoft@c c `l  1 p 4 69 ]
 "57
 } 0
-"32 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/awtoft.c
+"60 C:\Users\ryan\Documents\Servo-Stabilizer\main.c
+[v _get_last_z_angle get_last_z_angle `T(f  1 e 3 0 ]
+{
+} 0
+"59
+[v _get_last_y_angle get_last_y_angle `T(f  1 e 3 0 ]
+{
+} 0
+"58
+[v _get_last_x_angle get_last_x_angle `T(f  1 e 3 0 ]
+{
+} 0
+"63
+[v _get_last_gyro_z_angle get_last_gyro_z_angle `T(f  1 e 3 0 ]
+{
+} 0
+"62
+[v _get_last_gyro_y_angle get_last_gyro_y_angle `T(f  1 e 3 0 ]
+{
+} 0
+"61
+[v _get_last_gyro_x_angle get_last_gyro_x_angle `T(f  1 e 3 0 ]
+{
+} 0
+"96
+[v _calibrate_sensors calibrate_sensors `(v  1 e 1 0 ]
+{
+"111
+[v calibrate_sensors@i i `i  1 a 2 2 ]
+"103
+[v calibrate_sensors@_z_gyro _z_gyro `f  1 a 3 19 ]
+"102
+[v calibrate_sensors@_y_gyro _y_gyro `f  1 a 3 16 ]
+"101
+[v calibrate_sensors@_x_gyro _x_gyro `f  1 a 3 13 ]
+"100
+[v calibrate_sensors@_z_accel _z_accel `f  1 a 3 10 ]
+"99
+[v calibrate_sensors@_y_accel _y_accel `f  1 a 3 7 ]
+"98
+[v calibrate_sensors@_x_accel _x_accel `f  1 a 3 4 ]
+"97
+[v calibrate_sensors@num_readings num_readings `i  1 a 2 22 ]
+"137
+} 0
+"65
+[v _read_gyro_accel_vals read_gyro_accel_vals `(v  1 e 1 0 ]
+{
+"84
+} 0
+"1733 C:\Users\ryan\Documents\Servo-Stabilizer\MPU6050.c
+[v _MPU6050_getMotion6 MPU6050_getMotion6 `(v  1 e 1 0 ]
+{
+[v MPU6050_getMotion6@ax ax `*.39i  1 p 2 32 ]
+[v MPU6050_getMotion6@ay ay `*.39i  1 p 2 34 ]
+[v MPU6050_getMotion6@az az `*.39i  1 p 2 36 ]
+[v MPU6050_getMotion6@gx gx `*.39i  1 p 2 38 ]
+[v MPU6050_getMotion6@gy gy `*.39i  1 p 2 40 ]
+[v MPU6050_getMotion6@gz gz `*.39i  1 p 2 42 ]
+"1741
+} 0
+"32 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
 [v ___awtoft __awtoft `(f  1 e 3 0 ]
 {
 "34
@@ -654,7 +863,95 @@
 [v ___awtoft@c c `i  1 p 2 8 ]
 "42
 } 0
-"62 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/float.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atan.c
+[v _atan atan `(d  1 e 3 0 ]
+{
+"28
+[v atan@val val `d  1 a 3 58 ]
+[v atan@val_squared val_squared `d  1 a 3 55 ]
+[v atan@x x `d  1 a 3 51 ]
+[v atan@y y `d  1 a 3 48 ]
+"27
+[v atan@recip recip `uc  1 a 1 54 ]
+"8
+[v atan@f f `d  1 p 3 45 ]
+"10
+[v atan@coeff_a coeff_a `C[6]d  1 s 18 coeff_a ]
+"19
+[v atan@coeff_b coeff_b `C[5]d  1 s 15 coeff_b ]
+"41
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fabs.c
+[v _fabs fabs `(d  1 e 3 0 ]
+{
+[v fabs@d d `d  1 p 3 3 ]
+"9
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+{
+[v ___ftneg@f1 f1 `f  1 p 3 0 ]
+"20
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\evalpoly.c
+[v _eval_poly eval_poly `(d  1 e 3 0 ]
+{
+"6
+[v eval_poly@res res `d  1 a 3 56 ]
+"4
+[v eval_poly@x x `d  1 p 3 47 ]
+[v eval_poly@d d `*.25Cd  1 p 2 50 ]
+[v eval_poly@n n `i  1 p 2 52 ]
+"12
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 42 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 46 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 45 ]
+[v ___ftmul@exp exp `uc  1 a 1 41 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 32 ]
+[v ___ftmul@f2 f2 `f  1 p 3 35 ]
+"157
+} 0
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+{
+"88
+[v ___ftadd@exp1 exp1 `uc  1 a 1 31 ]
+[v ___ftadd@exp2 exp2 `uc  1 a 1 30 ]
+[v ___ftadd@sign sign `uc  1 a 1 29 ]
+"86
+[v ___ftadd@f1 f1 `f  1 p 3 20 ]
+[v ___ftadd@f2 f2 `f  1 p 3 23 ]
+"148
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+{
+[v ___ftge@ff1 ff1 `f  1 p 3 0 ]
+[v ___ftge@ff2 ff2 `f  1 p 3 3 ]
+"13
+} 0
+"54 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+"60
+[v ___ftdiv@f3 f3 `f  1 a 3 89 ]
+"59
+[v ___ftdiv@sign sign `uc  1 a 1 93 ]
+[v ___ftdiv@exp exp `uc  1 a 1 92 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 88 ]
+"54
+[v ___ftdiv@f1 f1 `f  1 p 3 79 ]
+[v ___ftdiv@f2 f2 `f  1 p 3 82 ]
+"86
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
 [v ___ftpack __ftpack `(f  1 e 3 0 ]
 {
 [v ___ftpack@arg arg `um  1 p 3 0 ]
@@ -662,7 +959,7 @@
 [v ___ftpack@sign sign `uc  1 p 1 4 ]
 "86
 } 0
-"14 /home/fbuga/opt/microchip/xc8/v1.45/sources/pic18/plib/i2c/i2c_open.c
+"14 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic18\plib\i2c\i2c_open.c
 [v _OpenI2C OpenI2C `(v  1 e 1 0 ]
 {
 [v OpenI2C@sync_mode sync_mode `uc  1 a 1 wreg ]
@@ -672,7 +969,7 @@
 [v OpenI2C@sync_mode sync_mode `uc  1 a 1 1 ]
 "26
 } 0
-"73 /home/fbuga/Documents/Servo-Stabilizer/MPU6050.c
+"73 C:\Users\ryan\Documents\Servo-Stabilizer\MPU6050.c
 [v _MPU6050_testConnection MPU6050_testConnection `(uc  1 e 1 0 ]
 {
 "75
@@ -682,7 +979,7 @@
 {
 "2699
 } 0
-"206 /home/fbuga/Documents/Servo-Stabilizer/I2Cdev.c
+"206 C:\Users\ryan\Documents\Servo-Stabilizer\I2Cdev.c
 [v _I2Cdev_readBits I2Cdev_readBits `(c  1 e 1 0 ]
 {
 [v I2Cdev_readBits@devAddr devAddr `uc  1 a 1 wreg ]
@@ -701,7 +998,7 @@
 [v I2Cdev_readBits@devAddr devAddr `uc  1 a 1 45 ]
 "220
 } 0
-"62 /home/fbuga/Documents/Servo-Stabilizer/MPU6050.c
+"62 C:\Users\ryan\Documents\Servo-Stabilizer\MPU6050.c
 [v _MPU6050_initialize MPU6050_initialize `(v  1 e 1 0 ]
 {
 "67
@@ -714,7 +1011,7 @@
 [v MPU6050_setSleepEnabled@enabled enabled `uc  1 a 1 48 ]
 "2384
 } 0
-"344 /home/fbuga/Documents/Servo-Stabilizer/I2Cdev.c
+"344 C:\Users\ryan\Documents\Servo-Stabilizer\I2Cdev.c
 [v _I2Cdev_writeBit I2Cdev_writeBit `(uc  1 e 1 0 ]
 {
 [v I2Cdev_writeBit@devAddr devAddr `uc  1 a 1 wreg ]
@@ -729,7 +1026,7 @@
 [v I2Cdev_writeBit@devAddr devAddr `uc  1 a 1 46 ]
 "349
 } 0
-"251 /home/fbuga/Documents/Servo-Stabilizer/MPU6050.c
+"251 C:\Users\ryan\Documents\Servo-Stabilizer\MPU6050.c
 [v _MPU6050_setFullScaleGyroRange MPU6050_setFullScaleGyroRange `(v  1 e 1 0 ]
 {
 [v MPU6050_setFullScaleGyroRange@range range `uc  1 a 1 wreg ]
@@ -753,7 +1050,7 @@
 [v MPU6050_setClockSource@source source `uc  1 a 1 46 ]
 "2477
 } 0
-"373 /home/fbuga/Documents/Servo-Stabilizer/I2Cdev.c
+"373 C:\Users\ryan\Documents\Servo-Stabilizer\I2Cdev.c
 [v _I2Cdev_writeBits I2Cdev_writeBits `(uc  1 e 1 0 ]
 {
 [v I2Cdev_writeBits@devAddr devAddr `uc  1 a 1 wreg ]
@@ -806,18 +1103,7 @@
 [v I2Cdev_readByte@devAddr devAddr `uc  1 a 1 35 ]
 "97
 } 0
-"1733 /home/fbuga/Documents/Servo-Stabilizer/MPU6050.c
-[v _MPU6050_getMotion6 MPU6050_getMotion6 `(v  1 e 1 0 ]
-{
-[v MPU6050_getMotion6@ax ax `*.39i  1 p 2 32 ]
-[v MPU6050_getMotion6@ay ay `*.39i  1 p 2 34 ]
-[v MPU6050_getMotion6@az az `*.39i  1 p 2 36 ]
-[v MPU6050_getMotion6@gx gx `*.39i  1 p 2 38 ]
-[v MPU6050_getMotion6@gy gy `*.39i  1 p 2 40 ]
-[v MPU6050_getMotion6@gz gz `*.39i  1 p 2 42 ]
-"1741
-} 0
-"43 /home/fbuga/Documents/Servo-Stabilizer/I2Cdev.c
+"43
 [v _I2Cdev_readBytes I2Cdev_readBytes `(c  1 e 1 0 ]
 {
 [v I2Cdev_readBytes@devAddr devAddr `uc  1 a 1 wreg ]
@@ -831,7 +1117,7 @@
 [v I2Cdev_readBytes@devAddr devAddr `uc  1 a 1 30 ]
 "87
 } 0
-"15 /home/fbuga/opt/microchip/xc8/v1.45/sources/common/Umul16.c
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
 {
 "17
@@ -841,7 +1127,7 @@
 [v ___wmul@multiplicand multiplicand `ui  1 p 2 16 ]
 "53
 } 0
-"12 /home/fbuga/opt/microchip/xc8/v1.45/sources/pic18/plib/i2c/i2c_writ.c
+"12 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic18\plib\i2c\i2c_writ.c
 [v _WriteI2C WriteI2C `(c  1 e 1 0 ]
 {
 [v WriteI2C@data_out data_out `uc  1 a 1 wreg ]
@@ -850,17 +1136,17 @@
 [v WriteI2C@data_out data_out `uc  1 a 1 1 ]
 "43
 } 0
-"24 /home/fbuga/opt/microchip/xc8/v1.45/sources/pic18/plib/i2c/i2c_idle.c
+"24 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic18\plib\i2c\i2c_idle.c
 [v _IdleI2C IdleI2C `(v  1 e 1 0 ]
 {
 "28
 } 0
-"11 /home/fbuga/opt/microchip/xc8/v1.45/sources/pic18/plib/i2c/i2c_read.c
+"11 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic18\plib\i2c\i2c_read.c
 [v _ReadI2C ReadI2C `(uc  1 e 1 0 ]
 {
 "17
 } 0
-"51 /home/fbuga/Documents/Servo-Stabilizer/MPU6050.c
+"51 C:\Users\ryan\Documents\Servo-Stabilizer\MPU6050.c
 [v _MPU6050 MPU6050 `(v  1 e 1 0 ]
 {
 [v MPU6050@address address `uc  1 a 1 wreg ]

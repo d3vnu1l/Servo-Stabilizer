@@ -1,17 +1,17 @@
 
 # 1 "main.c"
 
-# 26 "/home/fbuga/opt/microchip/xc8/v1.45/include/htc.h"
+# 26 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\htc.h"
 extern const char __xc8_OPTIM_SPEED;
 
 extern double __fpnormalize(double);
 
 
-# 13 "/home/fbuga/opt/microchip/xc8/v1.45/include/xc8debug.h"
+# 13 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\xc8debug.h"
 #pragma intrinsic(__builtin_software_breakpoint)
 extern void __builtin_software_breakpoint(void);
 
-# 50 "/home/fbuga/opt/microchip/xc8/v1.45/include/pic18f4550.h"
+# 50 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h"
 extern volatile unsigned char SPPDATA @ 0xF62;
 
 asm("SPPDATA equ 0F62h");
@@ -4778,7 +4778,7 @@ extern volatile __bit nW @ (((unsigned) &SSPSTAT)*8) + 2;
 
 extern volatile __bit nWRITE @ (((unsigned) &SSPSTAT)*8) + 2;
 
-# 2008 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/adc.h"
+# 2008 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\adc.h"
 union ADCResult
 {
 int lr;
@@ -4805,11 +4805,11 @@ void SetChanADC(unsigned char );
 # 2100
 void SelChanConvADC( unsigned char );
 
-# 38 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/ancomp.h"
+# 38 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\ancomp.h"
 void Close_ancomp( void );
 void Open_ancomp(unsigned char config);
 
-# 584 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/spi.h"
+# 584 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\spi.h"
 void OpenSPI( unsigned char sync_mode,
 unsigned char bus_mode,
 unsigned char smp_phase );
@@ -4822,7 +4822,7 @@ void putsSPI( unsigned char *wrptr );
 
 unsigned char ReadSPI( void );
 
-# 414 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/can2510.h"
+# 414 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\can2510.h"
 void CAN2510Initialize(  unsigned int configuration,
  unsigned char brp,
  unsigned char interruptFlags,
@@ -4929,7 +4929,7 @@ unsigned char CAN2510DataRead(  unsigned char bufferNum,
  unsigned char *numBytes,
  unsigned char *data );
 
-# 64 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/capture.h"
+# 64 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\capture.h"
 union capstatus
 {
 
@@ -4968,7 +4968,7 @@ void OpenCapture2 ( unsigned char config);
 unsigned int ReadCapture2 (void);
 void CloseCapture2 (void);
 
-# 385 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/compare.h"
+# 385 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\compare.h"
 void OpenCompare1(unsigned char config,unsigned int period);
 void CloseCompare1(void);
 
@@ -4976,18 +4976,18 @@ void CloseCompare1(void);
 void OpenCompare2(unsigned char config, unsigned int period);
 void CloseCompare2(void);
 
-# 36 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/EEP.h"
+# 36 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\EEP.h"
 void Busy_eep ( void );
 unsigned char Read_b_eep( unsigned int badd );
 void Write_b_eep( unsigned int badd, unsigned char bdat );
 
-# 4 "/home/fbuga/opt/microchip/xc8/v1.45/include/__size_t.h"
+# 4 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\__size_t.h"
 typedef unsigned size_t;
 
-# 6 "/home/fbuga/opt/microchip/xc8/v1.45/include/stddef.h"
+# 6 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stddef.h"
 typedef int ptrdiff_t;
 
-# 65 "/home/fbuga/opt/microchip/xc8/v1.45/include/GenericTypeDefs.h"
+# 65 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\GenericTypeDefs.h"
 typedef enum _BOOL { FALSE = 0, TRUE } BOOL;
 
 
@@ -5367,7 +5367,7 @@ struct
 } bits;
 } QWORD_VAL;
 
-# 113 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/flash.h"
+# 113 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\flash.h"
 extern void ReadFlash(unsigned long startaddr, unsigned int num_bytes, unsigned char *flash_array);
 
 # 120
@@ -5377,7 +5377,7 @@ extern void WriteBlockFlash(unsigned long startaddr, unsigned char num_blocks, u
 
 extern void WriteBytesFlash(unsigned long startaddr, unsigned int num_bytes, unsigned char *flash_array);
 
-# 775 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/i2c.h"
+# 775 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\i2c.h"
 void IdleI2C( void );
 
 void OpenI2C( unsigned char sync_mode, unsigned char slew );
@@ -5415,7 +5415,7 @@ unsigned char address,
 unsigned char *rdptr,
 unsigned char length );
 
-# 325 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/mwire.h"
+# 325 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\mwire.h"
 void OpenMwire( unsigned char sync_mode );
 
 unsigned char ReadMwire( unsigned char high_byte,
@@ -5427,7 +5427,7 @@ signed char WriteMwire( unsigned char data_out );
 # 354
 void getsMwire( unsigned char *rdptr, unsigned char length );
 
-# 126 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/portb.h"
+# 126 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\portb.h"
 void OpenPORTB( unsigned char config);
 
 # 176
@@ -5439,7 +5439,7 @@ void OpenRB1INT( unsigned char config);
 # 211
 void OpenRB2INT( unsigned char config);
 
-# 85 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/pwm.h"
+# 85 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\pwm.h"
 union PWMDC
 {
 unsigned int lpwm;
@@ -5463,7 +5463,7 @@ void SetDCPWM2( unsigned int duty_cycle);
 # 492
 void ClosePWM2 (void);
 
-# 16 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/reset.h"
+# 16 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\reset.h"
 char isMCLR(void);
 void StatusReset(void);
 char isPOR(void);
@@ -5481,12 +5481,12 @@ char isWDTWU(void);
 
 char isLVD(void);
 
-# 687 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/rtcc.h"
+# 687 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\rtcc.h"
 void Open_RTCC(void);
 void Close_RTCC(void);
 unsigned char update_RTCC(void);
 
-# 97 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/sw_i2c.h"
+# 97 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\sw_i2c.h"
 void SWStopI2C ( void );
 void SWStartI2C ( void );
 void SWRestartI2C ( void );
@@ -5499,7 +5499,7 @@ signed char SWWriteI2C(  unsigned char data_out );
 signed char SWGetsI2C(  unsigned char *rdptr,  unsigned char length );
 signed char SWPutsI2C(  unsigned char *wrptr );
 
-# 84 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/sw_spi.h"
+# 84 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\sw_spi.h"
 void OpenSWSPI(void);
 
 
@@ -5511,7 +5511,7 @@ void SetCSSWSPI(void);
 
 void ClearCSSWSPI(void);
 
-# 47 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/sw_uart.h"
+# 47 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\sw_uart.h"
 void OpenUART(void);
 
 unsigned char ReadUART(void);
@@ -5527,7 +5527,7 @@ extern void DelayRXBitUART (void);
 extern void DelayRXHalfBitUART(void);
 extern void DelayTXBitUART (void);
 
-# 36 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/timers.h"
+# 36 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\timers.h"
 union Timers
 {
 unsigned int lt;
@@ -5559,7 +5559,7 @@ void WriteTimer3 ( unsigned int timer3);
 # 1179
 void SetTmrCCPSrc( unsigned char );
 
-# 568 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/usart.h"
+# 568 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\usart.h"
 union USART
 {
 unsigned char val;
@@ -5585,7 +5585,7 @@ void putrsUSART ( const  char *data);
 # 654
 void baudUSART ( unsigned char baudconfig);
 
-# 87 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/xlcd.h"
+# 87 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\xlcd.h"
 void OpenXLCD( unsigned char);
 
 # 92
@@ -5620,7 +5620,7 @@ extern void DelayFor18TCY(void);
 extern void DelayPORXLCD(void);
 extern void DelayXLCD(void);
 
-# 13 "/home/fbuga/opt/microchip/xc8/v1.45/include/plib/delays.h"
+# 13 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\plib\delays.h"
 void Delay1TCYx(unsigned char);
 
 # 19
@@ -5635,7 +5635,7 @@ void Delay1KTCYx(unsigned char);
 # 37
 void Delay10KTCYx(unsigned char);
 
-# 18 "/home/fbuga/opt/microchip/xc8/v1.45/include/pic18.h"
+# 18 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18.h"
 __attribute__((__unsupported__("The " "flash_write" " routine is no longer supported. Please use the MPLAB X MCC."))) void flash_write(const unsigned char *, unsigned int, __far unsigned char *);
 __attribute__((__unsupported__("The " "EraseFlash" " routine is no longer supported. Please use the MPLAB X MCC."))) void EraseFlash(unsigned long startaddr, unsigned long endaddr);
 
@@ -5662,7 +5662,7 @@ extern __nonreentrant void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __nonreentrant void _delay3(unsigned char);
 
-# 7 "/home/fbuga/opt/microchip/xc8/v1.45/include/stdarg.h"
+# 7 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdarg.h"
 typedef void * va_list[1];
 
 #pragma intrinsic(__va_start)
@@ -5671,17 +5671,17 @@ extern void * __va_start(void);
 #pragma intrinsic(__va_arg)
 extern void * __va_arg(void *, ...);
 
-# 43 "/home/fbuga/opt/microchip/xc8/v1.45/include/stdio.h"
+# 43 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdio.h"
 struct __prbuf
 {
 char * ptr;
 void (* func)(char);
 };
 
-# 29 "/home/fbuga/opt/microchip/xc8/v1.45/include/errno.h"
+# 29 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\errno.h"
 extern int errno;
 
-# 12 "/home/fbuga/opt/microchip/xc8/v1.45/include/conio.h"
+# 12 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\conio.h"
 extern void init_uart(void);
 
 extern char getch(void);
@@ -5695,7 +5695,7 @@ extern __bit kbhit(void);
 extern char * cgets(char *);
 extern void cputs(const char *);
 
-# 88 "/home/fbuga/opt/microchip/xc8/v1.45/include/stdio.h"
+# 88 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdio.h"
 extern int cprintf(char *, ...);
 #pragma printf_check(cprintf)
 
@@ -5722,7 +5722,7 @@ extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupport
 extern int sprintf(char *, const char *, ...);
 extern int printf(const char *, ...);
 
-# 30 "/home/fbuga/opt/microchip/xc8/v1.45/include/math.h"
+# 30 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\math.h"
 extern double fabs(double);
 extern double floor(double);
 extern double ceil(double);
@@ -5760,7 +5760,7 @@ void USART_Init(long);
 void putch(char);
 char USART_ReceiveChar();
 
-# 13 "/home/fbuga/opt/microchip/xc8/v1.45/include/stdint.h"
+# 13 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdint.h"
 typedef signed char int8_t;
 
 # 20
@@ -5850,7 +5850,7 @@ typedef int16_t intptr_t;
 
 typedef uint16_t uintptr_t;
 
-# 12 "/home/fbuga/opt/microchip/xc8/v1.45/include/stdbool.h"
+# 12 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdbool.h"
 typedef unsigned char bool;
 
 # 46 "I2Cdev.h"
@@ -6265,21 +6265,122 @@ void MPU6050_setDMPConfig2(uint8_t config);
 #pragma config XINST = OFF
 #pragma config STVREN = ON
 
-int main(void) {
-char data_in=0;
+int x_accel;
+int y_accel;
+int z_accel;
+int temperature;
+int x_gyro;
+int y_gyro;
+int z_gyro;
+
+unsigned long last_read_time;
+float last_x_angle;
+float last_y_angle;
+float last_z_angle;
+float last_gyro_x_angle;
+float last_gyro_y_angle;
+float last_gyro_z_angle;
+
+
+
+float base_x_accel;
+float base_y_accel;
+float base_z_accel;
+
+float base_x_gyro;
+float base_y_gyro;
+float base_z_gyro;
+
 int16_t ax, ay, az, gx, gy, gz;
-float fax, fay, faz, fgz, fgy, fgx;
-float angle=180;
-float A = 0.962;
+
+inline unsigned long get_last_time() {return last_read_time;}
+inline float get_last_x_angle() {return last_x_angle;}
+inline float get_last_y_angle() {return last_y_angle;}
+inline float get_last_z_angle() {return last_z_angle;}
+inline float get_last_gyro_x_angle() {return last_gyro_x_angle;}
+inline float get_last_gyro_y_angle() {return last_gyro_y_angle;}
+inline float get_last_gyro_z_angle() {return last_gyro_z_angle;}
+
+void read_gyro_accel_vals(void) {
+
+# 76
+MPU6050_getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
+
+x_accel = ax;
+y_accel = ay;
+z_accel = az;
+x_gyro = gx;
+y_gyro = gy;
+z_gyro = gz;
+}
+
+void set_last_read_angle_data(unsigned long time, float x, float y, float z, float x_gyro, float y_gyro, float z_gyro) {
+last_read_time = time;
+last_x_angle = x;
+last_y_angle = y;
+last_z_angle = z;
+last_gyro_x_angle = x_gyro;
+last_gyro_y_angle = y_gyro;
+last_gyro_z_angle = z_gyro;
+}
+
+void calibrate_sensors() {
+int num_readings = 10;
+float _x_accel = 0;
+float _y_accel = 0;
+float _z_accel = 0;
+float _x_gyro = 0;
+float _y_gyro = 0;
+float _z_gyro = 0;
+
+
+
+
+read_gyro_accel_vals();
+
+
+for (int i = 0; i < num_readings; i++) {
+read_gyro_accel_vals();
+_x_accel += x_accel;
+_y_accel += y_accel;
+_z_accel += z_accel;
+_x_gyro += x_gyro;
+_y_gyro += y_gyro;
+_z_gyro += z_gyro;
+_delay((unsigned long)((100)*(8000000/4000.0)));
+}
+_x_accel /= num_readings;
+_y_accel /= num_readings;
+_z_accel /= num_readings;
+_x_gyro /= num_readings;
+_y_gyro /= num_readings;
+_z_gyro /= num_readings;
+
+
+base_x_accel = _x_accel;
+base_y_accel = _y_accel;
+base_z_accel = _z_accel;
+base_x_gyro = _x_gyro;
+base_y_gyro = _y_gyro;
+base_z_gyro = _z_gyro;
+
+
+}
+
+int main(void) {
+
+
+float RADIANS_TO_DEGREES = 180/3.14159;
+float alpha = 0.96;
+float alphaInv = (1.0-alpha);
 float dt = 0.02;
-float error_angle;
+float FS_SEL = 131;
 
 OSCCON = 0x72;
 
-LATCbits.LATC2=1;
-
 initIO();
 initBT();
+
 
 _delay((unsigned long)((30)*(8000000/4000.0)));
 
@@ -6294,22 +6395,61 @@ if(MPU6050_testConnection())
 printf("MPU enabled!\r\n");
 else printf("MPU failure\r\n");
 
+_delay((unsigned long)((1000)*(8000000/4000.0)));
+calibrate_sensors();
+
 while (1) {
-MPU6050_getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
-
-
-angle = angle + gx*dt;
-error_angle = ax - angle;
-angle = angle + (1-A)*error_angle;
-
-
-printf("%f\r\n", angle);
-
-if(angle>360) angle-=360;
-_delay((unsigned long)((10)*(8000000/4000.0)));
 LATCbits.LC2=1;
-_delay((unsigned long)((10)*(8000000/4000.0)));
+
+
+read_gyro_accel_vals();
+
+
+
+
+float gyro_x = (x_gyro - base_x_gyro)/FS_SEL;
+float gyro_y = (y_gyro - base_y_gyro)/FS_SEL;
+float gyro_z = (z_gyro - base_z_gyro)/FS_SEL;
+
+
+
+
+float accel_x = x_accel;
+float accel_y = y_accel;
+float accel_z = z_accel;
+
+
+float accel_angle_y = atan(-1*accel_x/sqrt(pow(accel_y,2) + pow(accel_z,2)))*RADIANS_TO_DEGREES;
+float accel_angle_x = atan(accel_y/sqrt(pow(accel_x,2) + pow(accel_z,2)))*RADIANS_TO_DEGREES;
+float accel_angle_z = 0;
+
+
+
+float gyro_angle_x = gyro_x*dt + get_last_x_angle();
+float gyro_angle_y = gyro_y*dt + get_last_y_angle();
+float gyro_angle_z = gyro_z*dt + get_last_z_angle();
+
+
+float unfiltered_gyro_angle_x = gyro_x*dt + get_last_gyro_x_angle();
+float unfiltered_gyro_angle_y = gyro_y*dt + get_last_gyro_y_angle();
+float unfiltered_gyro_angle_z = gyro_z*dt + get_last_gyro_z_angle();
+
+
+
+float angle_x = alpha*gyro_angle_x + alphaInv*accel_angle_x;
+float angle_y = alpha*gyro_angle_y + alphaInv*accel_angle_y;
+float angle_z = gyro_angle_z;
+
+
+
+set_last_read_angle_data(0, angle_x, angle_y, angle_z, unfiltered_gyro_angle_x, unfiltered_gyro_angle_y, unfiltered_gyro_angle_z);
+
+printf("%f, %f, %f\r\n", angle_x, angle_y, angle_z);
+
+
+_delay((unsigned long)((20)*(8000000/4000.0)));
 LATCbits.LC2=0;
+
 }
 }
 
